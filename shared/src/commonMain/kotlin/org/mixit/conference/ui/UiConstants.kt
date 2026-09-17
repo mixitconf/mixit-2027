@@ -5,7 +5,7 @@ import org.mixit.conference.model.menu.Menu
 import org.mixit.conference.model.menu.MenuItem
 import org.mixit.conference.model.talk.Podcast
 
-const val CURRENT_YEAR = 2026
+const val CURRENT_YEAR = 2027
 const val CURRENT_TALK_YEAR = 2026
 const val CURRENT_MEDIA_YEAR = 2026
 
@@ -42,11 +42,11 @@ val MENU = listOf(
         title = "menu.content.title",
         items = listOf(
             MenuItem(title = "menu.content.cod", href = "codeofconduct"),
-            MenuItem(title = "menu.content.billetweb", href = "billetweb"),
+            //MenuItem(title = "menu.content.billetweb", href = "billetweb"),
             // MenuItem(title = "menu.content.cfp", href = "cfp"),
-            MenuItem(title = "menu.content.sponsors", href = "$CURRENT_YEAR/sponsors"),
-            MenuItem(title = "menu.content.speakers", href = "$CURRENT_TALK_YEAR/speakers"),
-            MenuItem(title = "menu.content.agenda", href = CURRENT_TALK_YEAR.toString()),
+            //MenuItem(title = "menu.content.sponsors", href = "$CURRENT_YEAR/sponsors"),
+            //MenuItem(title = "menu.content.speakers", href = "$CURRENT_TALK_YEAR/speakers"),
+            //MenuItem(title = "menu.content.agenda", href = CURRENT_TALK_YEAR.toString()),
             MenuItem(title = "menu.content.media", href = "$CURRENT_MEDIA_YEAR/media"),
         )
     ),
