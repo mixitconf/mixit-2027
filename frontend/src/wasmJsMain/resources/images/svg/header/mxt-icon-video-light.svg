@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 26.458 26.458">
-    <ellipse cx="6.436" cy="8.336" stroke-linecap="round" stroke-linejoin="round" rx="4.157" ry="4.175"
-             style="fill:#6c369d;stroke:#fff;stroke-width:1.10594;stroke-dasharray:none;fill-opacity:1"/>
-    <ellipse cx="16.146" cy="7.715" stroke-linecap="round" stroke-linejoin="round" rx="4.586" ry="4.68"
-             style="fill:#6c369d;stroke:#fff;stroke-width:1.10594;stroke-dasharray:none;fill-opacity:1"/>
-    <path d="m3.075 20.667.057-6.496c.34-1.067 1.051-1.614 2.039-1.777l11.504-.023c1.597.141 2.023.735 2.113 1.46l-.118 7.791c-.015 1.112-.599 1.398-1.335 1.46l-12.648-.135c-1.39-.22-1.795-1.065-1.612-2.28z"
-          style="fill:#16b1f9;stroke:#fff;stroke-width:1.10594;stroke-dasharray:none;fill-opacity:1"/>
-    <path d="m18.626 15.517 4.988-3.343c.473.258.84.595.844 1.208l.031 8.496c-.124.647-.505.976-.957 1.217l-4.91-4.292"
-          style="fill:#16b1f9;stroke:#fff;stroke-width:1.10594;stroke-dasharray:none;fill-opacity:1"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 26.458 26.458"><ellipse cx="6.436" cy="8.336" stroke-linecap="round" stroke-linejoin="round" rx="4.157" ry="4.175" style="fill:#6c369d;stroke:#fff;stroke-width:1.10594;stroke-dasharray:none;fill-opacity:1"/><ellipse cx="16.146" cy="7.715" stroke-linecap="round" stroke-linejoin="round" rx="4.586" ry="4.68" style="fill:#6c369d;stroke:#fff;stroke-width:1.10594;stroke-dasharray:none;fill-opacity:1"/><path d="m3.075 20.667.057-6.496c.34-1.067 1.051-1.614 2.039-1.777l11.504-.023c1.597.141 2.023.735 2.113 1.46l-.118 7.791c-.015 1.112-.599 1.398-1.335 1.46l-12.648-.135c-1.39-.22-1.795-1.065-1.612-2.28z" style="fill:#16b1f9;stroke:#fff;stroke-width:1.10594;stroke-dasharray:none;fill-opacity:1"/><path d="m18.626 15.517 4.988-3.343c.473.258.84.595.844 1.208l.031 8.496c-.124.647-.505.976-.957 1.217l-4.91-4.292" style="fill:#16b1f9;stroke:#fff;stroke-width:1.10594;stroke-dasharray:none;fill-opacity:1"/></svg>
