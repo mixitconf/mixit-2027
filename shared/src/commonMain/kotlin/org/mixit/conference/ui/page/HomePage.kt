@@ -57,20 +57,15 @@ fun renderHomePage(context: Context, lastPodCastId: String, event: Event, sponso
 //            }
 //            timeline(context)
 //        }
-        // This section is displayed when schedule is published
-        sectionComponent(context, i18nKey = "home.section.schedule.annoucement.title") {
-            div("lead") { +context.i18n("home.section.news.when") }
-            div("mt-2") {
-                b { +context.i18n("home.section.news.birthday")}
-                +" "
-                +context.i18n("home.section.news.birthday2")
-            }
-            div("lead mt-2") { +context.i18n("home.section.schedule.annoucement.subtitle") }
-
-            div("mt-2 mxt-no-link") {
-                a(classes = "mxt-no-link") {
-                    href = "/schedule"
-                    +context.i18n("home.section.schedule.annoucement.link")
+        // Next edition announcement
+        sectionComponent(context, i18nKey = "home.section.nextedition.title") {
+            div("lead") { +context.i18n("home.section.nextedition.when") }
+            div("mt-2") { +context.i18n("home.section.nextedition.subtitle") }
+            div(classes = "mxt-no-link mt-2") {
+                unsafe {
+                    raw(
+                        context.markdown(context.i18n("home.section.nextedition.podcast"))
+                    )
                 }
             }
         }
