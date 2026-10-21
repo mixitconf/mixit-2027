@@ -133,7 +133,7 @@ fun renderHomePage(context: Context, lastPodCastId: String, event: Event, sponso
                     }
                 }
 
-                div(classes = "mxt-video__multi-container") {
+                div(classes = "mxt-talk-cards mt-4") {
                     keynotes.forEach {
                         videoComponent(context, it)
                     }

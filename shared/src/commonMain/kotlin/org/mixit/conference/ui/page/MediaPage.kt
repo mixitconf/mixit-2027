@@ -20,6 +20,7 @@ fun renderMedia(
 ) =
     renderTemplate(context, event) {
         sectionComponent(context) {
+            archiveBackButton(context)
             val pageTitle = context.i18n("talks.media")
             h1 {
                 img(classes = "mxt-img__header-video me-2") {
@@ -44,10 +45,9 @@ fun renderMedia(
                     +context.i18n("talk.keynotes.intro")
                 }
 
-                div(classes = "mxt-year__selector") {
-                    style = "justify-content: flex-start;"
+                div(classes = "mxt-talk-cards mxt-talk-cards--featured") {
                     keynotes.shuffled().forEach {
-                        videoComponent(context, it, false)
+                        videoComponent(context, it, true)
                     }
                 }
             }
@@ -72,10 +72,9 @@ fun renderMedia(
                 others.forEach { (topic, talks) ->
                     div(classes = "mt-5") {
                         topicComponent(context, topic, event.year)
-                        div(classes = "mxt-year__selector") {
-                            style = "justify-content: flex-start;"
+                        div(classes = "mxt-talk-cards mt-3") {
                             talks.shuffled().forEach {
-                                videoComponent(context, it, false)
+                                videoComponent(context, it)
                             }
                         }
                     }

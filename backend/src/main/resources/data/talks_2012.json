@@ -17,7 +17,11 @@
         "summary": "I'll explain my development strategy, why I chose PhoneGap, and what I've learnt along the way.",
         "title": "Create mobile application with PhoneGap",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "mobile",
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.251",
@@ -37,7 +41,11 @@
         "summary": "L\u2019exp\u00e9rience des billes rouges (the red bead experiment) est un atelier con\u00e7u par William Edwards Deming.",
         "title": "Exp\u00e9rience des billes rouges",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "management",
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.26",
@@ -59,7 +67,11 @@
         "summary": "Le Sky Castle Game est bas\u00e9 sur le Kanban Game de Jon Jagger.",
         "title": "Sky Castle Game",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite",
+            "collaboration"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.26",
@@ -79,7 +91,11 @@
         "summary": "L\u2019\u00e8re du management 3.0 (agile et Lean) est annonc\u00e9e. Entre opportunit\u00e9s et n\u00e9cessit\u00e9, le m\u00e9tier de manager est en pleine \u00e9volution...",
         "title": "Dans la peau du Manager Agile",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=D95ASG_frvY"
+        "video": "http://www.youtube.com/watch?v=D95ASG_frvY",
+        "themes": [
+            "management",
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.263",
@@ -99,7 +115,10 @@
         "summary": "Gatling est un injecteur de charge l\u00e9ger et ultra-performant.",
         "title": "Stresser son application avec Gatling",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.261",
@@ -119,7 +138,11 @@
         "summary": "La r\u00e9alit\u00e9 agile : retour d\u2019exp\u00e9rience sur le d\u00e9ploiement agile au sein d\u2019un grand \u00e9diteur de logiciel dans le milieu bancaire. ",
         "title": "Anatomie d'une mission agile, saison 2",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=1efayxnn_Gs"
+        "video": "http://www.youtube.com/watch?v=1efayxnn_Gs",
+        "themes": [
+            "agilite",
+            "management"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.261",
@@ -139,7 +162,11 @@
         "summary": "Hibernate Search s'appuie sur Lucene pour offrir aux applications Hibernate un moteur de recherche puissant et intuitif \u00e0 ses utilisateurs.",
         "title": "Hibernate Search: dans ta face(ting)",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "architecture",
+            "data"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.262",
@@ -159,7 +186,11 @@
         "summary": "Introducing Social Architecture: how to design and build on-line communities.",
         "title": "Social Architecture 101",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "open-source",
+            "collaboration"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.262",
@@ -179,7 +210,10 @@
         "summary": "An introduction to ZeroMQ, the fast, smart, and massively scalable connectivity layer for applications in any language, on any platform.",
         "title": "ZeroMQ is Magic from the Future",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.262",
@@ -199,7 +233,11 @@
         "summary": "Le th\u00e9\u00e2tre d'impro c'est \u00eatre r\u00e9actif au changement pour \u00eatre au service d'une histoire qui doit avancer. Ca ne vous rappelle rien ?",
         "title": "Un atelier Th\u00e9\u00e2tre d'Impro pour jouer \u00e0 \u00eatre Agile",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite",
+            "collaboration"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.262",
@@ -220,7 +258,10 @@
         "summary": "Comprendre le bytecode, sa manipulation, et se rendre compte que cela est fort utile.",
         "title": "Manipulation de bytecode : d\u00e9mocratisons la magie",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.263",
@@ -241,7 +282,10 @@
         "summary": "Plut\u00f4t que d'assister \u00e0 de longs discours, venez t\u00e2ter du Clojure par vous-m\u00eames en participant \u00e0 un Workshop.",
         "title": "Workshop \"Clojure hands on\"",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.263",
@@ -262,7 +306,10 @@
         "summary": "Et si on vous racontait les principes fondamentaux qui se cachent derri\u00e8re Kanban ? Beaucoup plus qu'un tableau de post-it !",
         "title": "Kanban pour les nuls!",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.264",
@@ -282,7 +329,10 @@
         "summary": "5' de coding live pour animer un cube en CSS 3D suivi des explications techniques",
         "title": "Animez vos pages HTML5 avec CSS3",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=fML23uCN30o"
+        "video": "http://www.youtube.com/watch?v=fML23uCN30o",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.264",
@@ -302,7 +352,12 @@
         "summary": "We'll look behind the scenes of day-to-day development workflow in the engineering teams at Google.",
         "title": "Software Development Workflow at Google",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "collaboration",
+            "qualite-tests",
+            "cloud-devops"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.264",
@@ -322,7 +377,11 @@
         "summary": "Cette session a pour but de pr\u00e9senter la dynamique \u00e9conomique d\u2019automatisation des tests qui s'apparente au mod\u00e8le des options financi\u00e8res",
         "title": "Automatisation des tests: le mythe du ROI",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=hf__zcdihwI"
+        "video": "http://www.youtube.com/watch?v=hf__zcdihwI",
+        "themes": [
+            "qualite-tests",
+            "economie-societe"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.264",
@@ -342,7 +401,11 @@
         "summary": "Enrichir sa vision pour enrichir son produit: s'orienter vers un design centr\u00e9 sur l'utilisateur. Pourquoi, comment, quels r\u00e9sultats esp\u00e9rer",
         "title": "Utilisateur, mon amour, ma migraine",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=ta6PLKPF7oU"
+        "video": "http://www.youtube.com/watch?v=ta6PLKPF7oU",
+        "themes": [
+            "ux-design",
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.265",
@@ -362,7 +425,11 @@
         "summary": "Le DotGame illustre l'impact de l'initiative et la collaboration dans la croissance de la performance de l'\u00e9quipe",
         "title": "Le DotGame, jouer la performance ",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite",
+            "collaboration"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.265",
@@ -382,7 +449,11 @@
         "summary": "This talk will explore the idea of node.js being more scalable than other technologies, how much of it is true, and how much you should care",
         "title": "The Node.js Scalability Myth",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "architecture",
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.265",
@@ -402,7 +473,11 @@
         "summary": "Mise au point en 2008 et appliqu\u00e9e depuis dans de nombreuses startups, le lean startup bouleverse les r\u00e8gles de l'entrepreneuriat.",
         "title": "Lean Startup, l'entrepreneuriat agile",
         "topic": null,
-        "video": "https://www.youtube.com/watch?v=e1GGurd58Yo"
+        "video": "https://www.youtube.com/watch?v=e1GGurd58Yo",
+        "themes": [
+            "produit-entrepreneuriat",
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.265",
@@ -422,7 +497,11 @@
         "summary": "Comment tester une application web avec WebDriver, TestNG et Selenium Grid. Mise en place, bonnes pratiques ...",
         "title": "Selenium WebDriver, TestNG et Selenium Grid",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests",
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.266",
@@ -442,7 +521,11 @@
         "summary": "Vivez la mise en place d'une infrastucture compl\u00e8te, articul\u00e9e autour de Hadoop, chez un des acteurs majeurs du web-commerce europ\u00e9en.",
         "title": "BigData / Hadoop, exploiter des t\u00e9raoctets de logs",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=1WF_FBFJllc"
+        "video": "http://www.youtube.com/watch?v=1WF_FBFJllc",
+        "themes": [
+            "data",
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.266",
@@ -462,7 +545,11 @@
         "summary": "Le caching a sauv\u00e9 les architectes web des ann\u00e9es 2000, au prix souvent d'une \u00e9norme complexit\u00e9. Peux-t-on, et doit-on tourner cette page ?",
         "title": "MongoDB, Mustache... Vers la mort du cache ?",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "architecture",
+            "data"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.266",
@@ -482,7 +569,10 @@
         "summary": "You know how you always mean to apply proper MVC principles but end up with a mess of jQuery instead? No more excuses: now there's Backbone.",
         "title": "Painless Web App Development with Backbone",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=K3LwjZ-F09A"
+        "video": "http://www.youtube.com/watch?v=K3LwjZ-F09A",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.266",
@@ -502,7 +592,12 @@
         "summary": "Play 2.0 vient de sortir, il est tout frais, tout beau, et s\u2019utilise en Java et Scala",
         "title": "Play 2.0",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "web-frontend",
+            "architecture",
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.267",
@@ -522,7 +617,11 @@
         "summary": "This talk will provide a quick overview of JavaScript for people who already know how to program in an object-oriented language.",
         "title": "An overview of JavaScript",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=_GYicBSNhaY"
+        "video": "http://www.youtube.com/watch?v=_GYicBSNhaY",
+        "themes": [
+            "langages",
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.267",
@@ -543,6 +642,9 @@
         "summary": "Comment Kelkoo a impl\u00e9ment\u00e9 les principes DevOPS dans le d\u00e9ploiement de ses applications (10 releases par semaine sur 300 serveurs)",
         "title": "DevOps in real life at Kelkoo",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=SIVxBHJ4AbM"
+        "video": "http://www.youtube.com/watch?v=SIVxBHJ4AbM",
+        "themes": [
+            "cloud-devops"
+        ]
     }
 ]

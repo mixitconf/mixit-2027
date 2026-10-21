@@ -21,6 +21,14 @@ class TalkFileRepository(
             it.toTalk(peopleRepository.findSpeakerByIds(it.speakerIds))
         }
 
+    override fun findAllWithMedia(): List<Talk> =
+        repository
+            .findAll()
+            .values
+            .flatten()
+            .filter { it.video != null || it.video2 != null || it.format == TalkFormat.ON_AIR }
+            .map { it.toTalk(peopleRepository.findSpeakerByIds(it.speakerIds)) }
+
     override fun findRandomKeynote(nb: Int): List<Talk> =
         repository
             .findAll()

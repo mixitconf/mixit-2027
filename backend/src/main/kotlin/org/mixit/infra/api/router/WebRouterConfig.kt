@@ -13,6 +13,7 @@ import org.mixit.infra.api.EventHandler
 import org.mixit.infra.api.FaqHandler
 import org.mixit.infra.api.FavoriteHandler
 import org.mixit.infra.api.FeedbackHandler
+import org.mixit.infra.api.ArchiveHandler
 import org.mixit.infra.api.MediaHandler
 import org.mixit.infra.api.PeopleHandler
 import org.mixit.infra.api.PollHandler
@@ -38,6 +39,7 @@ class WebRouterConfig {
         peopleHandler: PeopleHandler,
         talkHandler: TalkHandler,
         mediaHandler: MediaHandler,
+        archiveHandler: ArchiveHandler,
         favoriteHandler: FavoriteHandler,
         feedbackHandler: FeedbackHandler,
         pollHandler: PollHandler,
@@ -77,6 +79,18 @@ class WebRouterConfig {
             }
             GET("/faq") {
                 faqHandler.findAllQuestions()
+            }
+            GET("/archives") {
+                archiveHandler.findThemes()
+            }
+            GET("/archives/topic/{topic}") {
+                archiveHandler.findTopic(it.pathVariable("topic"))
+            }
+            GET("/archives/year/{year}") {
+                archiveHandler.findYear(it.pathVariable("year").toIntOrNull() ?: 0)
+            }
+            GET("/archives/{theme}") {
+                archiveHandler.findTheme(it.pathVariable("theme"))
             }
             GET("/media") {
                 mediaHandler.findMediaByYear(CURRENT_MEDIA_YEAR, it.param("search").orElse(null))
