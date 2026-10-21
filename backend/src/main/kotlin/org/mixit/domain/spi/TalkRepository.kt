@@ -6,6 +6,8 @@ import org.mixit.infra.spi.talk.TalkDto
 interface TalkRepository {
     fun findByYear(year: Int): List<Talk>
 
+    fun findAllWithMedia(): List<Talk>
+
     fun findRandomKeynote(nb: Int): List<Talk>
 
     fun findSpeakerTalks(speakerId: String): List<Talk>

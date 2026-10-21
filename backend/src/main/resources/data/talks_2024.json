@@ -19,7 +19,8 @@
         "photoUrls": [],
         "slug": "keynote-team",
         "level": null,
-        "id": "637079"
+        "id": "637079",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -41,7 +42,12 @@
         "photoUrls": [],
         "slug": "la-communaute-contre-le-systeme-comment-la-tech-fait-societe",
         "level": "Beginner",
-        "id": "653397"
+        "id": "653397",
+        "themes": [
+            "economie-societe",
+            "ethique",
+            "geopolitique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -63,7 +69,12 @@
         "photoUrls": [],
         "slug": "la-communaute-contre-le-systeme-comment-la-tech-fait-societe-livestream",
         "level": "Beginner",
-        "id": "663643"
+        "id": "663643",
+        "themes": [
+            "economie-societe",
+            "ethique",
+            "geopolitique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -87,7 +98,12 @@
         "photoUrls": [],
         "slug": "interview-keynote-la-communaute-contre-le-systeme-comment-la-tech-fait-societe",
         "level": "Beginner",
-        "id": "664601"
+        "id": "664601",
+        "themes": [
+            "economie-societe",
+            "ethique",
+            "geopolitique"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -110,7 +126,8 @@
         "photoUrls": [],
         "slug": "developpement-front-et-back-en-kotlin-une-visite-guidee-de-kmp",
         "level": "Intermediate",
-        "id": "610532"
+        "id": "610532",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -132,7 +149,10 @@
         "photoUrls": [],
         "slug": "harnessing-the-power-of-ai-in-intellij-idea",
         "level": "Intermediate",
-        "id": "613767"
+        "id": "613767",
+        "themes": [
+            "ia"
+        ]
     },
     {
         "format": "TALK",
@@ -155,7 +175,10 @@
         "photoUrls": [],
         "slug": "leadership-emergent-jouons-a-faire-eclore-notre-potentiel",
         "level": "Intermediate",
-        "id": "601609"
+        "id": "601609",
+        "themes": [
+            "management"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -178,7 +201,8 @@
         "photoUrls": [],
         "slug": "libere-ta-creature-et-embrasse-tes-bizarreries-",
         "level": "Beginner",
-        "id": "593824"
+        "id": "593824",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -200,7 +224,12 @@
         "photoUrls": [],
         "slug": "numerique-responsable-en-contexte-humanitaire",
         "level": "Beginner",
-        "id": "609122"
+        "id": "609122",
+        "themes": [
+            "ecologie",
+            "accessibilite",
+            "geopolitique"
+        ]
     },
     {
         "format": "TALK",
@@ -222,7 +251,10 @@
         "photoUrls": [],
         "slug": "quand-la-cybersecurite-n-est-pas-qu-une-affaire-de-failles",
         "level": "Beginner",
-        "id": "609510"
+        "id": "609510",
+        "themes": [
+            "securite"
+        ]
     },
     {
         "format": "TALK",
@@ -245,7 +277,12 @@
         "photoUrls": [],
         "slug": "l-ia-et-le-handicap-progres-ou-exclusion-",
         "level": "Beginner",
-        "id": "593091"
+        "id": "593091",
+        "themes": [
+            "ia",
+            "accessibilite",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -270,7 +307,10 @@
         "photoUrls": [],
         "slug": "exploring-the-future-of-java-insights-from-experts",
         "level": "Beginner",
-        "id": "664605"
+        "id": "664605",
+        "themes": [
+            "langages"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -296,7 +336,11 @@
         "photoUrls": [],
         "slug": "securite-dans-les-applications-peut-on-rendre-le-sujet-moins-complexe-",
         "level": "Beginner",
-        "id": "664610"
+        "id": "664610",
+        "themes": [
+            "securite",
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -318,7 +362,11 @@
         "photoUrls": [],
         "slug": "et-si-on-implementait-une-machine-a-etats-from-scratch-pour-aider-la-petite-souris-",
         "level": "Beginner",
-        "id": "595434"
+        "id": "595434",
+        "themes": [
+            "architecture",
+            "langages"
+        ]
     },
     {
         "format": "TALK",
@@ -340,7 +388,12 @@
         "photoUrls": [],
         "slug": "squad-all-the-things-retour-d-xp-no-bullshit-sur-la-mise-en-oeuvre-d-equipes-pluridisciplinaires-",
         "level": "Intermediate",
-        "id": "611900"
+        "id": "611900",
+        "themes": [
+            "management",
+            "agilite",
+            "collaboration"
+        ]
     },
     {
         "format": "TALK",
@@ -362,7 +415,11 @@
         "photoUrls": [],
         "slug": "survivre-dans-la-js-jungle-des-outils-de-tests",
         "level": "Beginner",
-        "id": "609268"
+        "id": "609268",
+        "themes": [
+            "qualite-tests",
+            "web-frontend"
+        ]
     },
     {
         "format": "TALK",
@@ -384,7 +441,11 @@
         "photoUrls": [],
         "slug": "framaspace-du-next-cloud-pour-les-petites-associations-et-collectifs-militants",
         "level": "Beginner",
-        "id": "610274"
+        "id": "610274",
+        "themes": [
+            "open-source",
+            "cloud-devops"
+        ]
     },
     {
         "format": "TALK",
@@ -406,7 +467,11 @@
         "photoUrls": [],
         "slug": "a-day-in-the-life-of-a-quarkus-developer",
         "level": "Beginner",
-        "id": "611220"
+        "id": "611220",
+        "themes": [
+            "langages",
+            "architecture"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -430,7 +495,10 @@
         "photoUrls": [],
         "slug": "vers-une-inclusion-transformative-avec-la-non-mixite",
         "level": "Beginner",
-        "id": "664608"
+        "id": "664608",
+        "themes": [
+            "diversite-inclusion"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -453,7 +521,11 @@
         "photoUrls": [],
         "slug": "solidarite-et-defis-le-combat-du-collectif-soutiens-migrants-croix-rousse",
         "level": "Beginner",
-        "id": "666013"
+        "id": "666013",
+        "themes": [
+            "democratie-citoyennete",
+            "economie-societe"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -478,7 +550,11 @@
         "photoUrls": [],
         "slug": "syndicalisme-dans-la-tech-pionniers-nieres-dans-l-innovation-sociale",
         "level": "Beginner",
-        "id": "665988"
+        "id": "665988",
+        "themes": [
+            "futur-du-travail",
+            "economie-societe"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -502,7 +578,11 @@
         "photoUrls": [],
         "slug": "cybersecurite-entre-automatisation-et-bonnes-pratiques",
         "level": null,
-        "id": "665989"
+        "id": "665989",
+        "themes": [
+            "securite",
+            "cloud-devops"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -524,7 +604,8 @@
         "photoUrls": [],
         "slug": "presentation-des-associations-mixette",
         "level": null,
-        "id": "637081"
+        "id": "637081",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -546,7 +627,12 @@
         "photoUrls": [],
         "slug": "ce-que-le-nazisme-dit-du-management-a-propos-de-libres-d-obeir-gallimard-2020-",
         "level": "Beginner",
-        "id": "622656"
+        "id": "622656",
+        "themes": [
+            "management",
+            "histoire-informatique",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -568,7 +654,12 @@
         "photoUrls": [],
         "slug": "ce-que-le-nazisme-dit-du-management-a-propos-de-libres-d-obeir-gallimard-2020-livestream",
         "level": "Beginner",
-        "id": "663708"
+        "id": "663708",
+        "themes": [
+            "management",
+            "histoire-informatique",
+            "ethique"
+        ]
     },
     {
         "format": "TALK",
@@ -590,7 +681,10 @@
         "photoUrls": [],
         "slug": "gemini-le-large-language-model-de-google",
         "level": "Beginner",
-        "id": "604593"
+        "id": "604593",
+        "themes": [
+            "ia"
+        ]
     },
     {
         "format": "TALK",
@@ -613,7 +707,11 @@
         "photoUrls": [],
         "slug": "redonner-de-l-envergure-au-scrum-master",
         "level": "Intermediate",
-        "id": "612165"
+        "id": "612165",
+        "themes": [
+            "agilite",
+            "management"
+        ]
     },
     {
         "format": "TALK",
@@ -635,7 +733,11 @@
         "photoUrls": [],
         "slug": "securiser-votre-cluster-kubernetes-la-recette-pour-reussir-etape-par-etape-",
         "level": "Advanced",
-        "id": "611422"
+        "id": "611422",
+        "themes": [
+            "securite",
+            "cloud-devops"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -657,7 +759,8 @@
         "photoUrls": [],
         "slug": "une-histoire-sans-fin-avec-le-theatre-forum-ou-une-fin-acceptable-pour-les-femmes-",
         "level": "Beginner",
-        "id": "600027"
+        "id": "600027",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -680,7 +783,8 @@
         "photoUrls": [],
         "slug": "pas-d-39-innovation-sans-securite-psychologique-",
         "level": "Intermediate",
-        "id": "603754"
+        "id": "603754",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -703,7 +807,11 @@
         "photoUrls": [],
         "slug": "demarrer-la-plus-sociale-des-start-up-",
         "level": "Beginner",
-        "id": "611564"
+        "id": "611564",
+        "themes": [
+            "futur-du-travail",
+            "economie-societe"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -727,7 +835,12 @@
         "photoUrls": [],
         "slug": "interview-keynote-ce-que-le-nazisme-dit-du-management-a-propos-de-libres-d-39-obeir-gallimard-2020-",
         "level": null,
-        "id": "665999"
+        "id": "665999",
+        "themes": [
+            "management",
+            "histoire-informatique",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -753,7 +866,11 @@
         "photoUrls": [],
         "slug": "vers-un-futur-sous-le-signe-des-libertes-informatiques-framasoft-diversite-et-collaboration",
         "level": "Beginner",
-        "id": "666002"
+        "id": "666002",
+        "themes": [
+            "open-source",
+            "diversite-inclusion"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -775,7 +892,12 @@
         "photoUrls": [],
         "slug": "50-000-sites-publics-l-accessibilite-et-moi-et-moi-emoi",
         "level": "Intermediate",
-        "id": "610061"
+        "id": "610061",
+        "themes": [
+            "accessibilite",
+            "democratie-citoyennete",
+            "open-source"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -797,7 +919,11 @@
         "photoUrls": [],
         "slug": "je-delegue-tous-mes-tests-a-une-ia",
         "level": "Beginner",
-        "id": "612354"
+        "id": "612354",
+        "themes": [
+            "ia",
+            "qualite-tests"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -819,7 +945,11 @@
         "photoUrls": [],
         "slug": "spring-boot-devoile-exploration-des-rouages-internes-d-un-projet-open-source",
         "level": "Intermediate",
-        "id": "594797"
+        "id": "594797",
+        "themes": [
+            "open-source",
+            "collaboration"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -841,7 +971,11 @@
         "photoUrls": [],
         "slug": "la-grande-absente-la-communaute-trans-dans-nos-produits-digitaux",
         "level": "Beginner",
-        "id": "622630"
+        "id": "622630",
+        "themes": [
+            "diversite-inclusion",
+            "ux-design"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -863,7 +997,11 @@
         "photoUrls": [],
         "slug": "git-devenir-le-chouchou-de-son-reviewer",
         "level": "Beginner",
-        "id": "660190"
+        "id": "660190",
+        "themes": [
+            "qualite-tests",
+            "collaboration"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -890,7 +1028,11 @@
         "photoUrls": [],
         "slug": "redefinir-le-leadership-et-renforcer-les-scrum-masters-dans-les-environnements-agiles",
         "level": null,
-        "id": "666005"
+        "id": "666005",
+        "themes": [
+            "management",
+            "agilite"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -916,7 +1058,11 @@
         "photoUrls": [],
         "slug": "ai-and-code-quality-revolutionizing-development",
         "level": null,
-        "id": "666007"
+        "id": "666007",
+        "themes": [
+            "ia",
+            "qualite-tests"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -938,7 +1084,12 @@
         "photoUrls": [],
         "slug": "assistants-vocaux-inclusifs-le-defi-de-la-neutralite-de-genre",
         "level": "Beginner",
-        "id": "612448"
+        "id": "612448",
+        "themes": [
+            "ia",
+            "diversite-inclusion",
+            "ux-design"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -960,7 +1111,11 @@
         "photoUrls": [],
         "slug": "recruter-avec-amour",
         "level": "Beginner",
-        "id": "598718"
+        "id": "598718",
+        "themes": [
+            "management",
+            "carriere"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -982,7 +1137,10 @@
         "photoUrls": [],
         "slug": "reunions-en-non-mixite-choisie-un-moteur-pour-feminiser-sa-boite",
         "level": "Beginner",
-        "id": "611440"
+        "id": "611440",
+        "themes": [
+            "diversite-inclusion"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -1004,7 +1162,11 @@
         "photoUrls": [],
         "slug": "comment-merger-sa-pr-en-10-secondes-avez-vous-essaye-les-mob-code-review-",
         "level": "Beginner",
-        "id": "595818"
+        "id": "595818",
+        "themes": [
+            "qualite-tests",
+            "collaboration"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -1026,7 +1188,10 @@
         "photoUrls": [],
         "slug": "objectif-jetpack-compose-",
         "level": "Intermediate",
-        "id": "660189"
+        "id": "660189",
+        "themes": [
+            "mobile"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -1048,7 +1213,11 @@
         "photoUrls": [],
         "slug": "comment-bitcoin-et-les-cryptos-ont-envoute-la-planete-",
         "level": "Beginner",
-        "id": "641460"
+        "id": "641460",
+        "themes": [
+            "economie-societe",
+            "ecologie"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1070,7 +1239,11 @@
         "photoUrls": [],
         "slug": "comment-bitcoin-et-les-cryptos-ont-envoute-la-planete-livestream",
         "level": "Beginner",
-        "id": "663659"
+        "id": "663659",
+        "themes": [
+            "economie-societe",
+            "ecologie"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1094,7 +1267,11 @@
         "photoUrls": [],
         "slug": "interview-comment-bitcoin-et-les-cryptos-ont-envoute-la-planete-",
         "level": "Beginner",
-        "id": "666009"
+        "id": "666009",
+        "themes": [
+            "economie-societe",
+            "ecologie"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -1116,7 +1293,8 @@
         "photoUrls": [],
         "slug": "keynote-team",
         "level": null,
-        "id": "637078"
+        "id": "637078",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -1138,7 +1316,10 @@
         "photoUrls": [],
         "slug": "faut-il-numeriser-recits-d-exploration-et-de-recherches-de-2017-a-2024",
         "level": "Beginner",
-        "id": "622669"
+        "id": "622669",
+        "themes": [
+            "ecologie"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1160,7 +1341,10 @@
         "photoUrls": [],
         "slug": "faut-il-numeriser-recits-d-exploration-et-de-recherches-de-2017-a-2024-livestream",
         "level": "Beginner",
-        "id": "663707"
+        "id": "663707",
+        "themes": [
+            "ecologie"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1185,7 +1369,11 @@
         "photoUrls": [],
         "slug": "interview-calin-reinventer-le-travail-avec-le-leadership-doux-et-recrutement-affectueux",
         "level": "Beginner",
-        "id": "666015"
+        "id": "666015",
+        "themes": [
+            "management",
+            "carriere"
+        ]
     },
     {
         "format": "TALK",
@@ -1207,7 +1395,11 @@
         "photoUrls": [],
         "slug": "-pourquoi-une-grille-de-salaire-on-n-est-pas-chez-les-fonctionnaires-",
         "level": "Beginner",
-        "id": "612277"
+        "id": "612277",
+        "themes": [
+            "management",
+            "economie-societe"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -1230,7 +1422,8 @@
         "photoUrls": [],
         "slug": "du-cerebral-a-l-echarde-experimenter-le-faire-ensemble",
         "level": "Beginner",
-        "id": "602796"
+        "id": "602796",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1252,7 +1445,10 @@
         "photoUrls": [],
         "slug": "reinventer-les-masculinites-un-chemin-vers-plus-d-inclusion-dans-la-tech",
         "level": "Beginner",
-        "id": "611170"
+        "id": "611170",
+        "themes": [
+            "diversite-inclusion"
+        ]
     },
     {
         "format": "TALK",
@@ -1274,7 +1470,11 @@
         "photoUrls": [],
         "slug": "shape-up-l-agilite-sans-tickets-",
         "level": "Intermediate",
-        "id": "611298"
+        "id": "611298",
+        "themes": [
+            "agilite",
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "format": "TALK",
@@ -1296,7 +1496,11 @@
         "photoUrls": [],
         "slug": "spring-security-decodage-et-demystification",
         "level": "Intermediate",
-        "id": "593894"
+        "id": "593894",
+        "themes": [
+            "securite",
+            "architecture"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -1318,7 +1522,8 @@
         "photoUrls": [],
         "slug": "tous-ensemble-atelier-de-l-39-inclusion",
         "level": "Beginner",
-        "id": "612466"
+        "id": "612466",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1340,7 +1545,10 @@
         "photoUrls": [],
         "slug": "github-copilot-l-ia-generative-au-service-du-developpeur",
         "level": "Beginner",
-        "id": "602999"
+        "id": "602999",
+        "themes": [
+            "ia"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1364,7 +1572,10 @@
         "photoUrls": [],
         "slug": "cybersecurite-et-hacking-ikea-mais-c-est-quoi-le-lien-",
         "level": "Beginner",
-        "id": "666011"
+        "id": "666011",
+        "themes": [
+            "securite"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1391,7 +1602,11 @@
         "photoUrls": [],
         "slug": "back-to-basics-les-bonnes-pratiques-en-dev-et-en-test-pour-le-developpement-front-end",
         "level": "Beginner",
-        "id": "666012"
+        "id": "666012",
+        "themes": [
+            "web-frontend",
+            "qualite-tests"
+        ]
     },
     {
         "format": "TALK",
@@ -1414,7 +1629,11 @@
         "photoUrls": [],
         "slug": "comment-garder-espoir-en-l-avenir-",
         "level": "Beginner",
-        "id": "611744"
+        "id": "611744",
+        "themes": [
+            "sante-bien-etre",
+            "ecologie"
+        ]
     },
     {
         "format": "TALK",
@@ -1436,7 +1655,11 @@
         "photoUrls": [],
         "slug": "la-douceur-est-elle-un-avantage-dans-ce-monde-de-brutes-",
         "level": "Beginner",
-        "id": "593954"
+        "id": "593954",
+        "themes": [
+            "management",
+            "sante-bien-etre"
+        ]
     },
     {
         "format": "TALK",
@@ -1458,7 +1681,12 @@
         "photoUrls": [],
         "slug": "possible-de-mesurer-la-productivite-d-un-developpeur-",
         "level": "Intermediate",
-        "id": "612412"
+        "id": "612412",
+        "themes": [
+            "management",
+            "carriere",
+            "agilite"
+        ]
     },
     {
         "format": "TALK",
@@ -1480,7 +1708,11 @@
         "photoUrls": [],
         "slug": "programmation-asynchrone-les-threads-virtuels-en-java-21-et-au-dela",
         "level": "Intermediate",
-        "id": "612065"
+        "id": "612065",
+        "themes": [
+            "langages",
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -1502,7 +1734,11 @@
         "photoUrls": [],
         "slug": "la-metric-inp-qu-est-ce-que-c-est-et-comment-l-ameliorer-",
         "level": "Intermediate",
-        "id": "593767"
+        "id": "593767",
+        "themes": [
+            "web-frontend",
+            "ux-design"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1526,7 +1762,11 @@
         "photoUrls": [],
         "slug": "ce-que-les-champignons-peuvent-nous-apprendre-sur-l-ia",
         "level": "Beginner",
-        "id": "666021"
+        "id": "666021",
+        "themes": [
+            "ia",
+            "sciences-espace"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1549,7 +1789,11 @@
         "photoUrls": [],
         "slug": "au-dela-de-l-39-abri-l-39-impact-transformateur-du-refuge-sur-les-jeunes-lgbt-43-",
         "level": null,
-        "id": "665986"
+        "id": "665986",
+        "themes": [
+            "diversite-inclusion",
+            "economie-societe"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1574,7 +1818,10 @@
         "photoUrls": [],
         "slug": "horizon-front-end-les-enjeux-a-venir-des-frameworks",
         "level": "Beginner",
-        "id": "666014"
+        "id": "666014",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -1596,7 +1843,8 @@
         "photoUrls": [],
         "slug": "mixteen-a-10-ans-",
         "level": null,
-        "id": "637082"
+        "id": "637082",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -1618,7 +1866,12 @@
         "photoUrls": [],
         "slug": "abou-dhabi-pole-mondial-de-la-cybersurveillance",
         "level": "Beginner",
-        "id": "611369"
+        "id": "611369",
+        "themes": [
+            "vie-privee-surveillance",
+            "geopolitique",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1640,7 +1893,12 @@
         "photoUrls": [],
         "slug": "abou-dhabi-pole-mondial-de-la-cybersurveillance-livestream",
         "level": "Beginner",
-        "id": "663709"
+        "id": "663709",
+        "themes": [
+            "vie-privee-surveillance",
+            "geopolitique",
+            "ethique"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -1662,7 +1920,8 @@
         "photoUrls": [],
         "slug": "atelier-decouvrir-l-ecriture-inclusive",
         "level": "Beginner",
-        "id": "608238"
+        "id": "608238",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1684,7 +1943,11 @@
         "photoUrls": [],
         "slug": "ce-que-l-on-concoit-bien-s-ecrit-clairement-les-textes-et-l-accessibilite-numerique",
         "level": "Beginner",
-        "id": "611849"
+        "id": "611849",
+        "themes": [
+            "accessibilite",
+            "ux-design"
+        ]
     },
     {
         "format": "TALK",
@@ -1706,7 +1969,11 @@
         "photoUrls": [],
         "slug": "comment-chatgpt-me-fait-gagner-du-temps-en-tant-que-product-manager",
         "level": "Intermediate",
-        "id": "610225"
+        "id": "610225",
+        "themes": [
+            "ia",
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -1729,7 +1996,8 @@
         "photoUrls": [],
         "slug": "quoi-vous-n-utilisez-pas-figma-",
         "level": "Beginner",
-        "id": "609049"
+        "id": "609049",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1752,7 +2020,12 @@
         "photoUrls": [],
         "slug": "rechargez-vos-applications-web-avec-spring-boot",
         "level": "Intermediate",
-        "id": "605488"
+        "id": "605488",
+        "themes": [
+            "architecture",
+            "web-frontend",
+            "langages"
+        ]
     },
     {
         "format": "TALK",
@@ -1775,7 +2048,11 @@
         "photoUrls": [],
         "slug": "systemes-distribues-ne-jetez-pas-le-bebe-avec-l-auth-du-bain-",
         "level": "Intermediate",
-        "id": "599383"
+        "id": "599383",
+        "themes": [
+            "architecture",
+            "securite"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1799,7 +2076,12 @@
         "photoUrls": [],
         "slug": "interview-keynote-abou-dhabi-pole-mondial-de-la-cybersurveillance",
         "level": null,
-        "id": "666016"
+        "id": "666016",
+        "themes": [
+            "vie-privee-surveillance",
+            "geopolitique",
+            "ethique"
+        ]
     },
     {
         "format": "TALK",
@@ -1821,7 +2103,11 @@
         "photoUrls": [],
         "slug": "qu-est-ce-que-les-champignons-nous-apprennent-sur-l-intelligence-artificielle-",
         "level": "Beginner",
-        "id": "674303"
+        "id": "674303",
+        "themes": [
+            "ia",
+            "sciences-espace"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1845,7 +2131,11 @@
         "photoUrls": [],
         "slug": "interview-keynote-les-innovations-ont-elles-un-genre-",
         "level": "Beginner",
-        "id": "666020"
+        "id": "666020",
+        "themes": [
+            "diversite-inclusion",
+            "ethique"
+        ]
     },
     {
         "format": "TALK",
@@ -1868,7 +2158,11 @@
         "photoUrls": [],
         "slug": "la-compression-web-comment-re-prendre-le-controle-",
         "level": "Beginner",
-        "id": "600153"
+        "id": "600153",
+        "themes": [
+            "web-frontend",
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -1891,7 +2185,12 @@
         "photoUrls": [],
         "slug": "l-agc-retour-sur-l-ordinateur-qui-a-amene-l-humanite-sur-la-lune",
         "level": "Intermediate",
-        "id": "593079"
+        "id": "593079",
+        "themes": [
+            "histoire-informatique",
+            "sciences-espace",
+            "hardware-makers"
+        ]
     },
     {
         "format": "TALK",
@@ -1913,7 +2212,12 @@
         "photoUrls": [],
         "slug": "le-biomimetisme-au-secours-des-dev",
         "level": "Beginner",
-        "id": "601595"
+        "id": "601595",
+        "themes": [
+            "collaboration",
+            "sciences-espace",
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -1935,7 +2239,11 @@
         "photoUrls": [],
         "slug": "pulumi-gerer-son-infrastructure-avec-son-langage-de-programmation-prefere",
         "level": "Intermediate",
-        "id": "606132"
+        "id": "606132",
+        "themes": [
+            "cloud-devops",
+            "langages"
+        ]
     },
     {
         "format": "TALK",
@@ -1958,7 +2266,10 @@
         "photoUrls": [],
         "slug": "model-mitosis-ne-plus-se-tromper-entre-les-microservices-et-le-monolithe",
         "level": "Advanced",
-        "id": "593044"
+        "id": "593044",
+        "themes": [
+            "architecture"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1981,7 +2292,12 @@
         "photoUrls": [],
         "slug": "association-anciela-catalyseur-d-engagements-pour-un-lyon-ecologique-et-solidaire",
         "level": "Beginner",
-        "id": "666018"
+        "id": "666018",
+        "themes": [
+            "ecologie",
+            "democratie-citoyennete",
+            "economie-societe"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -2005,7 +2321,11 @@
         "photoUrls": [],
         "slug": "transcrire-l-emotion-de-la-voix-grace-au-machine-learning",
         "level": "Beginner",
-        "id": "669245"
+        "id": "669245",
+        "themes": [
+            "ia",
+            "accessibilite"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -2027,7 +2347,11 @@
         "photoUrls": [],
         "slug": "les-innovations-ont-elles-un-genre-",
         "level": "Beginner",
-        "id": "646315"
+        "id": "646315",
+        "themes": [
+            "diversite-inclusion",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -2049,7 +2373,11 @@
         "photoUrls": [],
         "slug": "les-innovations-ont-elles-un-genre-livestream",
         "level": "Beginner",
-        "id": "663711"
+        "id": "663711",
+        "themes": [
+            "diversite-inclusion",
+            "ethique"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -2071,6 +2399,7 @@
         "photoUrls": [],
         "slug": "mot-de-la-fin",
         "level": null,
-        "id": "637080"
+        "id": "637080",
+        "themes": []
     }
 ]

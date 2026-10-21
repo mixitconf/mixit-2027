@@ -18,7 +18,8 @@
         "end": "2023-04-13T09:30:00",
         "photoUrls": [],
         "slug": "keynote-team",
-        "id": "641cbe1dbc829903f2e9941d"
+        "id": "641cbe1dbc829903f2e9941d",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -39,7 +40,8 @@
         "end": "2023-04-13T09:30:00",
         "photoUrls": [],
         "slug": "keynote-team",
-        "id": "642dd5f23c378a36d10327d6"
+        "id": "642dd5f23c378a36d10327d6",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -60,7 +62,12 @@
         "end": "2023-04-13T10:00:00",
         "photoUrls": [],
         "slug": "capitalisme-de-surveillance-et-rapt-de-l-ecriture-numerique",
-        "id": "6405dd3d34a9b85777797fe7"
+        "id": "6405dd3d34a9b85777797fe7",
+        "themes": [
+            "vie-privee-surveillance",
+            "economie-societe",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -81,7 +88,12 @@
         "end": "2023-04-13T10:00:00",
         "photoUrls": [],
         "slug": "capitalisme-de-surveillance-et-rapt-de-l-ecriture-numerique-on-air-",
-        "id": "642dd54a3c378a36d10327d5"
+        "id": "642dd54a3c378a36d10327d5",
+        "themes": [
+            "vie-privee-surveillance",
+            "economie-societe",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -104,7 +116,8 @@
         "end": "2023-04-13T10:15:00",
         "photoUrls": [],
         "slug": "welcome-to-mixit-on-air-",
-        "id": "642dd24d3c378a36d10327d0"
+        "id": "642dd24d3c378a36d10327d0",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -127,7 +140,12 @@
         "end": "2023-04-13T11:15:00",
         "photoUrls": [],
         "slug": "interview-eric-guichard",
-        "id": "642dd2bc3c378a36d10327d1"
+        "id": "642dd2bc3c378a36d10327d1",
+        "themes": [
+            "vie-privee-surveillance",
+            "economie-societe",
+            "ethique"
+        ]
     },
     {
         "format": "TALK",
@@ -148,7 +166,11 @@
         "end": "2023-04-13T11:30:00",
         "photoUrls": [],
         "slug": "turbopack-rust-based-successor-to-webpack",
-        "id": "63ebb05fe87fb83515ebcfb9"
+        "id": "63ebb05fe87fb83515ebcfb9",
+        "themes": [
+            "web-frontend",
+            "langages"
+        ]
     },
     {
         "format": "TALK",
@@ -169,7 +191,12 @@
         "end": "2023-04-13T11:30:00",
         "photoUrls": [],
         "slug": "quelle-est-la-place-des-introverti-e-s-dans-une-equipe-agile-",
-        "id": "63ebb05fe87fb83515ebcfba"
+        "id": "63ebb05fe87fb83515ebcfba",
+        "themes": [
+            "agilite",
+            "collaboration",
+            "diversite-inclusion"
+        ]
     },
     {
         "format": "TALK",
@@ -190,7 +217,11 @@
         "end": "2023-04-13T11:30:00",
         "photoUrls": [],
         "slug": "conversations-avec-chatgpt-illusion-ou-realite-",
-        "id": "63ebb05fe87fb83515ebcfbb"
+        "id": "63ebb05fe87fb83515ebcfbb",
+        "themes": [
+            "ia",
+            "ethique"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -212,7 +243,8 @@
         "end": "2023-04-13T12:30:00",
         "photoUrls": [],
         "slug": "y-at-il-un-decideur-dans-l-avion-",
-        "id": "63ebb05fe87fb83515ebcfbc"
+        "id": "63ebb05fe87fb83515ebcfbc",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -233,7 +265,8 @@
         "end": "2023-04-13T12:30:00",
         "photoUrls": [],
         "slug": "fresque-anti-sexiste",
-        "id": "63ebb05fe87fb83515ebcfbd"
+        "id": "63ebb05fe87fb83515ebcfbd",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -255,7 +288,8 @@
         "end": "2023-04-13T12:30:00",
         "photoUrls": [],
         "slug": "coding-dojo-pour-apprendre-et-partager",
-        "id": "63ebb05fe87fb83515ebcfbe"
+        "id": "63ebb05fe87fb83515ebcfbe",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -276,7 +310,12 @@
         "end": "2023-04-13T11:30:00",
         "photoUrls": [],
         "slug": "ecrire-un-microservice-java-natif-avec-micronaut-et-graalvm",
-        "id": "63ebb05fe87fb83515ebcfbf"
+        "id": "63ebb05fe87fb83515ebcfbf",
+        "themes": [
+            "langages",
+            "architecture",
+            "cloud-devops"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -301,7 +340,8 @@
         "end": "2023-04-13T12:15:00",
         "photoUrls": [],
         "slug": "on-refait-la-conf-speciale-team-",
-        "id": "642dd41e3c378a36d10327d3"
+        "id": "642dd41e3c378a36d10327d3",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -322,7 +362,10 @@
         "end": "2023-04-13T12:30:00",
         "photoUrls": [],
         "slug": "pourquoi-le-css-ca-saoule-souvent",
-        "id": "63ebb05fe87fb83515ebcfc0"
+        "id": "63ebb05fe87fb83515ebcfc0",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "format": "TALK",
@@ -343,7 +386,10 @@
         "end": "2023-04-13T12:30:00",
         "photoUrls": [],
         "slug": "bienvenue-dans-le-monde-merveilleux-des-systemes-distribues-",
-        "id": "63ebb05fe87fb83515ebcfc1"
+        "id": "63ebb05fe87fb83515ebcfc1",
+        "themes": [
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -365,7 +411,11 @@
         "end": "2023-04-13T12:30:00",
         "photoUrls": [],
         "slug": "est-il-possible-de-reduire-l-aide-infligee-",
-        "id": "63ebb05fe87fb83515ebcfc2"
+        "id": "63ebb05fe87fb83515ebcfc2",
+        "themes": [
+            "collaboration",
+            "management"
+        ]
     },
     {
         "format": "TALK",
@@ -386,7 +436,12 @@
         "end": "2023-04-13T12:30:00",
         "photoUrls": [],
         "slug": "changer-le-visage-des-mathematiques-une-nouvelle-image-pour-la-recherche",
-        "id": "63ed511a561dc311fc7da366"
+        "id": "63ed511a561dc311fc7da366",
+        "themes": [
+            "sciences-espace",
+            "diversite-inclusion",
+            "carriere"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -408,7 +463,8 @@
         "end": "2023-04-13T12:55:00",
         "photoUrls": [],
         "slug": "papotage-avec-les-sponsors-",
-        "id": "642dd3db3c378a36d10327d2"
+        "id": "642dd3db3c378a36d10327d2",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -430,7 +486,8 @@
         "end": "2023-04-13T13:45:00",
         "photoUrls": [],
         "slug": "inside-mixit-la-mixette",
-        "id": "642dd4e33c378a36d10327d4"
+        "id": "642dd4e33c378a36d10327d4",
+        "themes": []
     },
     {
         "format": "LIGHTNING_TALK",
@@ -451,7 +508,11 @@
         "end": "2023-04-13T13:40:00",
         "photoUrls": [],
         "slug": "c-est-qui-le-patron-",
-        "id": "63ebb05fe87fb83515ebcfc4"
+        "id": "63ebb05fe87fb83515ebcfc4",
+        "themes": [
+            "management",
+            "futur-du-travail"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -472,7 +533,10 @@
         "end": "2023-04-13T13:40:00",
         "photoUrls": [],
         "slug": "des-secrets-dans-les-pixels-a-la-decouverte-de-la-steganographie",
-        "id": "63ebb05fe87fb83515ebcfc5"
+        "id": "63ebb05fe87fb83515ebcfc5",
+        "themes": [
+            "securite"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -493,7 +557,11 @@
         "end": "2023-04-13T13:40:00",
         "photoUrls": [],
         "slug": "et-si-vos-prochaines-vacances-se-passaient-a-velo-",
-        "id": "63ebb05fe87fb83515ebcfc6"
+        "id": "63ebb05fe87fb83515ebcfc6",
+        "themes": [
+            "ecologie",
+            "sante-bien-etre"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -514,7 +582,11 @@
         "end": "2023-04-13T13:40:00",
         "photoUrls": [],
         "slug": "comment-les-reconverties-peuvent-inspirer-et-enrichir-vos-equipes-",
-        "id": "63ebb05fe87fb83515ebcfe5"
+        "id": "63ebb05fe87fb83515ebcfe5",
+        "themes": [
+            "carriere",
+            "diversite-inclusion"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -535,7 +607,8 @@
         "end": "2023-04-13T14:00:00",
         "photoUrls": [],
         "slug": "presentation-des-associations-de-la-mixette",
-        "id": "643597a9abc36334732daabc"
+        "id": "643597a9abc36334732daabc",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -556,7 +629,12 @@
         "end": "2023-04-13T14:30:00",
         "photoUrls": [],
         "slug": "pour-une-ecologie-decoloniale-du-numerique",
-        "id": "6405dd8934a9b85777797fe8"
+        "id": "6405dd8934a9b85777797fe8",
+        "themes": [
+            "ecologie",
+            "geopolitique",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -577,7 +655,12 @@
         "end": "2023-04-13T14:30:00",
         "photoUrls": [],
         "slug": "pour-une-ecologie-decoloniale-du-numerique",
-        "id": "642dd6d13c378a36d10327d7"
+        "id": "642dd6d13c378a36d10327d7",
+        "themes": [
+            "ecologie",
+            "geopolitique",
+            "ethique"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -600,7 +683,12 @@
         "end": "2023-04-13T15:15:00",
         "photoUrls": [],
         "slug": "interview-de-david-maenda-kithoko",
-        "id": "642dd7613c378a36d10327d8"
+        "id": "642dd7613c378a36d10327d8",
+        "themes": [
+            "ecologie",
+            "geopolitique",
+            "ethique"
+        ]
     },
     {
         "format": "TALK",
@@ -622,7 +710,10 @@
         "end": "2023-04-13T15:40:00",
         "photoUrls": [],
         "slug": "la-tech-des-3-ans-sans-ecran-le-pari-de-colori",
-        "id": "63ebb05fe87fb83515ebcfc3"
+        "id": "63ebb05fe87fb83515ebcfc3",
+        "themes": [
+            "apprentissage"
+        ]
     },
     {
         "format": "TALK",
@@ -644,7 +735,11 @@
         "end": "2023-04-13T15:40:00",
         "photoUrls": [],
         "slug": "le-conte-chaud-et-doux-des-chaudoudoux",
-        "id": "63ebb05fe87fb83515ebcfc9"
+        "id": "63ebb05fe87fb83515ebcfc9",
+        "themes": [
+            "collaboration",
+            "sante-bien-etre"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -665,7 +760,8 @@
         "end": "2023-04-13T16:40:00",
         "photoUrls": [],
         "slug": "lego-flow-game-le-waterfall-le-scrum-et-le-kanban-tu-differencieras-",
-        "id": "63ebb05fe87fb83515ebcfca"
+        "id": "63ebb05fe87fb83515ebcfca",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -687,7 +783,8 @@
         "end": "2023-04-13T16:40:00",
         "photoUrls": [],
         "slug": "developpeurs-euses-facilitez-vous-la-vie-en-re-apprenant-a-lire-",
-        "id": "63ebb05fe87fb83515ebcfcb"
+        "id": "63ebb05fe87fb83515ebcfcb",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -708,7 +805,11 @@
         "end": "2023-04-13T15:40:00",
         "photoUrls": [],
         "slug": "corn-hole-2-turbo-mes-premiers-pas-dans-l-embarque",
-        "id": "63ebb05fe87fb83515ebcfcc"
+        "id": "63ebb05fe87fb83515ebcfcc",
+        "themes": [
+            "hardware-makers",
+            "jeux-creative-coding"
+        ]
     },
     {
         "format": "TALK",
@@ -729,7 +830,11 @@
         "end": "2023-04-13T15:40:00",
         "photoUrls": [],
         "slug": "tout-ce-que-vous-n-avez-jamais-voulu-savoir-sur-les-fuseaux-horaires",
-        "id": "63ebb05fe87fb83515ebcfcd"
+        "id": "63ebb05fe87fb83515ebcfcd",
+        "themes": [
+            "langages",
+            "histoire-informatique"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -751,7 +856,8 @@
         "end": "2023-04-13T17:50:00",
         "photoUrls": [],
         "slug": "fresque-du-numerique",
-        "id": "63ebb05fe87fb83515ebcfce"
+        "id": "63ebb05fe87fb83515ebcfce",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -775,7 +881,8 @@
         "end": "2023-04-13T16:00:00",
         "photoUrls": [],
         "slug": "inside-mixit-mixteen",
-        "id": "642dd7de3c378a36d10327d9"
+        "id": "642dd7de3c378a36d10327d9",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -797,7 +904,11 @@
         "end": "2023-04-13T16:40:00",
         "photoUrls": [],
         "slug": "progresser-en-conception-avec-les-design-patterns",
-        "id": "63ebb05fe87fb83515ebcfc8"
+        "id": "63ebb05fe87fb83515ebcfc8",
+        "themes": [
+            "qualite-tests",
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -819,7 +930,11 @@
         "end": "2023-04-13T16:40:00",
         "photoUrls": [],
         "slug": "charge-mentale-l-ingredient-oublie-pour-la-performance-et-le-bien-etre-des-equipes",
-        "id": "63ebb05fe87fb83515ebcfcf"
+        "id": "63ebb05fe87fb83515ebcfcf",
+        "themes": [
+            "sante-bien-etre",
+            "management"
+        ]
     },
     {
         "format": "TALK",
@@ -840,7 +955,11 @@
         "end": "2023-04-13T16:40:00",
         "photoUrls": [],
         "slug": "spring-framework-6-0",
-        "id": "63ebb05fe87fb83515ebcfd1"
+        "id": "63ebb05fe87fb83515ebcfd1",
+        "themes": [
+            "architecture",
+            "langages"
+        ]
     },
     {
         "format": "TALK",
@@ -862,7 +981,11 @@
         "end": "2023-04-13T16:40:00",
         "photoUrls": [],
         "slug": "la-neurodiversite-au-travail",
-        "id": "64184b1a2a24863cd072b4ab"
+        "id": "64184b1a2a24863cd072b4ab",
+        "themes": [
+            "diversite-inclusion",
+            "sante-bien-etre"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -883,7 +1006,8 @@
         "end": "2023-04-13T17:00:00",
         "photoUrls": [],
         "slug": "on-refait-la-conf-speciale-aliens-",
-        "id": "642dd9353c378a36d10327db"
+        "id": "642dd9353c378a36d10327db",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -904,7 +1028,11 @@
         "end": "2023-04-13T17:50:00",
         "photoUrls": [],
         "slug": "ada-lovelace-and-the-very-first-computer-program",
-        "id": "63ebb05fe87fb83515ebcfd3"
+        "id": "63ebb05fe87fb83515ebcfd3",
+        "themes": [
+            "histoire-informatique",
+            "diversite-inclusion"
+        ]
     },
     {
         "format": "TALK",
@@ -925,7 +1053,11 @@
         "end": "2023-04-13T17:50:00",
         "photoUrls": [],
         "slug": "faire-grandir-une-equipe-technique-autonomie-vs-anarchie",
-        "id": "63ebb05fe87fb83515ebcfd4"
+        "id": "63ebb05fe87fb83515ebcfd4",
+        "themes": [
+            "management",
+            "collaboration"
+        ]
     },
     {
         "format": "TALK",
@@ -946,7 +1078,10 @@
         "end": "2023-04-13T17:50:00",
         "photoUrls": [],
         "slug": "choisir-la-bonne-technologie-mobile-pour-votre-projet",
-        "id": "63ebb05fe87fb83515ebcfd5"
+        "id": "63ebb05fe87fb83515ebcfd5",
+        "themes": [
+            "mobile"
+        ]
     },
     {
         "format": "TALK",
@@ -968,7 +1103,11 @@
         "end": "2023-04-13T17:50:00",
         "photoUrls": [],
         "slug": "comment-aborder-le-design-dans-une-demarche-d-eco-conception-",
-        "id": "63ebb05fe87fb83515ebcfe7"
+        "id": "63ebb05fe87fb83515ebcfe7",
+        "themes": [
+            "ecologie",
+            "ux-design"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -992,7 +1131,8 @@
         "end": "2023-04-13T18:00:00",
         "photoUrls": [],
         "slug": "on-refait-la-conf-speciale-tech",
-        "id": "642dd8e63c378a36d10327da"
+        "id": "642dd8e63c378a36d10327da",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -1013,7 +1153,8 @@
         "end": "2023-04-13T18:30:00",
         "photoUrls": [],
         "slug": "mixit-on-air",
-        "id": "6405ddd934a9b85777797fe9"
+        "id": "6405ddd934a9b85777797fe9",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -1034,7 +1175,8 @@
         "end": "2023-04-13T18:30:00",
         "photoUrls": [],
         "slug": "keynote-de-cloture",
-        "id": "642dc2eaaa73a1714e34df02"
+        "id": "642dc2eaaa73a1714e34df02",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -1055,7 +1197,8 @@
         "end": "2023-04-14T09:30:00",
         "photoUrls": [],
         "slug": "keynote-team",
-        "id": "641cbeaebc829903f2e9941e"
+        "id": "641cbeaebc829903f2e9941e",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -1076,7 +1219,8 @@
         "end": "2023-04-14T09:30:00",
         "photoUrls": [],
         "slug": "keynote-team",
-        "id": "642dda643c378a36d10327dd"
+        "id": "642dda643c378a36d10327dd",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -1097,7 +1241,11 @@
         "end": "2023-04-14T10:00:00",
         "photoUrls": [],
         "slug": "why-is-being-different-actually-a-good-thing-my-way-into-tech",
-        "id": "63ebb05fe87fb83515ebcfd6"
+        "id": "63ebb05fe87fb83515ebcfd6",
+        "themes": [
+            "diversite-inclusion",
+            "carriere"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1118,7 +1266,11 @@
         "end": "2023-04-14T10:00:00",
         "photoUrls": [],
         "slug": "why-is-being-different-actually-a-good-thing-my-way-into-tech",
-        "id": "642dda223c378a36d10327dc"
+        "id": "642dda223c378a36d10327dc",
+        "themes": [
+            "diversite-inclusion",
+            "carriere"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1141,7 +1293,8 @@
         "end": "2023-04-14T10:15:00",
         "photoUrls": [],
         "slug": "welcome-to-mixit-on-air-",
-        "id": "642ddaca3c378a36d10327de"
+        "id": "642ddaca3c378a36d10327de",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -1164,7 +1317,11 @@
         "end": "2023-04-14T11:15:00",
         "photoUrls": [],
         "slug": "interview-feli-bernutz",
-        "id": "642ddb763c378a36d10327df"
+        "id": "642ddb763c378a36d10327df",
+        "themes": [
+            "diversite-inclusion",
+            "carriere"
+        ]
     },
     {
         "format": "TALK",
@@ -1185,7 +1342,11 @@
         "end": "2023-04-14T11:30:00",
         "photoUrls": [],
         "slug": "poser-les-bonnes-questions-au-bon-moment-pour-accelerer-son-developpement-produit-",
-        "id": "63ebb05fe87fb83515ebcfd7"
+        "id": "63ebb05fe87fb83515ebcfd7",
+        "themes": [
+            "produit-entrepreneuriat",
+            "collaboration"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -1207,7 +1368,8 @@
         "end": "2023-04-14T12:30:00",
         "photoUrls": [],
         "slug": "sensibiliser-et-passer-a-l-action-avec-l-atelier-numerique-responsable",
-        "id": "63ebb05fe87fb83515ebcfd8"
+        "id": "63ebb05fe87fb83515ebcfd8",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -1229,7 +1391,8 @@
         "end": "2023-04-14T12:30:00",
         "photoUrls": [],
         "slug": "shape-up-le-jeu-by-toovalu",
-        "id": "63ebb05fe87fb83515ebcfd9"
+        "id": "63ebb05fe87fb83515ebcfd9",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1250,7 +1413,12 @@
         "end": "2023-04-14T11:30:00",
         "photoUrls": [],
         "slug": "chasing-unicorns-0-dataloss-and-99-999-availability",
-        "id": "63ebb05fe87fb83515ebcfda"
+        "id": "63ebb05fe87fb83515ebcfda",
+        "themes": [
+            "architecture",
+            "data",
+            "cloud-devops"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -1273,7 +1441,8 @@
         "end": "2023-04-14T12:30:00",
         "photoUrls": [],
         "slug": "le-gitops-dont-vous-etes-le-heros",
-        "id": "63ebb05fe87fb83515ebcfdb"
+        "id": "63ebb05fe87fb83515ebcfdb",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1294,7 +1463,12 @@
         "end": "2023-04-14T11:30:00",
         "photoUrls": [],
         "slug": "jay-z-maths-and-signals-how-to-clone-shazam-",
-        "id": "63ebb05fe87fb83515ebcfdc"
+        "id": "63ebb05fe87fb83515ebcfdc",
+        "themes": [
+            "sciences-espace",
+            "data",
+            "culture-arts"
+        ]
     },
     {
         "format": "TALK",
@@ -1315,7 +1489,10 @@
         "end": "2023-04-14T11:30:00",
         "photoUrls": [],
         "slug": "comment-etre-condamne-par-la-cnil",
-        "id": "63ebb05fe87fb83515ebcfdd"
+        "id": "63ebb05fe87fb83515ebcfdd",
+        "themes": [
+            "vie-privee-surveillance"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1336,7 +1513,8 @@
         "end": "2023-04-14T12:15:00",
         "photoUrls": [],
         "slug": "on-refait-la-conf-speciale-aliens-ethics",
-        "id": "642ddc393c378a36d10327e0"
+        "id": "642ddc393c378a36d10327e0",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1357,7 +1535,10 @@
         "end": "2023-04-14T12:30:00",
         "photoUrls": [],
         "slug": "functional-programming-with-c-",
-        "id": "63ebb05fe87fb83515ebcfde"
+        "id": "63ebb05fe87fb83515ebcfde",
+        "themes": [
+            "langages"
+        ]
     },
     {
         "format": "TALK",
@@ -1378,7 +1559,11 @@
         "end": "2023-04-14T12:30:00",
         "photoUrls": [],
         "slug": "comment-integrer-au-mieux-une-personne-autiste-en-entreprise",
-        "id": "63ebb05fe87fb83515ebcfdf"
+        "id": "63ebb05fe87fb83515ebcfdf",
+        "themes": [
+            "diversite-inclusion",
+            "management"
+        ]
     },
     {
         "format": "TALK",
@@ -1399,7 +1584,12 @@
         "end": "2023-04-14T12:30:00",
         "photoUrls": [],
         "slug": "loi-de-conway-lorsque-votre-conception-produit-se-fache-avec-votre-organisation",
-        "id": "63ebb05fe87fb83515ebcfe0"
+        "id": "63ebb05fe87fb83515ebcfe0",
+        "themes": [
+            "architecture",
+            "produit-entrepreneuriat",
+            "management"
+        ]
     },
     {
         "format": "TALK",
@@ -1420,7 +1610,11 @@
         "end": "2023-04-14T12:30:00",
         "photoUrls": [],
         "slug": "-retourauxsources-le-cache-http",
-        "id": "63ebb05fe87fb83515ebcfe1"
+        "id": "63ebb05fe87fb83515ebcfe1",
+        "themes": [
+            "web-frontend",
+            "architecture"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1442,7 +1636,8 @@
         "end": "2023-04-14T12:55:00",
         "photoUrls": [],
         "slug": "papotage-avec-les-sponsors-",
-        "id": "642ddcff3c378a36d10327e1"
+        "id": "642ddcff3c378a36d10327e1",
+        "themes": []
     },
     {
         "format": "ON_AIR",
@@ -1464,7 +1659,8 @@
         "end": "2023-04-14T13:45:00",
         "photoUrls": [],
         "slug": "on-debriefe-avec-les-participant-e-s",
-        "id": "642ddd513c378a36d10327e2"
+        "id": "642ddd513c378a36d10327e2",
+        "themes": []
     },
     {
         "format": "LIGHTNING_TALK",
@@ -1485,7 +1681,11 @@
         "end": "2023-04-14T13:40:00",
         "photoUrls": [],
         "slug": "reflechir-avant-de-cliquer-comprendre-les-risques-lies-a-vos-donnees-personnelles-en-ligne",
-        "id": "63ebb05fe87fb83515ebcfc7"
+        "id": "63ebb05fe87fb83515ebcfc7",
+        "themes": [
+            "vie-privee-surveillance",
+            "securite"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -1506,7 +1706,12 @@
         "end": "2023-04-14T13:40:00",
         "photoUrls": [],
         "slug": "slow-business-travailler-moins-mieux",
-        "id": "63ebb05fe87fb83515ebcfe2"
+        "id": "63ebb05fe87fb83515ebcfe2",
+        "themes": [
+            "sante-bien-etre",
+            "futur-du-travail",
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -1527,7 +1732,11 @@
         "end": "2023-04-14T13:40:00",
         "photoUrls": [],
         "slug": "pourquoi-quitter-la-tech-",
-        "id": "63ebb05fe87fb83515ebcfe3"
+        "id": "63ebb05fe87fb83515ebcfe3",
+        "themes": [
+            "carriere",
+            "diversite-inclusion"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -1548,7 +1757,12 @@
         "end": "2023-04-14T13:40:00",
         "photoUrls": [],
         "slug": "ce-code-qui-nous-lit",
-        "id": "63ebb05fe87fb83515ebcfe4"
+        "id": "63ebb05fe87fb83515ebcfe4",
+        "themes": [
+            "culture-arts",
+            "ethique",
+            "open-source"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -1569,7 +1783,12 @@
         "end": "2023-04-14T14:30:00",
         "photoUrls": [],
         "slug": "comment-le-numerique-limite-les-libertes-des-femmes-et-des-minorites",
-        "id": "6405de4134a9b85777797fea"
+        "id": "6405de4134a9b85777797fea",
+        "themes": [
+            "diversite-inclusion",
+            "ethique",
+            "vie-privee-surveillance"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1590,7 +1809,12 @@
         "end": "2023-04-14T14:30:00",
         "photoUrls": [],
         "slug": "comment-le-numerique-limite-les-libertes-des-femmes-et-des-minorites",
-        "id": "642dddd63c378a36d10327e3"
+        "id": "642dddd63c378a36d10327e3",
+        "themes": [
+            "diversite-inclusion",
+            "ethique",
+            "vie-privee-surveillance"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1613,7 +1837,12 @@
         "end": "2023-04-14T15:15:00",
         "photoUrls": [],
         "slug": "interview-mathilde-saliou",
-        "id": "642dde4c3c378a36d10327e4"
+        "id": "642dde4c3c378a36d10327e4",
+        "themes": [
+            "diversite-inclusion",
+            "ethique",
+            "vie-privee-surveillance"
+        ]
     },
     {
         "format": "TALK",
@@ -1635,7 +1864,11 @@
         "end": "2023-04-14T15:40:00",
         "photoUrls": [],
         "slug": "remotion-le-7eme-art-a-portee-de-composants-web-et-d-api-",
-        "id": "63ebb05fe87fb83515ebcfe6"
+        "id": "63ebb05fe87fb83515ebcfe6",
+        "themes": [
+            "web-frontend",
+            "jeux-creative-coding"
+        ]
     },
     {
         "format": "TALK",
@@ -1657,7 +1890,11 @@
         "end": "2023-04-14T15:40:00",
         "photoUrls": [],
         "slug": "developpement-durable-et-si-on-developpait-enfin-des-logiciels-bons-pour-les-gens-et-la-planete",
-        "id": "63ebb05fe87fb83515ebcfe8"
+        "id": "63ebb05fe87fb83515ebcfe8",
+        "themes": [
+            "ecologie",
+            "ux-design"
+        ]
     },
     {
         "format": "TALK",
@@ -1678,7 +1915,11 @@
         "end": "2023-04-14T15:40:00",
         "photoUrls": [],
         "slug": "s-inspirer-de-l-astrophysique-pour-traverser-une-transformation-rex-d-une-etoile",
-        "id": "63ebb05fe87fb83515ebcfe9"
+        "id": "63ebb05fe87fb83515ebcfe9",
+        "themes": [
+            "sciences-espace",
+            "management"
+        ]
     },
     {
         "format": "TALK",
@@ -1699,7 +1940,11 @@
         "end": "2023-04-14T15:40:00",
         "photoUrls": [],
         "slug": "autodidaxie-c-est-grave-docteur-",
-        "id": "63f5dc52f4ed9b616de005fe"
+        "id": "63f5dc52f4ed9b616de005fe",
+        "themes": [
+            "apprentissage",
+            "carriere"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1721,7 +1966,8 @@
         "end": "2023-04-14T16:00:00",
         "photoUrls": [],
         "slug": "on-refait-la-conf-speciale-team-et-tremplin-",
-        "id": "642dde9c3c378a36d10327e5"
+        "id": "642dde9c3c378a36d10327e5",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1742,7 +1988,10 @@
         "end": "2023-04-14T16:40:00",
         "photoUrls": [],
         "slug": "resumability-in-the-next-generation-frontend-framework-with-o-1-loading-time",
-        "id": "63ebb05fe87fb83515ebcfea"
+        "id": "63ebb05fe87fb83515ebcfea",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "format": "TALK",
@@ -1763,7 +2012,12 @@
         "end": "2023-04-14T16:40:00",
         "photoUrls": [],
         "slug": "au-secours-j-ai-une-personne-handicapee-dans-mon-equipe-",
-        "id": "63ebb05fe87fb83515ebcfeb"
+        "id": "63ebb05fe87fb83515ebcfeb",
+        "themes": [
+            "accessibilite",
+            "diversite-inclusion",
+            "management"
+        ]
     },
     {
         "format": "TALK",
@@ -1784,7 +2038,11 @@
         "end": "2023-04-14T16:40:00",
         "photoUrls": [],
         "slug": "statut-tjm-et-clients-la-base-du-freelance",
-        "id": "63ebb05fe87fb83515ebcfec"
+        "id": "63ebb05fe87fb83515ebcfec",
+        "themes": [
+            "carriere",
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "format": "TALK",
@@ -1805,7 +2063,12 @@
         "end": "2023-04-14T16:40:00",
         "photoUrls": [],
         "slug": "webassembly-en-2023-un-etat-de-l-art",
-        "id": "63ebb05fe87fb83515ebcfed"
+        "id": "63ebb05fe87fb83515ebcfed",
+        "themes": [
+            "web-frontend",
+            "cloud-devops",
+            "langages"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1831,7 +2094,8 @@
         "end": "2023-04-14T16:45:00",
         "photoUrls": [],
         "slug": "on-refait-la-conf-special-tech",
-        "id": "642ddf3c3c378a36d10327e6"
+        "id": "642ddf3c3c378a36d10327e6",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -1852,7 +2116,11 @@
         "end": "2023-04-14T17:30:00",
         "photoUrls": [],
         "slug": "mathematiques-magie",
-        "id": "6405de8434a9b85777797feb"
+        "id": "6405de8434a9b85777797feb",
+        "themes": [
+            "sciences-espace",
+            "culture-arts"
+        ]
     },
     {
         "format": "ON_AIR",
@@ -1873,7 +2141,11 @@
         "end": "2023-04-14T17:30:00",
         "photoUrls": [],
         "slug": "mathematiques-magie",
-        "id": "642ddfea3c378a36d10327e7"
+        "id": "642ddfea3c378a36d10327e7",
+        "themes": [
+            "sciences-espace",
+            "culture-arts"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -1894,6 +2166,7 @@
         "end": "2023-04-14T17:30:00",
         "photoUrls": [],
         "slug": "le-mot-de-la-fin",
-        "id": "64359898abc36334732daac0"
+        "id": "64359898abc36334732daac0",
+        "themes": []
     }
 ]

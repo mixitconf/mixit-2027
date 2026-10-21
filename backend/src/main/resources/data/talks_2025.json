@@ -19,7 +19,12 @@
         "photoUrls": [],
         "slug": "robustesse-une-nouvelle-culture-tech-",
         "level": "Beginner",
-        "id": "867474"
+        "id": "867474",
+        "themes": [
+            "ecologie",
+            "economie-societe",
+            "sciences-espace"
+        ]
     },
     {
         "format": "TALK",
@@ -41,7 +46,10 @@
         "photoUrls": [],
         "slug": "llms-toutes-ces-questions-que-vous-n-avez-jamais-ose-poser-a-leur-sujet",
         "level": "Beginner",
-        "id": "819458"
+        "id": "819458",
+        "themes": [
+            "ia"
+        ]
     },
     {
         "format": "TALK",
@@ -63,7 +71,11 @@
         "photoUrls": [],
         "slug": "de-la-pseudoscience-pour-mon-pseudo-management",
         "level": "Beginner",
-        "id": "786340"
+        "id": "786340",
+        "themes": [
+            "management",
+            "sciences-espace"
+        ]
     },
     {
         "format": "TALK",
@@ -85,7 +97,11 @@
         "photoUrls": [],
         "slug": "leggins-et-dark-patterns-quand-une-experience-sans-couture-dessert-l-utilisateur",
         "level": "Beginner",
-        "id": "838384"
+        "id": "838384",
+        "themes": [
+            "ux-design",
+            "ethique"
+        ]
     },
     {
         "format": "TALK",
@@ -108,7 +124,11 @@
         "photoUrls": [],
         "slug": "et-si-on-parlait-de-malware-craftsmanship-",
         "level": "Beginner",
-        "id": "827511"
+        "id": "827511",
+        "themes": [
+            "securite",
+            "qualite-tests"
+        ]
     },
     {
         "format": "TALK",
@@ -130,7 +150,12 @@
         "photoUrls": [],
         "slug": "au-dela-des-heures-la-semaine-de-4-jours-comme-levier-d-egalite",
         "level": "Beginner",
-        "id": "813121"
+        "id": "813121",
+        "themes": [
+            "futur-du-travail",
+            "diversite-inclusion",
+            "sante-bien-etre"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -153,7 +178,8 @@
         "photoUrls": [],
         "slug": "mission-jetpack-compose-revolutionnez-le-developpement-mobile-",
         "level": "Beginner",
-        "id": "837809"
+        "id": "837809",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -176,7 +202,8 @@
         "photoUrls": [],
         "slug": "defi-l-accessibilite-au-bout-des-doigts-",
         "level": "Beginner",
-        "id": "787284"
+        "id": "787284",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -199,7 +226,10 @@
         "photoUrls": [],
         "slug": "le-pattern-hive-une-strategie-de-modularisation-pour-votre-monolithe-modulaire-ou-vos-microservice",
         "level": "Advanced",
-        "id": "786208"
+        "id": "786208",
+        "themes": [
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -221,7 +251,11 @@
         "photoUrls": [],
         "slug": "null-safety-en-java-avec-jspecify-et-nullaway",
         "level": "Intermediate",
-        "id": "795604"
+        "id": "795604",
+        "themes": [
+            "langages",
+            "qualite-tests"
+        ]
     },
     {
         "format": "TALK",
@@ -243,7 +277,11 @@
         "photoUrls": [],
         "slug": "stimuler-l-innovation-de-votre-entreprise-grace-a-une-plateforme-basee-sur-l-ia-generative",
         "level": "Intermediate",
-        "id": "797436"
+        "id": "797436",
+        "themes": [
+            "ia",
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "format": "TALK",
@@ -266,7 +304,13 @@
         "photoUrls": [],
         "slug": "retour-d-experience-sur-la-creation-de-pepiniere-de-tests-un-melange-de-reconversion-et-d-handicap",
         "level": "Beginner",
-        "id": "815595"
+        "id": "815595",
+        "themes": [
+            "qualite-tests",
+            "diversite-inclusion",
+            "accessibilite",
+            "carriere"
+        ]
     },
     {
         "format": "TALK",
@@ -288,7 +332,12 @@
         "photoUrls": [],
         "slug": "onboarding-2-0-reinventer-l-integration-des-devs",
         "level": "Beginner",
-        "id": "786918"
+        "id": "786918",
+        "themes": [
+            "management",
+            "apprentissage",
+            "collaboration"
+        ]
     },
     {
         "format": "TALK",
@@ -310,7 +359,8 @@
         "photoUrls": [],
         "slug": "presentation-des-associations-mixettes",
         "level": null,
-        "id": "921509"
+        "id": "921509",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -332,7 +382,13 @@
         "photoUrls": [],
         "slug": "nos-manieres-de-compter-perils-economiques-democratiques-et-ecologiques-",
         "level": "Beginner",
-        "id": "868819"
+        "id": "868819",
+        "themes": [
+            "data",
+            "democratie-citoyennete",
+            "economie-societe",
+            "ecologie"
+        ]
     },
     {
         "format": "TALK",
@@ -354,7 +410,11 @@
         "photoUrls": [],
         "slug": "art-generatif-de-la-decouverte-a-la-publication-de-projets-dans-des-studios-prestigieux",
         "level": "Beginner",
-        "id": "794742"
+        "id": "794742",
+        "themes": [
+            "jeux-creative-coding",
+            "culture-arts"
+        ]
     },
     {
         "format": "TALK",
@@ -376,7 +436,11 @@
         "photoUrls": [],
         "slug": "retrieval-augmented-generation-rag-obtenez-des-reponses-de-qualite-avec-des-techniques-avancees",
         "level": "Intermediate",
-        "id": "819462"
+        "id": "819462",
+        "themes": [
+            "ia",
+            "data"
+        ]
     },
     {
         "format": "TALK",
@@ -398,7 +462,11 @@
         "photoUrls": [],
         "slug": "quand-le-terminal-devore-la-ui-tui-pour-tout-le-monde-",
         "level": "Beginner",
-        "id": "835982"
+        "id": "835982",
+        "themes": [
+            "ux-design",
+            "langages"
+        ]
     },
     {
         "format": "TALK",
@@ -420,7 +488,12 @@
         "photoUrls": [],
         "slug": "le-langage-inclusif-un-levier-d-engagement-dans-les-equipes",
         "level": "Beginner",
-        "id": "838110"
+        "id": "838110",
+        "themes": [
+            "diversite-inclusion",
+            "collaboration",
+            "management"
+        ]
     },
     {
         "format": "TALK",
@@ -443,7 +516,10 @@
         "photoUrls": [],
         "slug": "tu-te-mets-combien-en-responsive-css-edition-2025",
         "level": "Beginner",
-        "id": "794595"
+        "id": "794595",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -466,7 +542,8 @@
         "photoUrls": [],
         "slug": "devenez-un-astronaute-decouvrez-le-framework-astro",
         "level": "Beginner",
-        "id": "800248"
+        "id": "800248",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -489,7 +566,8 @@
         "photoUrls": [],
         "slug": "redecouvrir-la-cooperation-atelier-de-mob-programming",
         "level": "Beginner",
-        "id": "786829"
+        "id": "786829",
+        "themes": []
     },
     {
         "format": "LIGHTNING_TALK",
@@ -512,7 +590,12 @@
         "photoUrls": [],
         "slug": "rendre-transparents-les-changements-des-cgus-avec-open-terms-archive",
         "level": "Beginner",
-        "id": "839194"
+        "id": "839194",
+        "themes": [
+            "democratie-citoyennete",
+            "open-source",
+            "vie-privee-surveillance"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -534,7 +617,10 @@
         "photoUrls": [],
         "slug": "tests-e2e-sans-stress-robot-framework-a-la-rescousse-",
         "level": "Beginner",
-        "id": "839132"
+        "id": "839132",
+        "themes": [
+            "qualite-tests"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -556,7 +642,11 @@
         "photoUrls": [],
         "slug": "donjons-et-pythons-la-chevaleresse-a-la-rescousse",
         "level": "Beginner",
-        "id": "825319"
+        "id": "825319",
+        "themes": [
+            "qualite-tests",
+            "langages"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -578,7 +668,10 @@
         "photoUrls": [],
         "slug": "-question-pour-un-conteneur-quiz-sur-les-images-les-conteneurs-oci-docker",
         "level": "Beginner",
-        "id": "792988"
+        "id": "792988",
+        "themes": [
+            "cloud-devops"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -600,7 +693,11 @@
         "photoUrls": [],
         "slug": "python-ou-l-eloge-de-la-contorsion",
         "level": "Beginner",
-        "id": "895351"
+        "id": "895351",
+        "themes": [
+            "langages",
+            "carriere"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -622,7 +719,11 @@
         "photoUrls": [],
         "slug": "a-la-decouverte-du-code-golf",
         "level": "Beginner",
-        "id": "827506"
+        "id": "827506",
+        "themes": [
+            "langages",
+            "jeux-creative-coding"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -644,7 +745,11 @@
         "photoUrls": [],
         "slug": "medtech-transformons-la-sante-par-la-data",
         "level": "Beginner",
-        "id": "800840"
+        "id": "800840",
+        "themes": [
+            "data",
+            "sciences-espace"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -666,7 +771,11 @@
         "photoUrls": [],
         "slug": "en-javascript-il-y-a-un-paquet-pour-tout-et-souvent-pour-rien-",
         "level": "Beginner",
-        "id": "837591"
+        "id": "837591",
+        "themes": [
+            "web-frontend",
+            "open-source"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -689,7 +798,11 @@
         "photoUrls": [],
         "slug": "mieux-inclure-la-diversite-de-genre-dans-le-monde-du-libre-ca-passe-aussi-par-la-radio-",
         "level": "Beginner",
-        "id": "837016"
+        "id": "837016",
+        "themes": [
+            "diversite-inclusion",
+            "open-source"
+        ]
     },
     {
         "format": "LIGHTNING_TALK",
@@ -711,7 +824,11 @@
         "photoUrls": [],
         "slug": "il-a-preempte-ma-vm-",
         "level": "Beginner",
-        "id": "895352"
+        "id": "895352",
+        "themes": [
+            "cloud-devops",
+            "ecologie"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -733,7 +850,12 @@
         "photoUrls": [],
         "slug": "design-sabotage-hacking-politique-",
         "level": "Beginner",
-        "id": "867468"
+        "id": "867468",
+        "themes": [
+            "ux-design",
+            "democratie-citoyennete",
+            "culture-arts"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -755,7 +877,8 @@
         "photoUrls": [],
         "slug": "keynote-team",
         "level": "Beginner",
-        "id": "921505"
+        "id": "921505",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -777,7 +900,11 @@
         "photoUrls": [],
         "slug": "faut-il-changer-d-ere-numerique-pour-preserver-la-democratie-",
         "level": "Beginner",
-        "id": "867471"
+        "id": "867471",
+        "themes": [
+            "democratie-citoyennete",
+            "ethique"
+        ]
     },
     {
         "format": "TALK",
@@ -799,7 +926,11 @@
         "photoUrls": [],
         "slug": "les-threads-virtuels-vont-ils-rendre-la-programmation-reactive-obsolete-",
         "level": "Intermediate",
-        "id": "831072"
+        "id": "831072",
+        "themes": [
+            "langages",
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -822,7 +953,11 @@
         "photoUrls": [],
         "slug": "les-accidents-du-travail-dans-la-tech",
         "level": "Beginner",
-        "id": "838130"
+        "id": "838130",
+        "themes": [
+            "sante-bien-etre",
+            "futur-du-travail"
+        ]
     },
     {
         "format": "TALK",
@@ -844,7 +979,10 @@
         "photoUrls": [],
         "slug": "la-reactivite-et-les-signaux-demystifions-la-magie-du-frontend",
         "level": "Advanced",
-        "id": "837594"
+        "id": "837594",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "format": "TALK",
@@ -866,7 +1004,11 @@
         "photoUrls": [],
         "slug": "smartphone-et-accessibilite-decouvrez-et-apprenez-en-jouant-",
         "level": "Beginner",
-        "id": "798646"
+        "id": "798646",
+        "themes": [
+            "accessibilite",
+            "mobile"
+        ]
     },
     {
         "format": "TALK",
@@ -888,7 +1030,11 @@
         "photoUrls": [],
         "slug": "ma-vie-de-developpeur-web-dans-le-quantique",
         "level": "Beginner",
-        "id": "832158"
+        "id": "832158",
+        "themes": [
+            "sciences-espace",
+            "carriere"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -910,7 +1056,8 @@
         "photoUrls": [],
         "slug": "workshop-async-profiler",
         "level": "Beginner",
-        "id": "825309"
+        "id": "825309",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -933,7 +1080,8 @@
         "photoUrls": [],
         "slug": "nos-corps-biologiques-a-la-rescousse-pour-comprendre-l-intelligence-artificielle-",
         "level": "Beginner",
-        "id": "839950"
+        "id": "839950",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -955,7 +1103,10 @@
         "photoUrls": [],
         "slug": "l-architecture-pour-tout-le-monde-partout-tout-le-temps",
         "level": "Intermediate",
-        "id": "839844"
+        "id": "839844",
+        "themes": [
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -978,7 +1129,11 @@
         "photoUrls": [],
         "slug": "spring-boot-la-fin-de-la-3eme-generation",
         "level": "Intermediate",
-        "id": "831521"
+        "id": "831521",
+        "themes": [
+            "architecture",
+            "langages"
+        ]
     },
     {
         "format": "TALK",
@@ -1000,7 +1155,10 @@
         "photoUrls": [],
         "slug": "double-authentification-parlons-en",
         "level": "Beginner",
-        "id": "832231"
+        "id": "832231",
+        "themes": [
+            "securite"
+        ]
     },
     {
         "format": "TALK",
@@ -1022,7 +1180,11 @@
         "photoUrls": [],
         "slug": "penser-l-accessibilite-numerique-avec-les-handicaps-cognitifs",
         "level": "Beginner",
-        "id": "826123"
+        "id": "826123",
+        "themes": [
+            "accessibilite",
+            "ux-design"
+        ]
     },
     {
         "format": "TALK",
@@ -1044,7 +1206,10 @@
         "photoUrls": [],
         "slug": "highway-to-fail-ou-l-histoire-d-un-echec-previsible",
         "level": "Beginner",
-        "id": "838924"
+        "id": "838924",
+        "themes": [
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "format": "TALK",
@@ -1066,7 +1231,8 @@
         "photoUrls": [],
         "slug": "presentations-des-associations-mixette-de-mixteen-et-du-retrogaming",
         "level": null,
-        "id": "921570"
+        "id": "921570",
+        "themes": []
     },
     {
         "format": "KEYNOTE",
@@ -1088,7 +1254,12 @@
         "photoUrls": [],
         "slug": "mapping-the-critical-infrastructure-sustaining-our-understanding-of-the-earth",
         "level": "Beginner",
-        "id": "868821"
+        "id": "868821",
+        "themes": [
+            "data",
+            "sciences-espace",
+            "open-source"
+        ]
     },
     {
         "format": "TALK",
@@ -1110,7 +1281,11 @@
         "photoUrls": [],
         "slug": "un-pixel-puis-un-autre-comment-faire-tourner-doom-sur-une-liseuse-electronique-",
         "level": "Beginner",
-        "id": "827750"
+        "id": "827750",
+        "themes": [
+            "jeux-creative-coding",
+            "hardware-makers"
+        ]
     },
     {
         "format": "TALK",
@@ -1132,7 +1307,11 @@
         "photoUrls": [],
         "slug": "ameliorer-l-implementation-du-feature-flip-pour-reussir-a-avoir-du-flow",
         "level": "Intermediate",
-        "id": "836750"
+        "id": "836750",
+        "themes": [
+            "qualite-tests",
+            "cloud-devops"
+        ]
     },
     {
         "format": "TALK",
@@ -1154,7 +1333,12 @@
         "photoUrls": [],
         "slug": "un-developpeur-sous-couverture-parmi-les-utilisateurs",
         "level": "Beginner",
-        "id": "829111"
+        "id": "829111",
+        "themes": [
+            "architecture",
+            "produit-entrepreneuriat",
+            "collaboration"
+        ]
     },
     {
         "format": "WORKSHOP",
@@ -1177,7 +1361,8 @@
         "photoUrls": [],
         "slug": "-slow-code-retreat-",
         "level": "Advanced",
-        "id": "821320"
+        "id": "821320",
+        "themes": []
     },
     {
         "format": "WORKSHOP",
@@ -1200,7 +1385,8 @@
         "photoUrls": [],
         "slug": "-34-mais-qu-39-est-ce-qu-39-on-va-devenir-34-le-metier-de-dev-passe-au-crible-des-scenarios-de-l-39-ademe",
         "level": "Beginner",
-        "id": "820251"
+        "id": "820251",
+        "themes": []
     },
     {
         "format": "TALK",
@@ -1222,7 +1408,11 @@
         "photoUrls": [],
         "slug": "why-brian-can-t-code-in-the-kitchen-",
         "level": "Beginner",
-        "id": "839814"
+        "id": "839814",
+        "themes": [
+            "apprentissage",
+            "carriere"
+        ]
     },
     {
         "format": "TALK",
@@ -1244,7 +1434,12 @@
         "photoUrls": [],
         "slug": "l-aventure-d-une-requete-http-ou-le-chemin-de-la-vie-des-devs",
         "level": "Beginner",
-        "id": "835114"
+        "id": "835114",
+        "themes": [
+            "web-frontend",
+            "architecture",
+            "carriere"
+        ]
     },
     {
         "format": "TALK",
@@ -1266,7 +1461,11 @@
         "photoUrls": [],
         "slug": "faut-il-deconstruire-l-intelligence-artificielle-",
         "level": "Beginner",
-        "id": "835323"
+        "id": "835323",
+        "themes": [
+            "ia",
+            "architecture"
+        ]
     },
     {
         "format": "TALK",
@@ -1289,7 +1488,10 @@
         "photoUrls": [],
         "slug": "les-super-pouvoirs-meconnus-de-docker-desktop",
         "level": "Beginner",
-        "id": "836767"
+        "id": "836767",
+        "themes": [
+            "cloud-devops"
+        ]
     },
     {
         "format": "TALK",
@@ -1312,7 +1514,11 @@
         "photoUrls": [],
         "slug": "succes-debloque-rendre-son-jeu-video-accessible",
         "level": "Beginner",
-        "id": "793974"
+        "id": "793974",
+        "themes": [
+            "accessibilite",
+            "jeux-creative-coding"
+        ]
     },
     {
         "format": "TALK",
@@ -1334,7 +1540,11 @@
         "photoUrls": [],
         "slug": "triangle-cherche-carre-3-activites-pour-mieux-apprecier-nos-differences",
         "level": "Beginner",
-        "id": "825452"
+        "id": "825452",
+        "themes": [
+            "diversite-inclusion",
+            "collaboration"
+        ]
     },
     {
         "format": "TALK",
@@ -1356,7 +1566,12 @@
         "photoUrls": [],
         "slug": "3-techniques-pour-piloter-par-la-valeur",
         "level": "Intermediate",
-        "id": "826220"
+        "id": "826220",
+        "themes": [
+            "agilite",
+            "produit-entrepreneuriat",
+            "management"
+        ]
     },
     {
         "format": "KEYNOTE",
@@ -1378,6 +1593,7 @@
         "photoUrls": [],
         "slug": "keynote-de-cloture",
         "level": "Beginner",
-        "id": "916736"
+        "id": "916736",
+        "themes": []
     }
 ]

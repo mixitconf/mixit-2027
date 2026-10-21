@@ -18,6 +18,7 @@ data class Talk(
     val language: Language,
     val description: String,
     val topic: Topic,
+    val themes: List<Theme> = emptyList(),
     val room: Room,
     val start: String?,
     val end: String?,

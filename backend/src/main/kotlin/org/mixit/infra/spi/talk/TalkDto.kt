@@ -6,10 +6,12 @@ import org.mixit.conference.model.link.LinkType
 import org.mixit.conference.model.link.Video
 import org.mixit.conference.model.people.Speaker
 import org.mixit.conference.model.shared.Language
+import org.mixit.conference.model.shared.decodeHtmlEntities
 import org.mixit.conference.model.talk.Room
 import org.mixit.conference.model.talk.Talk
 import org.mixit.conference.model.talk.TalkFormat
 import org.mixit.conference.model.talk.TalkLevel
+import org.mixit.conference.model.talk.Theme
 import org.mixit.conference.shared.model.Topic
 import org.mixit.infra.spi.event.LinkDto
 
@@ -24,6 +26,7 @@ data class TalkDto(
     val addedAt: String,
     val description: String? = null,
     val topic: String? = null,
+    val themes: List<String> = emptyList(),
     val video: String? = null,
     val video2: String? = null,
     val room: Room? = Room.UNKNOWN,
@@ -37,10 +40,10 @@ data class TalkDto(
     fun toTalk(speakers: List<Speaker>) =
         Talk(
             id = id!!,
-            title = title,
+            title = title.decodeHtmlEntities(),
             format = format,
             language = language,
-            summary = summary,
+            summary = summary.decodeHtmlEntities(),
             description = description ?: "",
             speakers = speakers,
             event = event,
@@ -51,6 +54,7 @@ data class TalkDto(
             photos = photoUrls.map { Link(type = LinkType.PHOTO, url = it.url) },
             videos = listOfNotNull(video?.let { Video(it) }, video2?.let { Video(it) }),
             topic = Topic.of(topic),
+            themes = themes.mapNotNull { Theme.of(it) }.distinct(),
             slug = slug,
         )
 }

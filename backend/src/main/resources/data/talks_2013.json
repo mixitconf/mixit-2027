@@ -17,7 +17,10 @@
         "summary": "Initiation \u00e0 la Customer Validation et au Lean Startup",
         "title": "Testez vos id\u00e9es en quelques heures !",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.345",
@@ -37,7 +40,11 @@
         "summary": "A great product is closer to an accident. It's the byproduct of the environment you build at your company.",
         "title": "The Product is the Byproduct",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "produit-entrepreneuriat",
+            "management"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.345",
@@ -57,7 +64,11 @@
         "summary": "Even without a UXer you can learn to build & develop apps the right way. This not a definitive guide, but it will get you started.",
         "title": "The hitchhikers guide to UXing without a UXer",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "ux-design",
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.345",
@@ -77,7 +88,11 @@
         "summary": "Qu'est-ce qui distingue une \u00e9quipe Agile? On d\u00e9couvre une nouvelle fa\u00e7on de travailler ensemble, mais qu'est-ce que l'on d\u00e9couvre vraiment?",
         "title": "Une \u00e9quipe si particuli\u00e8re",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite",
+            "collaboration"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.345",
@@ -97,7 +112,8 @@
         "summary": "Une \u00e9quipe ce sont des personnes. Permettre aux \u00e9quipiers d'observer tr\u00e9s t\u00f4t de ce qui les r\u00e9unis ou les \u00e9loigne favorise l'esprit d'\u00e9quipe",
         "title": "B\u00e2tir une \u00e9quipe \u00e0 partir de ses valeurs",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.346",
@@ -117,7 +133,12 @@
         "summary": "A talk for software developers that want to learn more about software architecture, technical leadership and the balance with agility.",
         "title": "Software architecture for developers",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "architecture",
+            "carriere",
+            "management"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.346",
@@ -137,7 +158,8 @@
         "summary": "Agility is about moving fast and this requires good communication, but can *you* communicate the design of your software system effectively?",
         "title": "Agile software architecture sketches",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.346",
@@ -157,7 +179,11 @@
         "summary": "pr\u00e9sentation des patterns d'architecture \u00e0 appliquer \u00e0 vos d\u00e9veloppements pour accompagner votre transition dans le Cloud",
         "title": "Cloud Patterns",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "cloud-devops",
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.346",
@@ -177,7 +203,8 @@
         "summary": "L'application \"Games of Thrones\" que nous d\u00e9velopperons ensemble pas \u00e0 pas nous servira de pr\u00e9texte pour explorer les possibilit\u00e9s du Cloud.",
         "title": "Game of Clouds",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.346",
@@ -197,7 +224,11 @@
         "summary": "Introduction to Validated Influencing: a systematic approach to evaluate our progress and ensure we are progressing into the right direction",
         "title": "Validated Influencing",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "management",
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.347",
@@ -217,7 +248,8 @@
         "summary": "Introduction to Validated Influencing (see Validated Influencing talk); Group exercises.",
         "title": "Validated Influencing Workshop",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.347",
@@ -237,7 +269,10 @@
         "summary": "A case study on how a team used the improvement kata and Theory of Constraints to consistently deliver 100% of their sprint backlog and more",
         "title": "The road to potential shippable increments",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.347",
@@ -257,7 +292,10 @@
         "summary": "Ou comment le Scrumban peut r\u00e9pondre \u00e0 certaines probl\u00e9matiques lorsque l'on fait du Scrum, du point de vue de l'\u00e9quipe et du Product Owner.",
         "title": "#OMG, mon \u00e9quipe fait son haka en kanban style !?!",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.347",
@@ -277,7 +315,8 @@
         "summary": "Venez d\u00e9couvrir le Kanban par la pratique, au cours d'un atelier de r\u00e9f\u00e9rence, pour le mettre en oeuvre dans votre \u00e9quipe Scrum.",
         "title": "Challenge Kanban",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.347",
@@ -297,7 +336,10 @@
         "summary": "Pr\u00e9sentation des solutions Yeoman et AngularJS et r\u00e9alisation en live d\u2019une interface Web permettant l'\u00e9dition de donn\u00e9es d'un service REST",
         "title": "Live coding avec Yeoman & AngularJS",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.348",
@@ -317,7 +359,10 @@
         "summary": "Why so many new languages? Isn't good old Java good enough? Why Kotlin?",
         "title": "Why Kotlin?",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.348",
@@ -337,7 +382,8 @@
         "summary": "This workshop aimed to demonstrate how different typical programming problems can be easily solved with Kotlin language.",
         "title": "Dive into Kotlin",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.348",
@@ -357,7 +403,10 @@
         "summary": "Enrichir le DOM HTML avec vos propres \u00e9l\u00e9ments, vous en avez r\u00eav\u00e9 ? C'est d\u00e9sormais possible. ",
         "title": "Web Components, l'avenir des d\u00e9veloppeurs web",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/web-components"
+        "video": "https://www.infoq.com/fr/presentations/web-components",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.348",
@@ -378,7 +427,8 @@
         "summary": "Avec Spring Data, 20% de LOC en moins. Garanti! Fa\u00eetes-vous la main sur JPA, Mongo, Neo4j mais aussi sur les DSL et l\u2019exposition REST.",
         "title": "Hands On Spring Data",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.348",
@@ -398,7 +448,8 @@
         "summary": "Explorer comment d\u00e9couper un d\u00e9veloppement en tranches aussi fines que d\u00e9sir\u00e9es tant du point de vue du d\u00e9veloppeur que du m\u00e9tier.",
         "title": "Un carpaccio, un !",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.348",
@@ -418,7 +469,11 @@
         "summary": "Pr\u00e9sentation d'outils et m\u00e9thodes pour ne pas oublier que la technique est indispensables au succ\u00e8s d'une transition agile",
         "title": "Agilistes : n'oubliez pas la technique !",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests",
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.349",
@@ -439,7 +494,8 @@
         "summary": "Envie de voir l\u2019autre cot\u00e9 du miroir ? Saisissez la chance de contribuer \u00e0 des projets open-source. ",
         "title": "Hackergarten",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.349",
@@ -460,7 +516,8 @@
         "summary": "Pr\u00e9sentation du robot humanoide par deux d\u00e9veloppeuses Nao. Qu'est-ce qu'il y a dedans? Qu'est-ce qu'on peut faire avec?",
         "title": "Entrer dans le monde du robot Nao",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.349",
@@ -480,7 +537,8 @@
         "summary": "Mise en place pratique d'un d\u00e9ploiement continu automatis\u00e9, sans interruption de service et en prenant en compte les \u00e9volutions de BDD.",
         "title": "Mettre en place un d\u00e9ploiement continu",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.349",
@@ -500,7 +558,8 @@
         "summary": "Un atelier pratique en Java sur l'int\u00e9gration d'Elasticsearch dans vos projets",
         "title": "Hands On Elasticsearch",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.349",
@@ -520,7 +579,8 @@
         "summary": "Pr\u00e9sentation \u00e0 base de d\u00e9monstrations de la base de donn\u00e9es NoSQL orient\u00e9e document Couchbase 2.0. (Clustering, JSON, MapReduce)",
         "title": "Introduction au NoSQL avec Couchbase",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.35",
@@ -541,7 +601,8 @@
         "summary": "Venez vivre un programme d'entra\u00eenement pour \u00e9crire du code dont vous serez plus fier. Cette exp\u00e9rience risque de changer vos habitudes !",
         "title": "D\u00e9veloppeurs Anonymes",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.35",
@@ -561,7 +622,10 @@
         "summary": "Venez d\u00e9couvrir les nouvelles fonctionnalit\u00e9s de Groovy 2.1 !\r\nInvoke dynamic, type checking personnalis\u00e9, m\u00e9ta-annotations... ",
         "title": "Les nouveaut\u00e9s de Groovy 2.1",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/les-nouveautes-groovy2"
+        "video": "https://www.infoq.com/fr/presentations/les-nouveautes-groovy2",
+        "themes": [
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.35",
@@ -581,7 +645,10 @@
         "summary": "C'est l'histoire de d\u00e9veloppeurs qui viennent de passer deux ans dans le flux... (c'est aussi celle d'un Scrum qui a mal tourn\u00e9)",
         "title": "Deux ans dans le flux",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.35",
@@ -601,7 +668,11 @@
         "summary": "iOS programming has a hard time becoming popular to the masses. RubyMotion will give a little more fun to this task.",
         "title": "RubyMotion: iOS programming in Ruby",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "mobile",
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.35",
@@ -623,7 +694,8 @@
         "summary": "Venez d\u00e9couvrir le langage JVM du moment : Scala, lors d'un workshop couvrant les bases.",
         "title": "C\u2019est le moment de se lancer dans s\u2019cas l\u00e0 !",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.354",
@@ -643,7 +715,11 @@
         "summary": "Venez d\u00e9couvrir la recette magique pour construire des \"custom Views\" et rendre les interfaces de vos application Android uniques !",
         "title": "Crafting Custom Android Views",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "mobile",
+            "ux-design"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.354",
@@ -663,7 +739,8 @@
         "summary": "Comment se mettre \u00e0 Groovy ? En mettant les mains dans le cambouis et en codant une petite application tous ensemble !",
         "title": "Groovy, les mains dans le cambouis",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.354",
@@ -684,7 +761,10 @@
         "summary": "Scrum by the book ne r\u00e9pond plus \u00e0 vos attentes, sortez des sentiers battus et passez \u00e0 la vitesse sup\u00e9rieure avec Scrum Metal Jacket !",
         "title": "Scrum Metal Jacket",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.355",
@@ -704,7 +784,8 @@
         "summary": "Des ing\u00e9nieurs sont missionn\u00e9s pour apprendre \u00e0 une ethnie inconnue comment construire un pont ... 2 cultures pour 1 seul objectif !",
         "title": "Voyage en pays inconnu",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.355",
@@ -724,7 +805,10 @@
         "summary": "Session, mi REX mi CONF, pr\u00e9sentant des pratiques agiles utilisables en dehors de l'IT et les difficult\u00e9s sp\u00e9cifiques rencontr\u00e9s hors IT",
         "title": "Agile Unlimited",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/agile-unlimited"
+        "video": "https://www.infoq.com/fr/presentations/agile-unlimited",
+        "themes": [
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.355",
@@ -745,7 +829,10 @@
         "summary": "Et si nous commencions par l'API ? Et ensuite ? Quelles bonnes pratiques pour concevoir une API sur de bonnes bases ?",
         "title": "Concevoir son d\u00e9veloppement par l'API",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.355",
@@ -765,7 +852,11 @@
         "summary": "Pr\u00e9sentation d'un hackerspace d\u00e9di\u00e9 \u00e0 la construction num\u00e9rique et ouvert \u00e0 de plus larges perspectives....",
         "title": "Usinette",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "hardware-makers",
+            "open-source"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.355",
@@ -785,7 +876,10 @@
         "summary": "Comment une discussion entre amis est devenue le 1er site de recommandation culturelle.",
         "title": "SensCritique.com : une histoire de start-up",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.356",
@@ -805,7 +899,10 @@
         "summary": "Ne venez pas si vous ne voulez pas sortir de situations o\u00f9 plus rien ne semble fonctionner !",
         "title": "Les paradoxes du leadership",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "management"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.356",
@@ -825,7 +922,11 @@
         "summary": "A la crois\u00e9e des chemins entre d\u00e9veloppement client, serveur et mobile, Dart a le potentiel pour r\u00e9volutionner notre fa\u00e7on de d\u00e9velopper.",
         "title": "Dart : one language to rule them all",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "langages",
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.356",
@@ -845,7 +946,11 @@
         "summary": "Live coding sur les tests d'acceptances d'une application html5/javascript #bdd #javascript",
         "title": "Comment tester une application html5 ?",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests",
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.356",
@@ -865,7 +970,8 @@
         "summary": "D\u00e9couvrez les lambdas de Java 8 avec un atelier TDD, o\u00f9 vous aurez \u00e0 utiliser les lambdas et les Streams de Java 8.",
         "title": "D\u00e9couvrez les lambdas avec Java 8",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.356",
@@ -885,7 +991,8 @@
         "summary": "ou comment, moi, d\u00e9veloppeur-testeur , j'ai appris \u00e0 ne plus m'en faire avec les donn\u00e9es",
         "title": "Testons Agile! TDD vs DBO",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.357",
@@ -905,7 +1012,8 @@
         "summary": "Pardon ? Vous voulez que je d\u00e9coupe ma demande en morceaux ? Impossible, c'est tout mon produit ou rien du tout !",
         "title": "Que je d\u00e9coupe ma demande en petits morceaux ?",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.357",
@@ -925,7 +1033,8 @@
         "summary": "l'auto-organisation est l'un des fondements de l'agilit\u00e9. Mais comment susciter, favoriser ce style d'organisation ?",
         "title": "Pour un management vraiment agile",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.357",
@@ -946,7 +1055,8 @@
         "summary": "nous vous proposons de passer en revue du code pour mettre en lumi\u00e8re ce qui peut appara\u00eetre comme de bonnes pratiques d'architecture SOLID",
         "title": "The Clean Architecture",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.357",
@@ -967,7 +1077,10 @@
         "summary": "Oserez-vous postuler pour un projet IT innovant sans conna\u00eetre le Cloud de Google ?",
         "title": "Quick Start avec le Cloud Google",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "cloud-devops"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.357",
@@ -987,7 +1100,8 @@
         "summary": "A partir de saynettes inspir\u00e9es du th\u00e9\u00e2tre d\u2019improvisation, d\u00e9couvrez les valeurs d\u2019une collaboration efficace.",
         "title": "Collaborer, et si on improvisait ?",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.358",
@@ -1007,7 +1121,10 @@
         "summary": "Backbone, Ember ou Angular ? Les d\u00e9bats sont enflamm\u00e9s ! Venez comparer forces et faiblesses de chacun pour vous faire votre propre opinion.",
         "title": "Backbone, Ember et Angular sont dans un bateau",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/backbone-ember-angular"
+        "video": "https://www.infoq.com/fr/presentations/backbone-ember-angular",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.358",
@@ -1027,7 +1144,11 @@
         "summary": "D\u00e9couvrez 7 id\u00e9es/pratiques des \u00e9quipes d'Atlassian qui vont vous aider \u00e0 faire de votre \u00e9quipe une \u00e9quipe exceptionnelle.",
         "title": "D'une bonne \u00e9quipe \u00e0 une \u00e9quipe exceptionnelle",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "collaboration",
+            "management"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.358",
@@ -1047,7 +1168,10 @@
         "summary": "A talk on why, when and how to use node.js in new and existing systems",
         "title": "node.js: why, when and how [CANCELLED]",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.358",
@@ -1067,7 +1191,8 @@
         "summary": "Learn what retrospectives are all about by participating in this interactive workshop filled with exercises, tips and tricks and interaction",
         "title": "Retrospectives in action",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.358",
@@ -1087,7 +1212,12 @@
         "summary": "Travis started as a fun little experiment, and quickly grew into the goto place for open source continuous integration testing",
         "title": "Travis - Saving the world from failing tests",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests",
+            "open-source",
+            "cloud-devops"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.358",
@@ -1108,7 +1238,8 @@
         "summary": "Usinette est un hackerspace d\u00e9di\u00e9 \u00e0 la fabrication num\u00e9rique, et a d\u00e9j\u00e0 fabriqu\u00e9 de nombreux RepRap (imprimante 3D autor\u00e9plicante).",
         "title": "FabLab versus Usinette ",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.359",
@@ -1128,7 +1259,11 @@
         "summary": "Christian Martinez nous invite \u00e0 d\u00e9couvrir son univers de cr\u00e9ateur de jeux dans le monde de la formation professionnelle.",
         "title": "Jouez, apprenez",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "apprentissage",
+            "jeux-creative-coding"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.359",
@@ -1148,7 +1283,11 @@
         "summary": "Zach will tell us some things we should know about open source",
         "title": "Open Source Misfeasance",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "open-source",
+            "carriere"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.359",
@@ -1169,6 +1308,9 @@
         "summary": "Comment et pourquoi expliquer la programmation aux enfants?",
         "title": "Apprendre la programmation",
         "topic": null,
-        "video": "http://www.youtube.com/watch?v=vr-MzXbHQUw"
+        "video": "http://www.youtube.com/watch?v=vr-MzXbHQUw",
+        "themes": [
+            "apprentissage"
+        ]
     }
 ]

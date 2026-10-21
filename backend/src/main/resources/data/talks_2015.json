@@ -18,7 +18,11 @@
         "summary": "Envie de mettre en place une architecture de plugins ? mais vous h\u00e9sitez: quelle solution utiliser, dans quel langage ? La solution: Docker!",
         "title": "Microplugins avec Docker",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/microplugins-docker"
+        "video": "https://www.infoq.com/fr/presentations/microplugins-docker",
+        "themes": [
+            "cloud-devops",
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.578",
@@ -38,7 +42,11 @@
         "summary": "B\u00e2tir une appli mobile multi plateforme avec son backend Java EE, le tout s\u00e9curis\u00e9,  en 24 minutes, tel est le d\u00e9fi de cette session",
         "title": "24 Minutes chrono pour b\u00e2tir une appli mobile",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "mobile",
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.578",
@@ -58,7 +66,10 @@
         "summary": "D\u00e9couverte du language et de son \u00e9cosyst\u00e8me au travers de d\u00e9mos.",
         "title": "Ceylon d\u2019ici \u00e0 l\u2019infini : tour d\u2019horizon et futur",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/mix-it-stephane-epardaud-ceylon"
+        "video": "https://www.infoq.com/fr/presentations/mix-it-stephane-epardaud-ceylon",
+        "themes": [
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.579",
@@ -78,7 +89,11 @@
         "summary": "Ce talk \"dont vous \u00eates le h\u00e9ros\" permettra de montrer en live l'int\u00e9r\u00eat de fabriquer un DSL graphique avec le projet OpenSource Sirius.",
         "title": "Sirius : un sch\u00e9ma vaut mieux qu'un long discours",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "open-source",
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.579",
@@ -99,7 +114,10 @@
         "summary": "Quelle place occupe nos mod\u00e8les mentaux lorsque nous d\u00e9veloppons? Si Michel-Ange avait \u00e9t\u00e9 d\u00e9veloppeur\u2026",
         "title": "Si le TDD est mort, alors pratiquons une autopsie",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.579",
@@ -119,7 +137,10 @@
         "summary": "Venez d\u00e9couvrir en live coding le plugin indispensable pour booster votre application Backbone.js, j'ai nomm\u00e9 Marionette.js !",
         "title": "Apprenez les ficelles de Marionette",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.579",
@@ -140,7 +161,8 @@
         "summary": "Vous souhaitez d\u00e9couvrir RxJava par une approche pratique et concr\u00e8te? Cet atelier est fait pour vous :)",
         "title": "RxJava, les mains dans le Code",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.579",
@@ -160,7 +182,11 @@
         "summary": "Int\u00e9gration web : Bonnes pratiques et outils \u00e0 conna\u00eetre pour ne plus sacrifier la qualit\u00e9 du code sur l'autel de la productivit\u00e9.",
         "title": "Int\u00e9gration web : qualit\u00e9 & productivit\u00e9 FTW",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "web-frontend",
+            "qualite-tests"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.579",
@@ -180,7 +206,11 @@
         "summary": "Venez d\u00e9couvrir la vie de d\u00e9veloppeur sur un gros projet opensource de l'int\u00e9rieur.",
         "title": "Look Ma, I'm a core developper",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/look-ma-im-core-developper"
+        "video": "https://www.infoq.com/fr/presentations/look-ma-im-core-developper",
+        "themes": [
+            "open-source",
+            "collaboration"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.58",
@@ -200,7 +230,8 @@
         "summary": "Learn how to evolve your tools to embody continuous improvement.",
         "title": "Entangling artefacts",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.58",
@@ -220,7 +251,8 @@
         "summary": "L'urgence, le retard, la (non) performance, la (non) qualit\u00e9, pas/peu d'am\u00e9lioration... D\u00e9couvrez votre principal probl\u00e8me et sa solution !",
         "title": "Jeu des pr\u00e9noms revisit\u00e9",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.58",
@@ -243,7 +275,8 @@
         "summary": "Et si la complexit\u00e9 d'un logiciel refl\u00e9tait la complexit\u00e9 fonctionnelle et non technique ?",
         "title": "Agilit\u00e9 par le code gr\u00e2ce \u00e0 CQRS et EventSourcing",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.58",
@@ -264,7 +297,8 @@
         "summary": "Comment d\u00e9velopper un produit innovant et construire un mod\u00e8le \u00e9conomique viable de fa\u00e7on empirique ?",
         "title": "Lean Takeoff : plongez dans un monde incertain !",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.58",
@@ -284,7 +318,11 @@
         "summary": "Reproducible setups for test & deployment are hard. Harder on a cluster. This talk presents lessons learned making a Spark distribution.",
         "title": "Ramping up your DevOps-fu for big data developers",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/ramping-up-devops-fu-big-data-developers"
+        "video": "https://www.infoq.com/fr/presentations/ramping-up-devops-fu-big-data-developers",
+        "themes": [
+            "cloud-devops",
+            "data"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.58",
@@ -304,7 +342,8 @@
         "summary": "Venez d\u00e9couvrir en quoi la pens\u00e9e visuelle aide \u00e0 la compr\u00e9hension entre les individus et \u00e0 cr\u00e9er des cadres interactifs fun et s\u00e9rieux",
         "title": "Initiation \u00e0 la facilitation graphique",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.58",
@@ -324,7 +363,10 @@
         "summary": "Entrez dans un flux de retours d'exp\u00e9rience de d\u00e9ploiement de Kanban dans une grande vari\u00e9t\u00e9 d'environnements. ",
         "title": "Kanban pour tous",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.581",
@@ -344,7 +386,11 @@
         "summary": "Cleanly design your schemas. Learn to use your RDBMS to its full power.",
         "title": "Tips and tricks for clean relational db schemas",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/tips-tricks-clean-relational-db-schemas"
+        "video": "https://www.infoq.com/fr/presentations/tips-tricks-clean-relational-db-schemas",
+        "themes": [
+            "data",
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.581",
@@ -364,7 +410,8 @@
         "summary": "This talk will focus on practical, real-world ways to bridge the communication divide between technical and non-technical team members.",
         "title": "Communicating Across the Skills Gap",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.581",
@@ -384,7 +431,8 @@
         "summary": "Nous sommes tous diff\u00e9rents,  et c\u2019est pour cette raison que nous formons une bonne \u00e9quipe\r\n",
         "title": "Tous diff\u00e9rents et nous formons une superbe \u00e9quipe",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.581",
@@ -405,7 +453,8 @@
         "summary": "Initiation au machine learning avec le framework Spark. D\u00e9veloppement d'algorithmes simples et utilisation de la librairie MLlib.",
         "title": "Initiation au Machine Learning avec Spark\t",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.581",
@@ -425,7 +474,11 @@
         "summary": "ES6 (ES2015) est une (r)\u00e9volution du JS : plus fiable, plus productif, voyons ensemble comment l'utiliser d\u00e8s \u00e0 pr\u00e9sent",
         "title": "Changez d'avis sur JavaScript",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/changez-avis-sur-javascript"
+        "video": "https://www.infoq.com/fr/presentations/changez-avis-sur-javascript",
+        "themes": [
+            "langages",
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.581",
@@ -445,7 +498,8 @@
         "summary": "Livrer des projets de qualit\u00e9, dans les d\u00e9lais et les co\u00fbts impartis, c\u2019est possible ! D\u00e9couvrez comment l'Obeya vous permettra de r\u00e9ussir",
         "title": "R\u00e9ussissez vos projets IT gr\u00e2ce \u00e0 l'Obeya",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.581",
@@ -465,7 +519,8 @@
         "summary": "jstat, jstack et jmap sont des outils du JDK trop peu connu et pourtant utiles pour la prod ! Venez les d\u00e9couvrir et les pratiquer.",
         "title": "Prise en main des outils JDK:jstat, jstack et jmap",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.581",
@@ -486,7 +541,8 @@
         "summary": "Mindstorm4Scrum ou comment d\u00e9couvrir une m\u00e9thodologie agile (SCRUM) de mani\u00e8re cr\u00e9ative avec des Legos programmables",
         "title": "Apprentissage agile ludique : Mindstorm4Scrum",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.582",
@@ -506,7 +562,11 @@
         "summary": "Contexte & Dependency Injection (CDI) ne fait pas que de l'injection de d\u00e9pendance. Vous avez des doutes ?",
         "title": "Venez d\u00e9couvrir CDI, la perle de Java EE !",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "langages",
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.582",
@@ -526,7 +586,10 @@
         "summary": "Les Services Workers arrivent dans nos navigateurs Web et nous promettent du lourd : hors-ligne, notifis push, synchro en background...",
         "title": "Du Web hors-ligne avec les Services Workers",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/web-hors-ligne-services-workers"
+        "video": "https://www.infoq.com/fr/presentations/web-hors-ligne-services-workers",
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.582",
@@ -546,7 +609,11 @@
         "summary": "Faire \u00e9merger le meilleur d'une \u00e9quipe lors des r\u00e9trospective en utilisant des outils collaboratifs et l'intelligence collective",
         "title": "R\u00e9trospective et intelligence collective",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite",
+            "collaboration"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.582",
@@ -566,7 +633,11 @@
         "summary": "NoSQL claim was to use the right database model for the right domain. Bad news, in most cases a single database model is not enough!",
         "title": "OrientDB - the 2nd generation of (MultiModel)NoSQL",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/orientdb-2nd-generation-multimodel-nosql"
+        "video": "https://www.infoq.com/fr/presentations/orientdb-2nd-generation-multimodel-nosql",
+        "themes": [
+            "data",
+            "architecture"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.582",
@@ -587,7 +658,8 @@
         "summary": "L\u2019am\u00e9lioration continue en \u00e9quipe avec le Solution Focus in Team : utilisez votre \u00e9quipe comme un coach !",
         "title": "Solution Focus in Team + d\u00e9jeuner",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.582",
@@ -607,7 +679,8 @@
         "summary": "D\u00e9couverte de ce que va nous apporter les nouveaut\u00e9s EcmaScript mais surtout comment l'utiliser et le mettre en oeuvre au quotidien.",
         "title": "Le JavaScript du futur au bout des doigts",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.582",
@@ -627,7 +700,11 @@
         "summary": "Using AsciiDoc, you can write once and publish everywhere. Discover even more ways you can benefit from using AsciiDoc for documentation!",
         "title": "Write in AsciiDoc, Publish Everywhere!",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/write-asciidoc-publish-everywhere"
+        "video": "https://www.infoq.com/fr/presentations/write-asciidoc-publish-everywhere",
+        "themes": [
+            "collaboration",
+            "open-source"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.583",
@@ -647,7 +724,11 @@
         "summary": "D\u2019un langage dynamique, orient\u00e9 objet \u00e0 un langage statique fortement typ\u00e9 avec de la programmation fonctionnelle n\u2019y a-t-il qu\u2019un pas?",
         "title": "Switch to Swift",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "langages",
+            "mobile"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.583",
@@ -667,7 +748,11 @@
         "summary": "Dependency management tools make life easier than ever for developers but let's pause to consider the unintended consequences of open source",
         "title": "The Social Coding Contract",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/social-coding-contract"
+        "video": "https://www.infoq.com/fr/presentations/social-coding-contract",
+        "themes": [
+            "open-source",
+            "ethique"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.583",
@@ -687,7 +772,11 @@
         "summary": "A l\u2019image de super h\u00e9ros nous avons des supers pouvoirs et comme tous super h\u00e9ros \u00e0 grands pouvoirs, grandes responsabilit\u00e9s",
         "title": "Disruptive hackers, le pouvoir de changer le monde",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/disruptive-hackers-pouvoir-changer-monde"
+        "video": "https://www.infoq.com/fr/presentations/disruptive-hackers-pouvoir-changer-monde",
+        "themes": [
+            "ethique",
+            "carriere"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.583",
@@ -707,7 +796,11 @@
         "summary": "The second most popular chess server is free, open source, and maintained by volunteers only. \r\nHow do we do it?",
         "title": "lichess.org: open source success story",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/lichessorg-open-source-success-story"
+        "video": "https://www.infoq.com/fr/presentations/lichessorg-open-source-success-story",
+        "themes": [
+            "open-source",
+            "jeux-creative-coding"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.583",
@@ -728,7 +821,10 @@
         "summary": "Comment \u00e9viter aux coll\u00e8gues le \"Y'a qu'\u00e0 installer [longue liste d'outils], mais \u00e7a marche pas sauf avec [autre longue liste d'outils]\" ?",
         "title": "Fabriquez votre devbox portable avec Docker",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/fabriquez-devbox-portable-docker"
+        "video": "https://www.infoq.com/fr/presentations/fabriquez-devbox-portable-docker",
+        "themes": [
+            "cloud-devops"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.583",
@@ -748,7 +844,11 @@
         "summary": "Comment impl\u00e9menter un Design d'inspiration Material dans une application Android.",
         "title": "Material Design implementation in Android",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/material-design-android"
+        "video": "https://www.infoq.com/fr/presentations/material-design-android",
+        "themes": [
+            "mobile",
+            "ux-design"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.583",
@@ -768,7 +868,11 @@
         "summary": "J'ai d\u00e9velopp\u00e9 une application pour Firefox OS et j'ai aim\u00e9 \u00e7a. \u00c7a vous tente aussi ? Venez d\u00e9couvrir mon exp\u00e9rience.",
         "title": "Le panda roux est mon nouvel ami.",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/panda-roux-nouvel-ami"
+        "video": "https://www.infoq.com/fr/presentations/panda-roux-nouvel-ami",
+        "themes": [
+            "mobile",
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.583",
@@ -788,7 +892,10 @@
         "summary": "Comment r\u00e9pondre aux probl\u00e9matiques de performance et de SEO des applications single-page gr\u00e2ce \u00e0 l\u2019isomorphisme avec React et Flux ?",
         "title": "Application isomorphique avec ReactJS et Flux",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "web-frontend"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.584",
@@ -810,7 +917,8 @@
         "summary": "Venez d\u00e9couvrir React, la librairie web du moment dans un atelier 100% JS, le vrai JS, celui qui marche, celui qui fait plaisir \u00e0 coder !",
         "title": "ReactJS pour les n\u00e9ophytes",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.584",
@@ -830,7 +938,11 @@
         "summary": "Vert.x est une plateforme pour cr\u00e9er des applications concurrentes, performantes et polyglottes sur la JVM.",
         "title": "Applications Concurrentes Polyglottes avec Vert.x",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/applications-concurrentes-polyglottes-vertx"
+        "video": "https://www.infoq.com/fr/presentations/applications-concurrentes-polyglottes-vertx",
+        "themes": [
+            "architecture",
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.584",
@@ -850,7 +962,11 @@
         "summary": "How can you build today a microservice oriented architecture with Spring Boot, Spring Cloud and Netflix OSS?",
         "title": "Microservices with Spring Cloud and Netflix OSS",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "architecture",
+            "cloud-devops"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.584",
@@ -870,7 +986,11 @@
         "summary": "Retour d'exp\u00e9rience sur Kafka, un broker de messages tr\u00e8s performant, scalable, distribu\u00e9 et persistant",
         "title": "Broker de messages Kafka, retour d'exp\u00e9rience",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/broker-messages-kafka"
+        "video": "https://www.infoq.com/fr/presentations/broker-messages-kafka",
+        "themes": [
+            "architecture",
+            "data"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.584",
@@ -891,7 +1011,8 @@
         "summary": "Atelier de programmation qui simule la vie d'un projet en 2h. Changement de direction, de deadline. Votre code va t'il y survivre ?",
         "title": "Atelier Fruit Shop, la vie d'un projet en 2h",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.584",
@@ -912,7 +1033,12 @@
         "summary": "Lean start up et Design Thinking : qu'est ce que \u00e7a change pour ma phase de cadrage agile ?",
         "title": "(Re)Cadrage en \u00e9quipe agile",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite",
+            "ux-design",
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.584",
@@ -932,7 +1058,11 @@
         "summary": "Et si on examinait les maux des organisations non (encore:) agiles via les prismes historique, culturelle, anthropologique, psychologique?..",
         "title": "Le pourquoi du pourquoi de l\u2019agilit\u00e9",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "agilite",
+            "management"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.585",
@@ -953,7 +1083,8 @@
         "summary": "Outil de base du Design Thinking et du Lean Start-Up, l'interview utilisateur ne s'improvise pas. Venez apprendre comment les pr\u00e9parer !",
         "title": "Comment pr\u00e9parer les interview utilisateurs ?",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.585",
@@ -973,7 +1104,8 @@
         "summary": "Conquer the complexity of creating documentation. Learn how to plan, structure, and write documentation for all types of users.",
         "title": "Driving Open Source Adoption with Documentation",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.585",
@@ -994,7 +1126,11 @@
         "summary": "Vous voulez lancer un projet IoT ? A travers des exemples, d\u00e9couvrez comment connecter vos capteurs, r\u00e9colter la donn\u00e9e et l\u2019analyser !",
         "title": "Introduction \u00e0 l\u2019IoT: du capteur \u00e0 la donn\u00e9e.",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "hardware-makers",
+            "data"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.585",
@@ -1014,7 +1150,11 @@
         "summary": "D\u00e9livrer tr\u00e8s r\u00e9guli\u00e8rement peut rapidement devenir un cauchemar : quand le r\u00eave devient r\u00e9alit\u00e9",
         "title": "Quand Dev et QA ne font plus qu'un",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests",
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.585",
@@ -1034,7 +1174,8 @@
         "summary": "Introduction workshop to Appcelerator Titanium where we will code a true native cross-platform app using JavaScript and the Alloy framework",
         "title": "Build native mobile apps using JS and Appcelerator",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.585",
@@ -1054,7 +1195,12 @@
         "summary": "Nous avons utilis\u00e9 des Coding Dojo et le Mob programming pour partager le savoir faire dans l'\u00e9quipe et augmenter la productivit\u00e9.",
         "title": "Coding Dojo et Mob Programming dans les tranch\u00e9es",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests",
+            "apprentissage",
+            "collaboration"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.585",
@@ -1074,7 +1220,11 @@
         "summary": "Vous utilisez Gradle et bidouillez vos scripts pour l'adapter a vos besoins. Passez au plugin pour prendre le contr\u00f4le du build !",
         "title": "Gradle Plugin, prenez le controle du build!",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "cloud-devops",
+            "langages"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.585",
@@ -1094,7 +1244,12 @@
         "summary": "Innover, ce n'est pas avoir de nouvelles id\u00e9es, c'est surtout abandonner des anciennes",
         "title": "Startups d'\u00e9tat",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/mix-it-pierre-pezziardi-startups-d-etat"
+        "video": "https://www.infoq.com/fr/presentations/mix-it-pierre-pezziardi-startups-d-etat",
+        "themes": [
+            "democratie-citoyennete",
+            "produit-entrepreneuriat",
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1114,7 +1269,11 @@
         "summary": "Ways of Working in the Networked Society - how we made the transition to Lean, Agile & Flow \"stick\".",
         "title": "The Mental Leaps at Ericsson 3G",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/mental-leaps-ericsson-3g"
+        "video": "https://www.infoq.com/fr/presentations/mental-leaps-ericsson-3g",
+        "themes": [
+            "agilite",
+            "management"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1134,7 +1293,12 @@
         "summary": "Quelles solutions Cloud \u00e0 l'heure o\u00f9 Snowden et la nouvelle loi Renseignement d\u00e9montrent comment notre vie priv\u00e9e est menac\u00e9e ?",
         "title": "Cloud et vie priv\u00e9e",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/cloud-vie-privee"
+        "video": "https://www.infoq.com/fr/presentations/cloud-vie-privee",
+        "themes": [
+            "vie-privee-surveillance",
+            "cloud-devops",
+            "geopolitique"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1154,7 +1318,12 @@
         "summary": "How do you explain BDD to non-technical stakeholders: business sponsors, clients or senior management?",
         "title": "Selling BDD to the Business",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "qualite-tests",
+            "collaboration",
+            "agilite"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1174,7 +1343,8 @@
         "summary": "Utiliser Spring Boot, c'est un peu faire du pair programming avec l'\u00e9quipe Spring. Venez d\u00e9couvrir Spring Boot par la pratique!",
         "title": "De z\u00e9ro \u00e0 h\u00e9ros avec Spring Boot",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": []
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1194,7 +1364,12 @@
         "summary": "As a new programmer, reading code is a powerful exercise that will help you grow as a developer, and this talk outlines how.",
         "title": "Reading Code Good",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/mix-it-saron-yitbarek-reading-code-good"
+        "video": "https://www.infoq.com/fr/presentations/mix-it-saron-yitbarek-reading-code-good",
+        "themes": [
+            "apprentissage",
+            "carriere",
+            "qualite-tests"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1214,7 +1389,11 @@
         "summary": "There are distinct ages in the growth of an idea or a product, and innovation can and should occur in all of these, and involve everyone.",
         "title": "The Three Ages of Innovation",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/three-ages-innovation"
+        "video": "https://www.infoq.com/fr/presentations/three-ages-innovation",
+        "themes": [
+            "produit-entrepreneuriat",
+            "management"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1234,7 +1413,10 @@
         "summary": "Learn how to kill a project or startup most effectively with the help of technology.",
         "title": "10 ways to kill your startup",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/10-ways-kill-startup"
+        "video": "https://www.infoq.com/fr/presentations/10-ways-kill-startup",
+        "themes": [
+            "produit-entrepreneuriat"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1254,7 +1436,11 @@
         "summary": "Learn the latest of hottest in the world of Chrome DevTools, and how we can improve iterating and design for all.",
         "title": "Designing with Chrome DevTools",
         "topic": null,
-        "video": null
+        "video": null,
+        "themes": [
+            "web-frontend",
+            "ux-design"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1274,7 +1460,10 @@
         "summary": "O\u00f9 en est-on de l'exploration habit\u00e9e de Mars ? Cette destination fait r\u00eaver mais l'\u00e9ch\u00e9ance est sans cesse repouss\u00e9e... ",
         "title": "Aller sur Mars... ou presque",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/aller-sur-mars-ou-presque"
+        "video": "https://www.infoq.com/fr/presentations/aller-sur-mars-ou-presque",
+        "themes": [
+            "sciences-espace"
+        ]
     },
     {
         "addedAt": "2017-02-28T15:38:33.586",
@@ -1294,6 +1483,11 @@
         "summary": "L'informatique est partout. Ceux qui la ma\u00eetrisent ont donc de fait un grand pouvoir. Comment utiliser ce pouvoir, notre pouvoir ?",
         "title": "\"Come to the dark side\"",
         "topic": null,
-        "video": "https://www.infoq.com/fr/presentations/come-to-dark-side"
+        "video": "https://www.infoq.com/fr/presentations/come-to-dark-side",
+        "themes": [
+            "ethique",
+            "vie-privee-surveillance",
+            "securite"
+        ]
     }
 ]
