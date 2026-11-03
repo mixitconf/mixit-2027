@@ -49,22 +49,6 @@
     --sponsor-max-width: 20em;
 }
 
-body[data-theme="car"] {
-    --color-primary: #FF4081;
-    --color-secondary: #1976d2;
-    --color-third: #f49bb9;
-    --theme-color: #ffffff;
-    --theme-dark: #FF4081;
-    --theme-light: #f49bb9;
-    --theme-footer: var(--color-primary);
-    --text-color: var(--color-dark);
-    --text-footer-color: var(--color-dark);
-    --accent-color: #FF4081;
-    --title-color: var(--text-color);
-    --mode-img-src: url('/images/svg/mode/mxt-light.svg');
-    --theme-sponsor: var(--theme-color);
-}
-
 body[data-theme="dark"] {
     --color-primary: #1976d2;
     --color-secondary: #FF4081;
@@ -78,7 +62,7 @@ body[data-theme="dark"] {
     --text-footer-color: #E0E0E0;
     --accent-color: var(--color-dark);
     --title-color: var(--text-color);
-    --mode-img-src: url('/images/svg/mode/mxt-fire.svg');
+    --mode-img-src: url('/images/svg/mode/mxt-light.svg');
     --accessibility-child-care: url('/images/svg/accessibility/mxt-icon--child-care.svg');
     --accessibility-hearing-impaired: url('/images/svg/accessibility/mxt-icon--hearing-impaired.svg');
     --accessibility-motor-disability: url('/images/svg/accessibility/mxt-icon--motor-disability.svg');
@@ -105,22 +89,6 @@ body[data-theme="dark"] {
     --timeline-cfpe-open: url('/images/svg/timeline/nov10_light.svg');
     --timeline-cfpe-close: url('/images/svg/timeline/jan4_light.svg');
     --timeline-ticketing-open: url('/images/svg/timeline/fev9_light.svg');
-}
-
-body[data-theme="old"] {
-    --color-primary: #1976d2;
-    --color-secondary: #FF4081;
-    --color-third: #aecbd6;
-    --theme-color: #EEEEEE;
-    --theme-sponsor: var(--theme-color);
-    --theme-dark: var(--color-fourth);
-    --theme-light: #BBDEFB;
-    --theme-footer: var(--color-primary);
-    --text-footer-color: var(--color-light);
-    --text-color: #212121;
-    --accent-color: var(--color-primary);
-    --title-color: var(--color-primary);
-    --mode-img-src: url('/images/svg/mode/mxt-car.svg');
 }
 
 body {
@@ -1448,4 +1416,191 @@ footer {
   background: var(--color-primary, #ff7f19);
   color: #fff;
   font-weight: 700;
+}
+
+/* ------------------------------------------------------------------ */
+/* Home 2027                                                           */
+/* ------------------------------------------------------------------ */
+
+.mxt-layout__section-dark .mxt-home__hero,
+.mxt-layout__section-dark h2,
+.mxt-layout__section-dark .mxt-home__timeline,
+.mxt-layout__section-dark .mxt-home__closing {
+    color: var(--color-light);
+}
+
+.mxt-home__hero {
+    text-align: center;
+    padding: 1.75rem 0 1rem;
+}
+
+.mxt-home__hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.mxt-home__button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 999px;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-light);
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.mxt-home__button:hover,
+.mxt-home__button:focus-visible {
+    color: var(--color-light);
+    background-color: color-mix(in srgb, var(--color-secondary) 20%, transparent);
+    transform: translateY(-1px);
+}
+
+.mxt-home__button--primary,
+.mxt-home__button--primary:hover,
+.mxt-home__button--primary:focus-visible {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+}
+
+.mxt-home__manifesto {
+    max-width: 62rem;
+    padding-bottom: 1.5rem;
+}
+
+.mxt-home__manifesto .lead {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.mxt-home__quote {
+    border-left: 4px solid var(--color-secondary);
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.mxt-home__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mxt-home__card {
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    border-radius: 12px;
+    border-top: 4px solid var(--color-secondary);
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.mxt-home__card h3 {
+    padding-top: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.mxt-home__card-index {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.mxt-home__card--subject {
+    background-color: var(--theme-light);
+    border-top-color: var(--color-third);
+}
+
+.mxt-home__card--subject .mxt-img__topic-home {
+    width: 64px;
+    height: 64px;
+}
+
+.mxt-home__timeline {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.mxt-home__timeline-step {
+    position: relative;
+    padding-top: 2rem;
+}
+
+/* Horizontal line between the dots */
+.mxt-home__timeline-step::after {
+    content: "";
+    position: absolute;
+    top: 0.55rem;
+    left: 1.25rem;
+    right: -1rem;
+    height: 2px;
+    background-color: color-mix(in srgb, var(--color-light) 35%, transparent);
+}
+
+.mxt-home__timeline-step:last-child::after {
+    display: none;
+}
+
+.mxt-home__timeline-step::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-secondary);
+    background-color: var(--theme-dark);
+    z-index: 1;
+}
+
+.mxt-home__timeline-step:first-child::before {
+    background-color: var(--color-secondary);
+}
+
+.mxt-home__timeline-date {
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.mxt-home__timeline-label {
+    color: var(--color-light);
+    margin-top: 0.25rem;
+}
+
+.mxt-home__closing {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 1rem 0 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .mxt-home__timeline {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mxt-home__timeline-step {
+        padding: 0 0 0 2.25rem;
+    }
+
+    .mxt-home__timeline-step::after {
+        top: 1.4rem;
+        left: 0.55rem;
+        right: auto;
+        bottom: -1.5rem;
+        width: 2px;
+        height: auto;
+    }
 }
