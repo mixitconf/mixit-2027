@@ -1,6 +1,7 @@
 package org.mixit.conference.ui.component
 
 import kotlinx.html.DIV
+import kotlinx.html.FlowContent
 import kotlinx.html.div
 import kotlinx.html.h2
 import org.mixit.conference.model.shared.Context
@@ -17,6 +18,14 @@ enum class SectionStyle(private val effectStyle: String) {
     fun classes(effect: SectionEffect) = effectStyle.replace("%%", effect.name.lowercase()).trim()
 }
 
+/** Diagonal bevel that opens ([SectionEffect.START]) or closes ([SectionEffect.END]) a coloured band. */
+fun FlowContent.bevel(style: SectionStyle, effect: SectionEffect) {
+    if (style == SectionStyle.TRANSPARENT || effect == SectionEffect.NONE || effect == SectionEffect.BOTH) return
+    div(classes = style.classes(effect)) {
+        attributes["aria-hidden"] = "true"
+    }
+}
+
 fun DIV.sectionComponent(
     context: Context?,
     i18nKey: String? = null,
@@ -25,10 +34,12 @@ fun DIV.sectionComponent(
     block: DIV.() -> Unit
 ) {
     if (effect == SectionEffect.START || effect == SectionEffect.BOTH) {
-        div(classes ="mt-4 " + style.classes(SectionEffect.START)) {}
+        div(classes = "mt-4 " + style.classes(SectionEffect.START)) {
+            attributes["aria-hidden"] = "true"
+        }
     }
-    div(classes ="mxt-layout__section-${style.name.lowercase()}") {
-        div(classes ="container-xxl") {
+    div(classes = "mxt-layout__section-${style.name.lowercase()}") {
+        div(classes = "container-xxl") {
             if (i18nKey != null) {
                 h2 {
                     attributes["id"] = i18nKey
@@ -39,6 +50,6 @@ fun DIV.sectionComponent(
         }
     }
     if (effect == SectionEffect.END || effect == SectionEffect.BOTH) {
-        div(classes =style.classes(SectionEffect.END)) {}
+        bevel(style, SectionEffect.END)
     }
 }

@@ -1,69 +1,70 @@
 package org.mixit.conference.ui.page
 
-import kotlinx.html.*
 import org.mixit.conference.model.event.Event
 import org.mixit.conference.model.people.Sponsor
 import org.mixit.conference.model.shared.Context
-import org.mixit.conference.ui.component.SectionEffect
-import org.mixit.conference.ui.component.SectionStyle
-import org.mixit.conference.ui.component.sectionComponent
-import org.mixit.conference.ui.component.sponsorGroupComponent
+import org.mixit.conference.ui.CONTACT_EMAIL
+import org.mixit.conference.ui.component.Rubrique
+import org.mixit.conference.ui.component.autoGrid
+import org.mixit.conference.ui.component.banner
+import org.mixit.conference.ui.component.callout
+import org.mixit.conference.ui.component.figureImage
+import org.mixit.conference.ui.component.infoCard
+import org.mixit.conference.ui.component.pageContent
+import org.mixit.conference.ui.component.pageHeaderComponent
+import org.mixit.conference.ui.component.pageSection
+import org.mixit.conference.ui.component.sponsorsSection
 import org.mixit.conference.ui.renderTemplate
 
-fun renderAccessibilityPage(
-    context: Context,
-    event: Event,
-    sponsors: List<Sponsor>
-) =
+/** On-site measures, in display order (i18n prefix and icon name). */
+private val MEASURES = listOf("parents", "captioning", "elevator", "seat")
+
+fun renderAccessibilityPage(context: Context, event: Event, sponsors: List<Sponsor>) =
     renderTemplate(context, event) {
-        val pageTitle = context.i18n("accessibility.title")
-        sectionComponent(context) {
-            h1 {
-                img(classes = "mxt-img__header-accessibility") {
-                    alt = pageTitle
-                }
-                +pageTitle
-            }
-            p(classes = "lead") {
-                +context.i18n("accessibility.intro")
-            }
-            p { +context.i18n("accessibility.free.ticket") }
+        pageHeaderComponent(
+            context,
+            rubrique = Rubrique.ACCESSIBILITY,
+            title = context.i18n("accessibility.title"),
+            intro = context.i18n("accessibility.v2.intro"),
+        )
+        pageContent {
+            banner(
+                title = context.i18n("accessibility.banner.title"),
+                text = context.i18n("accessibility.banner.text"),
+                ctaLabel = context.i18n("page.contact.email"),
+                ctaHref = "mailto:$CONTACT_EMAIL",
+            )
 
-            accessibilityElement(context, "mxt-img__accessibility-child-care", "accessibility.baby")
-            accessibilityElement(context, "mxt-img__accessibility-hearing-impaired", "accessibility.mute")
-            accessibilityElement(context, "mxt-img__accessibility-motor-disability", "accessibility.chair")
-            accessibilityElement(context, "mxt-img__accessibility-pregnant", "accessibility.pregnant")
-        }
-
-        sectionComponent(context, effect = SectionEffect.BOTH, style = SectionStyle.LIGHT) {
-            div(classes = "row") {
-                div(classes = "col-6") {
-                    img(classes = "img-fluid") {
-                        src = "/images/jpg/mxt-accessibility1.jpg"
-                        alt = context.i18n("accessibility.title")
-                    }
-                }
-                div(classes = "col-6") {
-                    img(classes = "img-fluid") {
-                        src = "/images/jpg/mxt-accessibility2.jpg"
-                        alt = context.i18n("accessibility.title")
+            pageSection(context.i18n("accessibility.onsite.title")) {
+                autoGrid("240px") {
+                    MEASURES.forEach {
+                        infoCard(
+                            icon = "/images/svg/access-v2/mxt-access-$it.svg",
+                            title = context.i18n("accessibility.$it.title"),
+                            html = context.i18n("accessibility.$it.text"),
+                        )
                     }
                 }
             }
 
-        }
+            autoGrid("300px") {
+                (1..2).forEach {
+                    figureImage(
+                        src = "/images/jpg/mxt-accessibility$it.jpg",
+                        alt = context.i18n("accessibility.photo$it.alt"),
+                        caption = context.i18n("accessibility.photo$it.caption"),
+                    )
+                }
+            }
 
-        sectionComponent(context) {
-            sponsorGroupComponent(context, event, sponsors)
+            callout(
+                icon = Rubrique.VENUE.src,
+                title = context.i18n("accessibility.venue.title"),
+                description = context.i18n("accessibility.venue.text"),
+                ctaLabel = context.i18n("accessibility.venue.cta"),
+                ctaHref = "${context.forceUriBAsePath()}/venue",
+                soft = true,
+            )
         }
+        sponsorsSection(context, event, sponsors)
     }
-
-fun DIV.accessibilityElement(context: Context, imgClass: String, key: String) {
-    div(classes = "d-flex align-items-center mb-3") {
-        img(classes = "me-3 $imgClass") {
-            alt = context.i18n(key)
-        }
-        span { +context.i18n(key) }
-
-    }
-}

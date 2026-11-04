@@ -48,24 +48,10 @@ fun registerForm(
 
 fun renderRegisteringPage(context: Context, formValue: FormDescriptor<RegisteredUser>) =
     renderTemplate(context) {
-        sectionComponent(context) {
-            h1 { +context.i18n("login.title") }
-        }
-        sectionComponent(context) {
-            p {
-                +context.i18n("login.register")
-            }
+        authLayout(context, context.i18n("login.v2.register.title"), context.i18n("login.v2.register")) {
             formValue.form(this, action = "/signup") {
-                button(classes = "btn mxt-btn-primary", type = ButtonType.submit) { +context.i18n("login.action.token") }
-            }
-        }
-        div(classes="mb-3") {
-            sectionComponent(context) {
-                p {
-                    +context.i18n("login.cookies")
-                }
-                small {
-                    +context.i18n("login.data")
+                button(classes = "mxt-button mxt-button--primary mxt-auth__submit", type = ButtonType.submit) {
+                    +context.i18n("login.v2.register.action")
                 }
             }
         }

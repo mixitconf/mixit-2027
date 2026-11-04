@@ -30,24 +30,10 @@ fun loginStartForm(
 
 fun renderLoginStartPage(context: Context, formValue: FormDescriptor<Email>) =
     renderTemplate(context) {
-        sectionComponent(context) {
-            h1 { +context.i18n("login.title") }
-        }
-        sectionComponent(context) {
-            p {
-                +context.i18n("login.email")
-            }
+        authLayout(context, context.i18n("login.title"), context.i18n("login.v2.email")) {
             formValue.form(this, action = "/login") {
-                button(classes = "btn mxt-btn-primary", type = ButtonType.submit) { +context.i18n("login.action.token") }
-            }
-        }
-        div(classes="mb-3") {
-            sectionComponent(context) {
-                p {
-                    +context.i18n("login.cookies")
-                }
-                small {
-                    +context.i18n("login.data")
+                button(classes = "mxt-button mxt-button--primary mxt-auth__submit", type = ButtonType.submit) {
+                    +context.i18n("login.action.token")
                 }
             }
         }

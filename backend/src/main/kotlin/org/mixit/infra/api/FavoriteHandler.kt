@@ -22,11 +22,13 @@ class FavoriteHandler(
     fun toggleFavorite(
         email: Email,
         talkId: String,
+        redirect: String? = null,
     ): ServerResponse {
         try {
             repository.toggleFavorite(email, talkId)
             val talk = talkRepository.findById(talkId) ?: return ServerResponse.notFound().build()
-            return seeOther(URI("/${talk.event}/${talk.slug}")).build()
+            val target = redirect?.takeIf { it.isSafeLocalPath() } ?: "/${talk.event}/${talk.slug}"
+            return seeOther(URI(target)).build()
         } catch (e: Exception) {
             if (e is HttpClientErrorException.Unauthorized) {
                 val email: Email? = webContext.ctx().email
@@ -39,3 +41,7 @@ class FavoriteHandler(
         }
     }
 }
+
+/** Only a path of this site ("/2026?topic=TECH"), never another host ("//evil.com", "https://..."). */
+private fun String.isSafeLocalPath(): Boolean =
+    startsWith("/") && !startsWith("//") && !contains('\\') && none { it.isWhitespace() }

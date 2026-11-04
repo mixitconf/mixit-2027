@@ -1,231 +1,174 @@
 package org.mixit.conference.ui.page
 
-import kotlinx.html.DIV
 import kotlinx.html.a
-import kotlinx.html.b
 import kotlinx.html.br
 import kotlinx.html.div
-import kotlinx.html.h3
-import kotlinx.html.img
-import kotlinx.html.li
+import kotlinx.html.h1
+import kotlinx.html.h2
+import kotlinx.html.p
 import kotlinx.html.span
-import kotlinx.html.ul
-import kotlinx.html.unsafe
 import org.mixit.conference.model.event.Event
 import org.mixit.conference.model.people.Sponsor
 import org.mixit.conference.model.shared.Context
 import org.mixit.conference.model.talk.Talk
-import org.mixit.conference.shared.model.Topic
+import org.mixit.conference.ui.HEADER_CTA
+import org.mixit.conference.ui.PODCASTS
+import org.mixit.conference.ui.component.Definition
 import org.mixit.conference.ui.component.SectionEffect
 import org.mixit.conference.ui.component.SectionStyle
-import org.mixit.conference.ui.component.podcastComponent
-import org.mixit.conference.ui.component.podcastLinks
+import org.mixit.conference.ui.component.TimelineStep
+import org.mixit.conference.ui.component.blockTitle
+import org.mixit.conference.ui.component.callout
+import org.mixit.conference.ui.component.cfpButton
+import org.mixit.conference.ui.component.cardGrid
+import org.mixit.conference.ui.component.definitionList
+import org.mixit.conference.ui.component.featureCard
+import org.mixit.conference.ui.component.mediaItem
+import org.mixit.conference.ui.component.navHref
 import org.mixit.conference.ui.component.sectionComponent
 import org.mixit.conference.ui.component.sponsorGroupComponent
-import org.mixit.conference.ui.component.videoComponent
+import org.mixit.conference.ui.component.timeline
+import org.mixit.conference.ui.component.topicIconSrc
 import org.mixit.conference.ui.renderTemplate
 
-fun renderHomePage(context: Context, lastPodCastId: String, event: Event, sponsors: List<Sponsor>, keynotes: List<Talk>) =
-    renderTemplate(context, event) {
-        sectionComponent(context, effect = SectionEffect.END, style = SectionStyle.DARK) {
-            div(classes = "mxt-text__wrapper") {
-                +context.i18n("home.wrapper.start")
-                span(classes = "mxt-text__third") {
-                    +" ${context.i18n("home.wrapper.ethic")} "
-                }
-                br
-                +context.i18n("home.wrapper.crepe")
-                span(classes = "mxt-text__secondary") {
-                    +" ${context.i18n("home.wrapper.love")} "
-                }
+/** Formats announced for the next edition (i18n suffix under home.section.formats). */
+private val EDITION_FORMATS = listOf("cfp", "participative", "keynotes", "roundtables")
+
+/** Subjects announced for the next edition, with the topic icon used to illustrate them. */
+private val EDITION_SUBJECTS = listOf(
+    "tech" to "tech",
+    "team" to "team",
+    "ethics" to "ethics",
+    "social" to "hacktivism",
+)
+
+/** Key dates of the next edition (i18n suffix under home.timeline). */
+private val EDITION_TIMELINE = listOf("cfp.open", "cfp.close", "program", "tickets.open", "tickets.close")
+
+/** Our values (i18n suffix under home.section.values), illustrated by the values-v2 icons. */
+private val VALUES = listOf("accessibility", "safe", "eco")
+
+private val PODCAST_HOME = PODCASTS.first { it.key == "ausha" }.url
+
+fun renderHomePage(
+    context: Context,
+    @Suppress("UNUSED_PARAMETER") lastPodCastId: String,
+    event: Event,
+    sponsors: List<Sponsor>,
+    @Suppress("UNUSED_PARAMETER") keynotes: List<Talk>,
+) = renderTemplate(context, event) {
+    // Hero: when and where, the historical tagline and the main call to action
+    sectionComponent(context, effect = SectionEffect.END, style = SectionStyle.DARK) {
+        div(classes = "mxt-home__hero") {
+            p(classes = "mxt-home__when") {
+                span(classes = "mxt-home__when-date") { +context.i18n("home.hero.date") }
+                span(classes = "mxt-home__when-place") { +context.i18n("home.hero.place") }
+            }
+            h1(classes = "mxt-home__title") {
+                // Properties values lose their leading spaces: the separators are added here.
+                +"${context.i18n("home.wrapper.start").trim()} "
+                span(classes = "mxt-text__third") { +context.i18n("home.wrapper.ethic").trim() }
+                +" ${context.i18n("home.wrapper.crepe").trim()} "
+                span(classes = "mxt-text__secondary") { +context.i18n("home.wrapper.love").trim() }
+            }
+            cfpButton(
+                context,
+                "mxt-button mxt-button--primary mxt-home__cta",
+                openLabel = context.i18n(HEADER_CTA.title),
+                closedLabel = context.i18n("home.hero.cfp"),
+            )
+        }
+    }
+
+    // Why this edition is different
+    sectionComponent(context) {
+        div(classes = "mxt-home__manifesto") {
+            div(classes = "mxt-home__manifesto-heading") {
+                p(classes = "mxt-eyebrow mxt-eyebrow--muted") { +context.i18n("nav.edition.current") }
+                h2(classes = "mxt-home__manifesto-title") { +context.i18n("home.section.news.title") }
+                p(classes = "mxt-home__manifesto-lead") { +context.i18n("home.section.news.intro") }
+            }
+            div(classes = "mxt-home__manifesto-body") {
+                p { +context.i18n("home.section.news.focus") }
+                p { +context.i18n("home.section.news.change") }
             }
         }
+    }
 
-        // This section is displayed in september
-//        sectionComponent(context, i18nKey = "home.section.news.title") {
-//            div("lead") { +context.i18n("home.section.news.when") }
-//            div("mt-2") {
-//                b { +context.i18n("home.section.news.birthday") }
-//                +context.i18n("home.section.news.birthday2")
-//                div(classes = "mxt-no-link mt-2") {
-//                    unsafe {
-//                        raw(
-//                            context.markdown(context.i18n("home.section.news.newsletter"))
-//                        )
-//                    }
-//                }
-//            }
-//            timeline(context)
-//        }
-        // Next edition announcement
-        sectionComponent(context, i18nKey = "home.section.nextedition.title") {
-            div("lead") { +context.i18n("home.section.nextedition.when") }
-            div("mt-2") { +context.i18n("home.section.nextedition.subtitle") }
-            div(classes = "mxt-no-link mt-2") {
-                unsafe {
-                    raw(
-                        context.markdown(context.i18n("home.section.nextedition.podcast"))
+    // Formats and subjects, side by side on large screens
+    sectionComponent(context, effect = SectionEffect.BOTH, style = SectionStyle.LIGHT) {
+        div(classes = "mxt-home__split") {
+            div {
+                blockTitle(context.i18n("home.section.formats.title"))
+                definitionList(EDITION_FORMATS.map {
+                    Definition(
+                        context.i18n("home.section.formats.$it.title"),
+                        context.i18n("home.section.formats.$it.desc"),
                     )
-                }
+                })
             }
-        }
-        sectionComponent(context) {
-//            h3(classes = "mt-4") {
-//                +context.i18n("home.section.sales.annoucement.title")
-//            }
-//            div() { +context.i18n("home.section.sales.annoucement.subtitle") }
-//            div("mt-2") {
-//                +context.i18n("home.section.sales.annoucement.description")
-//                ul {
-//                    li(classes = "lead") { +context.i18n("home.section.sales.annoucement.first") }
-//                    li(classes = "lead") { +context.i18n("home.section.sales.annoucement.second") }
-//                }
-//                b { +context.i18n("home.section.sales.annoucement.warning") }
-//                div("mt-2 mxt-no-link") {
-//                    a(classes = "mxt-no-link") {
-//                        href = "/billetweb"
-//                        target="_blank"
-//                        +context.i18n("home.section.sales.annoucement.link")
-//                    }
-//                }
-//
-//            }
-
-            div(classes = "mxt-no-link mt-5") {
-                unsafe {
-                    raw(
-                        context.markdown(context.i18n("home.section.news.newsletter"))
-                    )
-                }
-            }
-        }
-
-        sectionComponent(
-            context,
-            i18nKey = "home.section.onair.title",
-            effect = SectionEffect.BOTH,
-            style = SectionStyle.LIGHT
-        ) {
-            div("lead") { +context.i18n("home.section.onair.subtitle") }
-            div("mt-2") { +context.i18n("home.section.onair.description") }
-            podcastComponent(lastPodCastId)
-            div { +context.i18n("home.section.onair.joinus") }
-            podcastLinks()
-        }
-        sectionComponent(context, i18nKey = "home.section.values.title") {
-            renderValueBlock(context, "accessibility")
-            renderValueBlock(context, "safe")
-            renderValueBlock(context, "eco")
-        }
-        sectionComponent(
-            context,
-            i18nKey = "home.section.editorialline.title",
-            effect = SectionEffect.BOTH,
-            style = SectionStyle.LIGHT
-        ) {
-            div("lead") { +context.i18n("home.section.editorialline.description") }
-            div("mt-2") { +context.i18n("home.section.editorialline.format") }
-            div("mt-2") { +context.i18n("home.section.editorialline.themes") }
-            div("mt-2 row justify-content-center") {
-                listOf(Topic.ALIENS, Topic.TECH, Topic.ETHICS, Topic.TEAM).forEach { topic ->
-                    div("col-12 col-md-6 col-lg-3 pt-2") {
-                        renderHomeTopic(context, topic)
-                    }
-                }
-
-                div(classes = "mxt-talk-cards mt-4") {
-                    keynotes.forEach {
-                        videoComponent(context, it)
+            div {
+                blockTitle(context.i18n("home.section.subjects.title"))
+                cardGrid {
+                    EDITION_SUBJECTS.forEach { (subject, icon) ->
+                        featureCard(
+                            icon = topicIconSrc(icon),
+                            title = context.i18n("home.section.subjects.$subject.title"),
+                            description = context.i18n("home.section.subjects.$subject.desc"),
+                        )
                     }
                 }
             }
         }
+    }
+
+    // Key dates
+    sectionComponent(
+        context,
+        i18nKey = "home.timeline.title",
+        effect = SectionEffect.BOTH,
+        style = SectionStyle.DARK,
+    ) {
+        timeline(EDITION_TIMELINE.map {
+            TimelineStep(context.i18n("home.timeline.$it.date"), context.i18n("home.timeline.$it"))
+        })
+    }
+
+    // Podcast
+    sectionComponent(context) {
+        div(classes = "mxt-home__podcast") {
+            callout(
+                icon = topicIconSrc("onair"),
+                title = context.i18n("home.section.onair.card.title"),
+                description = context.i18n("home.section.onair.card.text"),
+                ctaLabel = context.i18n("home.section.onair.card.cta"),
+                ctaHref = PODCAST_HOME,
+                titleId = "home.section.onair.title",
+                external = true,
+            )
+        }
+    }
+
+    // Values
+    sectionComponent(context) {
+        div(classes = "mxt-home__values") {
+            blockTitle(context.i18n("home.section.values.title"), id = "home.section.values.title")
+            div(classes = "mxt-home__values-list") {
+                VALUES.forEach {
+                    mediaItem(
+                        icon = "/images/svg/value/mxt-value-$it.svg",
+                        title = context.i18n("home.section.values.$it.title"),
+                        description = context.i18n("home.section.values.$it.short"),
+                    )
+                }
+            }
+        }
+    }
+
+    // Sponsors, only once the partners of the edition are known
+    if (sponsors.isNotEmpty()) {
         sectionComponent(context) {
             sponsorGroupComponent(context, event, sponsors)
-        }
-    }
-
-fun DIV.renderHomeTopic(context: Context, topic: Topic) {
-    div("row align-items-center") {
-        div("col-4 col-md-3 col-lg-3 text-center") {
-            img(classes = "mxt-img__topic-home") {
-                src = "/images/svg/topic/mxt-icon--${topic.value.lowercase()}.svg"
-                alt = context.i18n("topics.${topic.value.lowercase()}.title")
-            }
-        }
-        div("col-8 col-md-9 col-lg-9") {
-            h3 { +context.i18n("topics.${topic.value.lowercase()}.title") }
-            div { +context.i18n("topics.${topic.value.lowercase()}.description") }
-        }
-    }
-}
-
-fun DIV.renderValueBlock(context: Context, category: String) {
-    div(classes = "d-flex align-items-center pt-3") {
-        div {
-            img(classes = "mxt-icon__category-$category") {
-                alt = context.i18n("home.section.values.$category.title")
-            }
-        }
-        div {
-            h3 { +context.i18n("home.section.values.$category.title") }
-        }
-    }
-    div {
-        +context.i18n("home.section.values.$category.desc")
-    }
-}
-
-fun DIV.timeline(context: Context) {
-    div(classes = "d-flex justify-content-center gap-4 mt-5") {
-        timelineElement(context, "home.timeline.cfp.open", "mxt-timeline--cfp-open")
-        timelineElement(context, "home.timeline.cfp.close", "mxt-timeline--cfp-close")
-        timelineElement(context, "home.timeline.tickets.sale", "mxt-timeline--ticketing-open")
-    }
-
-    div(classes = "mt-5 mb-5") {
-        div(classes = "d-flex align-items-center mt-3") {
-            div {
-                img(classes = "mxt-img__header-cfp-home") {
-                    alt = "CFP"
-                }
-            }
-            div(classes = "mxt-no-link") {
-                unsafe {
-                    raw(
-                        context.markdown(context.i18n("home.section.news.cfp"))
-                    )
-                }
-            }
-        }
-        div(classes = "d-flex align-items-center") {
-            div {
-                img(classes = "mxt-img__header-sponsor-home") {
-                    alt = "Sponsor"
-                }
-            }
-            div(classes = "mxt-no-link") {
-                unsafe {
-                    raw(
-                        context.markdown(context.i18n("home.section.news.sponsor"))
-                    )
-                }
-            }
-        }
-
-    }
-
-}
-
-fun DIV.timelineElement(context: Context, titleKey: String, className: String) {
-    div(classes = "d-flex flex-column align-items-center") {
-        img(classes = className) {
-            alt = context.i18n(titleKey)
-        }
-        div {
-            b {
-                +context.i18n(titleKey)
-            }
         }
     }
 }

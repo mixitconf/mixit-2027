@@ -1,5 +1,9 @@
 package org.mixit.conference.ui
 
+import kotlinx.datetime.Clock
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import org.mixit.conference.model.link.SocialNetwork
 import org.mixit.conference.model.menu.Menu
 import org.mixit.conference.model.menu.MenuItem
@@ -8,6 +12,13 @@ import org.mixit.conference.model.talk.Podcast
 const val CURRENT_YEAR = 2027
 const val CURRENT_TALK_YEAR = 2026
 const val CURRENT_MEDIA_YEAR = 2026
+
+/** Opening day of the call for papers of [CURRENT_YEAR]: the "Propose a talk" buttons stay inactive before it. */
+val CFP_OPENING_DATE = LocalDate(2026, 11, 30)
+
+/** True from [CFP_OPENING_DATE] on, Paris time. */
+fun isCfpOpen(today: LocalDate = Clock.System.now().toLocalDateTime(TimeZone.of("Europe/Paris")).date): Boolean =
+    today >= CFP_OPENING_DATE
 
 
 val TALKS_YEARS = (2012..CURRENT_TALK_YEAR).sortedDescending().filterNot { it == 2020 }
@@ -37,39 +48,41 @@ val PODCASTS = listOf(
     Podcast("ausha","Ausha", "https://podcast.ausha.co/mixit"),
 )
 
-val MENU = listOf(
+/**
+ * Site navigation, single source for the desktop header, the mobile menu and the footer columns.
+ * An `inline` group is shown as top-level links in the desktop header, the others as dropdowns.
+ */
+val NAVIGATION = listOf(
     Menu(
-        title = "menu.content.title",
+        title = "nav.edition.title",
+        inline = true,
         items = listOf(
-            MenuItem(title = "menu.content.cod", href = "codeofconduct"),
-            // MenuItem(title = "menu.content.billetweb", href = "billetweb"),
-            // MenuItem(title = "menu.content.cfp", href = "cfp"),
-            // MenuItem(title = "menu.content.sponsors", href = "$CURRENT_YEAR/sponsors"),
-            // MenuItem(title = "menu.content.speakers", href = "$CURRENT_TALK_YEAR/speakers"),
-            // MenuItem(title = "menu.content.agenda", href = CURRENT_TALK_YEAR.toString()),
-            // MenuItem(title = "menu.content.media", href = "$CURRENT_MEDIA_YEAR/media"),
-            MenuItem(title = "menu.content.archives", href = "archives"),
+            MenuItem(title = "nav.edition.current", href = ""),
+            MenuItem(title = "nav.edition.archives", href = "archives"),
         )
     ),
     Menu(
-        title = "menu.facilities.title",
+        title = "nav.infos.title",
         items = listOf(
-            MenuItem(title = "menu.facilities.accessibility", href = "accessibility"),
-            MenuItem(title = "menu.facilities.venue", href = "venue"),
-            MenuItem(title = "menu.facilities.mixette", href = "mixette"),
-            MenuItem(title = "menu.facilities.budget", href = "budget"),
-            MenuItem(title = "menu.content.faq", href = "faq")
+            MenuItem(title = "nav.infos.venue", href = "venue"),
+            MenuItem(title = "nav.infos.accessibility", href = "accessibility"),
+            MenuItem(title = "nav.infos.mixette", href = "mixette"),
+            MenuItem(title = "nav.infos.budget", href = "budget"),
+            MenuItem(title = "nav.infos.faq", href = "faq"),
         )
     ),
     Menu(
-        title = "menu.mixit.title",
+        title = "nav.about.title",
         items = listOf(
-            MenuItem(title = "menu.mixit.news", href = "#home.section.news.title"),
-            MenuItem(title = "menu.mixit.podcast", href = "#home.section.onair.title"),
-            MenuItem(title = "menu.mixit.values", href = "#home.section.values.title"),
-            MenuItem(title = "menu.mixit.editorialline", href = "#home.section.editorialline.title"),
-            MenuItem(title = "menu.facilities.us", href = "about"),
+            MenuItem(title = "nav.about.us", href = "about"),
+            MenuItem(title = "nav.about.values", href = "#home.section.values.title"),
+            MenuItem(title = "nav.about.podcast", href = "#home.section.onair.title", inHeader = false),
+            MenuItem(title = "nav.about.coc", href = "codeofconduct"),
         )
     ),
 )
 
+/** Call to action shown in the header and the mobile menu: it follows the edition calendar (CFP, then ticketing). */
+val HEADER_CTA = MenuItem(title = "header.cta.cfp", href = "cfp")
+
+const val CONTACT_EMAIL = "contact@mixitconf.org"

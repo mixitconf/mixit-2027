@@ -33,3 +33,12 @@ fun LocalDate.formatDate(language: Language): String =
 
 fun LocalDateTime.formatTime(): String =
     this.toString().substring(11, 16)
+
+private val frDayNames = listOf("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche")
+private val enDayNames = listOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+
+/** "Jeudi 16 avril" / "Thursday April 16". */
+fun LocalDate.formatDayDate(language: Language): String {
+    val day = (if (language == Language.FRENCH) frDayNames else enDayNames)[dayOfWeek.ordinal]
+    return "${day.replaceFirstChar { it.uppercase() }} ${formatDate(language)}"
+}

@@ -107,21 +107,7 @@ fun renderTemplate(ctx: Context, event: Event? = null, layoutContent: DIV.(Conte
             unsafe {
                 raw("""   
                      function switchTheme() {
-                        const existing = localStorage.getItem('mode') || 'light';
-                        var theme = 'light'; 
-                        switch(existing) {
-                            case 'dark':
-                                theme = 'old'
-                                break;
-                            case 'old':
-                                theme = 'car'
-                                break;
-                            case 'light':
-                                theme = 'dark'
-                                break;
-                            default:
-                                theme = 'light';
-                        }
+                        const theme = localStorage.getItem('mode') === 'dark' ? 'light' : 'dark';
                         document.body.setAttribute('data-theme', theme);
                         localStorage.setItem('mode', theme);
                      }
@@ -155,7 +141,7 @@ fun renderTemplate(ctx: Context, event: Event? = null, layoutContent: DIV.(Conte
             // We try to read the usage mode choosed by the user
             unsafe {
                 raw("""
-             const theme = (localStorage.getItem('mode')) ? localStorage.getItem('mode') : 'light';
+             const theme = localStorage.getItem('mode') === 'dark' ? 'dark' : 'light';
              document.body.setAttribute('data-theme', theme);
              localStorage.setItem('mode', theme);
             """)

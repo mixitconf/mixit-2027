@@ -53,3 +53,9 @@ fun DIV.sponsorThumbnailComponent(event: Event, sponsorName: String, photoUrl: S
         img(classes = "mxt-img__sponsors", alt = sponsorName, src = photoUrl.replace("https://mixitconf.org", ""))
     }
 }
+
+/** Sponsors band at the bottom of a page, rendered only when the edition has sponsors. */
+fun DIV.sponsorsSection(context: Context, event: Event, sponsors: List<Sponsor>) {
+    if (sponsors.isEmpty()) return
+    sectionComponent(context) { sponsorGroupComponent(context, event, sponsors) }
+}

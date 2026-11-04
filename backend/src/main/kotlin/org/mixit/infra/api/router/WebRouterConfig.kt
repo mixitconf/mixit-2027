@@ -175,7 +175,7 @@ class WebRouterConfig {
             }
             POST("/talks/{talkId}/favorite") {
                 val email = webContext.context?.email ?: return@POST ServerResponse.status(403).build()
-                favoriteHandler.toggleFavorite(email, it.pathVariable("talkId"))
+                favoriteHandler.toggleFavorite(email, it.pathVariable("talkId"), it.param("redirect").orElse(null))
             }
             POST("/api/talks/{talkId}/{feedback}/{value}") { req ->
                 val email = webContext.context?.email ?: return@POST ServerResponse.status(403).build()
