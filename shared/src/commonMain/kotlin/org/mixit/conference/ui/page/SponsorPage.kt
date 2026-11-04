@@ -129,7 +129,7 @@ private fun FlowContent.sponsorTile(context: Context, sponsor: Sponsor) {
             span(classes = "mxt-sponsor-logo mxt-sponsor-logo--tile") {
                 sponsor.logoSrc()?.let { img(src = it, alt = "") { attributes["loading"] = "lazy" } }
             }
-            strong(classes = "mxt-sponsor-tile__name") { +sponsor.name }
+            strong(classes = "mxt-sponsor-tile__name") { span(classes = "mxt-sponsor-tile__label") { +sponsor.name } }
         }
         div(classes = "mxt-sponsor-tile__body") {
             val description = sponsor.description[context.language] ?: sponsor.description.values.firstOrNull()

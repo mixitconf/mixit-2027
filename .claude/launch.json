@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mixit",
+      "runtimeExecutable": "./gradlew",
+      "runtimeArgs": [":backend:bootRun"],
+      "env": { "PORT": "8084" },
+      "port": 8084
+    }
+  ]
+}
