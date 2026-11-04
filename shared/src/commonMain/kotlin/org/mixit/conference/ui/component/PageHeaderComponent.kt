@@ -23,7 +23,8 @@ data class Crumb(val label: String, val href: String? = null)
 
 /**
  * Header shared by the inner pages: violet band with the section icon, the title, an intro,
- * an optional breadcrumb and an optional aside (edition selector, buttons...), closed by a bevel.
+ * an optional breadcrumb, an optional meta row (badges...) and an optional aside (edition selector, buttons...),
+ * closed by a bevel.
  */
 fun DIV.pageHeaderComponent(
     ctx: Context,
@@ -31,6 +32,8 @@ fun DIV.pageHeaderComponent(
     title: String,
     intro: String? = null,
     breadcrumb: List<Crumb> = emptyList(),
+    meta: (DIV.() -> Unit)? = null,
+    leading: (DIV.() -> Unit)? = null,
     aside: (DIV.() -> Unit)? = null,
 ) {
     div(classes = "mxt-page-header") {
@@ -49,10 +52,12 @@ fun DIV.pageHeaderComponent(
             }
             div(classes = "mxt-page-header__row") {
                 div(classes = "mxt-page-header__heading") {
-                    if (rubrique != null) img(src = rubrique.src, alt = "", classes = "mxt-page-header__icon")
+                    if (leading != null) leading()
+                    else if (rubrique != null) img(src = rubrique.src, alt = "", classes = "mxt-page-header__icon")
                     div(classes = "mxt-page-header__text") {
                         h1(classes = "mxt-page-header__title") { +title }
                         if (intro != null) p(classes = "mxt-page-header__intro") { +intro }
+                        if (meta != null) div(classes = "mxt-page-header__meta") { meta() }
                     }
                 }
                 if (aside != null) div(classes = "mxt-page-header__aside") { aside() }

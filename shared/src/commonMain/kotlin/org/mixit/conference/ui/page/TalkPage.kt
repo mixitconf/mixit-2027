@@ -4,6 +4,34 @@ import kotlinx.datetime.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import kotlinx.html.ButtonType
+import kotlinx.html.FlowContent
+import kotlinx.html.article
+import kotlinx.html.aside
+import kotlinx.html.br
+import kotlinx.html.dd
+import kotlinx.html.dl
+import kotlinx.html.dt
+import kotlinx.html.label
+import kotlinx.html.strong
+import org.mixit.conference.model.people.Speaker
+import org.mixit.conference.ui.CURRENT_TALK_YEAR
+import org.mixit.conference.ui.component.Crumb
+import org.mixit.conference.ui.component.durationLabel
+import org.mixit.conference.ui.component.favoriteToggle
+import org.mixit.conference.ui.component.formatBadge
+import org.mixit.conference.ui.component.fullName
+import org.mixit.conference.ui.component.initials
+import org.mixit.conference.ui.component.pageContent
+import org.mixit.conference.ui.component.pageHeaderComponent
+import org.mixit.conference.ui.component.pageSection
+import org.mixit.conference.ui.component.roomLabel
+import org.mixit.conference.ui.component.sessionCard
+import org.mixit.conference.ui.component.speakerHref
+import org.mixit.conference.ui.component.sponsorsSection
+import org.mixit.conference.ui.component.talkHref
+import org.mixit.conference.ui.component.topicLabel
+import org.mixit.conference.ui.formatter.formatDayDate
+import org.mixit.conference.ui.formatter.formatTime
 import kotlinx.html.DIV
 import kotlinx.html.FORM
 import kotlinx.html.FormMethod
@@ -61,208 +89,180 @@ fun renderTalk(
     displayFeedback: Boolean,
     talkFeedback: TalkFeedback?,
     userTalkFeedback: UserTalkFeedback?,
+    related: List<Talk> = emptyList(),
 ) =
     renderTemplate(context, event) {
-        sectionComponent(context) {
-            val pageTitle = talk.title
-            h2 {
-                img(classes = "mxt-img__header-talk") {
-                    alt = pageTitle
+        val programme = "${context.uriBasePath}/${talk.event}"
+        pageHeaderComponent(
+            context,
+            rubrique = null,
+            title = talk.title,
+            breadcrumb = listOf(
+                Crumb(context.i18n("talks.title"), "${context.uriBasePath}/${CURRENT_TALK_YEAR}"),
+                Crumb("MiXiT ${talk.event}", programme),
+            ),
+            meta = {
+                formatBadge(context, talk, talk.durationLabel())
+                topicLabel(context, talk)
+                val names = talk.speakers.joinToString(" & ") { it.fullName() }
+                if (names.isNotBlank()) {
+                    span { attributes["aria-hidden"] = "true"; +"·" }
+                    span { +names }
                 }
-                +context.i18n("talk.format.${talk.format.name}")
-            }
-            h1 {
-                unsafe {
-                    raw(context.markdown(talk.title))
-                }
-            }
-            div(classes = "d-flex align-items-center mb-4") {
-                div(classes = "flex-fill") {
-                    div(classes = "d-flex align-items-center mb-4") {
-                        languageComponent(context, talk)
-                        if (talk.videos.isNotEmpty()) {
-                            img(classes = "mxt-img__header-video ms-2") {
-                                attributes["aria-label"] = context.i18n("talks.video.available")
-                                title = context.i18n("talks.video.available")
-                            }
-                        }
-                        roomComponent(context, talk, withCapacity = true, withLink = true, withTime = true)
+            },
+        )
 
+        pageContent {
+            div(classes = "mxt-talk") {
+                article(classes = "mxt-talk__main") {
+                    talk.videos.firstOrNull()?.let { videoComponent(it) }
+                    div(classes = "mxt-talk__abstract") {
+                        h2(classes = "mxt-block-title") { +context.i18n("talk.v2.summary") }
+                        div(classes = "mxt-talk__text") {
+                            unsafe { raw(context.markdown(talk.summary) + context.markdown(talk.description)) }
+                        }
                     }
                 }
-                div {
-                    if (context.email != null) {
-                        form {
-                            method = FormMethod.post
-                            action = "/talks/${talk.id}/favorite"
 
-                            button {
-                                classes = setOf("mxt-btn-primary")
-                                if (isFavorite) {
-                                    attributes["aria-label"] = context.i18n("favorite.selected")
-                                    img(src = "/images/svg/favorites/mxt-favorite-dark.svg") {
-                                        alt = context.i18n("favorite.selected")
-                                    }
-                                    span(classes = "ms-2") {
-                                        +context.i18n("favorite.selected")
-                                    }
-                                } else {
-                                    attributes["aria-label"] = context.i18n("favorite.nonselected")
-                                    img(src = "/images/svg/favorites/mxt-favorite-non-dark.svg") {
-                                        alt = context.i18n("favorite.nonselected")
-                                    }
-                                    span(classes = "ms-2") {
-                                        +context.i18n("favorite.nonselected")
+                aside(classes = "mxt-talk__aside") {
+                    div(classes = "mxt-talk__facts") {
+                        dl(classes = "mxt-talk__facts-list") {
+                            talk.startLocalTime()?.let { start ->
+                                dt { +context.i18n("talk.v2.when") }
+                                dd {
+                                    +start.date.formatDayDate(context.language)
+                                    br
+                                    +start.formatTime()
+                                    talk.endLocalTime()?.let { +" – ${it.formatTime()}" }
+                                }
+                            }
+                            context.roomLabel(talk)?.let { room ->
+                                dt { +context.i18n("talk.v2.room") }
+                                dd { +room }
+                            }
+                            talk.level?.let { level ->
+                                dt { +context.i18n("talk.v2.level") }
+                                dd { +context.i18n("talk.level.${level.name}") }
+                            }
+                            dt { +context.i18n("talk.v2.language") }
+                            dd { +context.i18n("talk.language.${talk.language.name}") }
+                        }
+                        if (talk.themes.isNotEmpty()) {
+                            div(classes = "mxt-talk__themes") {
+                                talk.themes.forEach { theme ->
+                                    a(href = "${context.uriBasePath}/archives/${theme.slug}", classes = "mxt-tag") {
+                                        +context.i18n("themes.${theme.slug}.title")
                                     }
                                 }
                             }
                         }
-                    } else {
-                        a(href = "${context.uriBasePath}/login", classes = "mxt-btn-primary") {
-                            attributes["aria-label"] = context.i18n("favorite.connected")
-                            img(src = "/images/svg/favorites/mxt-favorite-non-dark.svg") {
-                                alt = context.i18n("favorite.nonselected")
-                            }
-                            span(classes = "ms-2") {
-                                +context.i18n("favorite.nonselected")
-                            }
-                        }
+                        favoriteToggle(context, talk, isFavorite, context.talkHref(talk), withLabel = true)
                     }
 
-                }
-            }
-
-            topicComponent(context, talk.topic)
-
-
-            div(classes = "mt-3 mb-3") {
-                unsafe {
-                    raw(context.markdown(talk.summary))
-                }
-                unsafe {
-                    raw(context.markdown(talk.description))
-                }
-            }
-        }
-
-        sectionComponent(context) {
-            p(classes = "mb-4") {
-                +" "
-            }
-            talk.speakers.forEach { speaker ->
-                sectionComponent(context) {
-                    div(classes = "d-flex align-items-center mb-4") {
-                        img(classes = "mxt-speaker__img me-2") {
-                            src = speaker.photoUrl ?: DEFAULT_IMG_URL
-                            attributes["aria-label"] = "${speaker.firstname} ${speaker.lastname}"
-                        }
-                        div {
-                            h4 {
-
-                                +"${speaker.firstname} ${speaker.lastname}"
-                            }
-                            p {
-                                unsafe {
-                                    raw(
-                                        context.markdown(
-                                            speaker.description[Language.FRENCH]
-                                                ?: speaker.description[Language.ENGLISH].orEmpty()
-                                        )
-                                    )
-                                }
-
-                            }
-                        }
+                    talk.speakers.forEach { speaker ->
+                        speakerCard(context, speaker, context.i18n("talk.v2.speaker"))
                     }
                 }
             }
-        }
-        sectionComponent(context) {
-            id = "feedback"
+
             if (displayFeedback) {
-                h2 {
-                    +context.i18n("feedback.title")
-                }
+                feedbackSection(context, event, talk, isATalkSpeakerOrAdmin, talkFeedback, userTalkFeedback)
+            }
 
-                if (Clock.System.now().toLocalDateTime(TimeZone.of("Europe/Paris")).date < event.start) {
-                    p {
-                        +context.i18n("feedback.preconf")
+            if (related.isNotEmpty()) {
+                pageSection(context.i18n("talk.v2.related")) {
+                    div(classes = "mxt-slot__sessions") {
+                        related.forEach { sessionCard(context, it, favorite = false, redirect = context.talkHref(it)) }
                     }
                 }
+            }
+        }
 
-                if (context.isAuthenticated) {
-                    p {
-                        +context.i18n("feedback.description")
-                        i(classes = "ms-2") {
-                            +talk.title
-                        }
-                    }
-                    form(action = "/talks/${talk.id}/feedback", method = FormMethod.post) {
-                        feedbackTable(context, talk, talkFeedback, userTalkFeedback)
-                        div(classes = "mt-3") {
-                            b {
-                                +context.i18n("feedback.comment")
-                            }
-                        }
-                        textArea(classes = "form-control", rows = "2") {
-                            id = "comment"
-                            name = "comment"
-                            +(userTalkFeedback?.comment ?: "")
-                        }
-                        button(classes = "btn mxt-btn-primary mt-3 mb-4") {
-                            +context.i18n("feedback.action")
-                        }
-                    }
+        sponsorsSection(context, event, sponsors)
+    }
 
+/** Speaker of a talk: photo (or initials), name, company, bio and a link to the speaker page. */
+fun FlowContent.speakerCard(context: Context, speaker: Speaker, eyebrow: String) {
+    div(classes = "mxt-speaker-card") {
+        span(classes = "mxt-eyebrow mxt-eyebrow--muted") { +eyebrow }
+        div(classes = "mxt-speaker-card__head") {
+            if (speaker.photoUrl.isNullOrBlank()) {
+                span(classes = "mxt-speaker-card__initials") {
+                    attributes["aria-hidden"] = "true"
+                    +speaker.initials()
+                }
+            } else {
+                img(src = speaker.photoUrl, alt = "", classes = "mxt-speaker-card__photo") { attributes["loading"] = "lazy" }
+            }
+            div(classes = "mxt-speaker-card__name") {
+                a(href = context.speakerHref(speaker)) { +speaker.fullName() }
+                speaker.company?.takeIf { it.isNotBlank() }?.let { span { +it } }
+            }
+        }
+        val bio = speaker.description[context.language] ?: speaker.description.values.firstOrNull()
+        if (!bio.isNullOrBlank()) {
+            div(classes = "mxt-speaker-card__bio") { unsafe { raw(context.markdown(bio)) } }
+        }
+        a(href = context.speakerHref(speaker), classes = "mxt-speaker-card__more") { +context.i18n("talk.v2.speaker.more") }
+    }
+}
+
+private fun FlowContent.feedbackSection(
+    context: Context,
+    event: Event,
+    talk: Talk,
+    isATalkSpeakerOrAdmin: Boolean,
+    talkFeedback: TalkFeedback?,
+    userTalkFeedback: UserTalkFeedback?,
+) {
+    div(classes = "mxt-page__section mxt-talk__feedback") {
+        id = "feedback"
+        div(classes = "mxt-page__section-head") {
+            h2(classes = "mxt-block-title") { +context.i18n("feedback.title") }
+            if (Clock.System.now().toLocalDateTime(TimeZone.of("Europe/Paris")).date < event.start) {
+                p(classes = "mxt-page__section-intro") { +context.i18n("feedback.preconf") }
+            }
+        }
+        if (context.isAuthenticated) {
+            p {
+                +"${context.i18n("feedback.description").trim()} "
+                i { +talk.title }
+            }
+            form(action = "/talks/${talk.id}/feedback", method = FormMethod.post) {
+                feedbackTable(context, talk, talkFeedback, userTalkFeedback)
+                label(classes = "mxt-talk__feedback-label") {
+                    htmlFor = "comment"
+                    +context.i18n("feedback.comment")
+                }
+                textArea(classes = "form-control", rows = "3") {
+                    id = "comment"
+                    name = "comment"
+                    +(userTalkFeedback?.comment ?: "")
+                }
+                button(classes = "mxt-button mxt-button--primary mt-3") {
+                    +context.i18n("feedback.action")
+                }
+            }
+        } else {
+            p { +context.i18n("feedback.anonymous") }
+            a(href = "${context.uriBasePath}/login", classes = "mxt-button mxt-button--line") {
+                +context.i18n("login.action.log")
+            }
+            div { feedbackTable(context, talk, talkFeedback) }
+        }
+
+        if (isATalkSpeakerOrAdmin) {
+            div(classes = "mxt-talk__comments") {
+                if (talkFeedback == null || talkFeedback.comments.isEmpty()) {
+                    strong { +context.i18n("feedback.none.comments") }
                 } else {
-                    p {
-                        +context.i18n("feedback.anonymous")
-                    }
-                    a(classes = "btn mxt-btn-primary mb-5") {
-                        href = "${context.uriBasePath}/login"
-                        +context.i18n("login.action.log")
-                    }
-                    feedbackTable(context, talk, talkFeedback)
-                }
-
-                if (isATalkSpeakerOrAdmin) {
-                    sectionComponent(context) {
-
-                        if (talkFeedback == null || talkFeedback.comments.isEmpty()) {
-                            div {
-                                b {
-                                    +context.i18n("feedback.none.comments")
-                                }
-                            }
-                        } else {
-                            div {
-                                b {
-                                    +context.i18n("feedback.your.comments")
-                                }
-                            }
-                            ul {
-                                talkFeedback.comments.forEach { comment ->
-                                    li {
-                                        +comment
-                                    }
-                                }
-                            }
-
-                        }
-                    }
+                    strong { +context.i18n("feedback.your.comments") }
+                    ul { talkFeedback.comments.forEach { li { +it } } }
                 }
             }
-        }
-        sectionComponent(context) {
-            if (talk.videos.isNotEmpty()) {
-                videoComponent(talk.videos.first())
-            }
-        }
-
-        sectionComponent(context) {
-            sponsorGroupComponent(context, event, sponsors)
         }
     }
+}
 
 fun DIV.feedbackTable(context: Context, talk: Talk, talkFeedback: TalkFeedback?) {
     div(classes = "mxt-feedback__container mb-4") {

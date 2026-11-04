@@ -46,12 +46,11 @@ class TalkHandler(
                 emptyList()
             }
 
+        val yearTalks = talkRepository.findByYear(year).filter { it.format != TalkFormat.ON_AIR }
         val talks =
-            talkRepository
-                .findByYear(year)
+            yearTalks
                 .filter {
                     it.search(filterValues.filter) &&
-                        it.format != TalkFormat.ON_AIR &&
                         it.searchByTopic(filterValues.topic) &&
                         it.searchByFavorite(favorites, filterValues.favorites)
                 }.sortedBy { it.startLocalTime() }
@@ -65,6 +64,7 @@ class TalkHandler(
                 favorites,
                 talks,
                 filter,
+                yearTalks,
             ),
         )
     }
@@ -156,6 +156,12 @@ class TalkHandler(
                 displayFeedback = displayFeedback,
                 talkFeedback = feedback,
                 userFeedback,
+                related =
+                    talkRepository
+                        .findByYear(year)
+                        .filter { it.id != talk.id && it.topic == talk.topic && it.format != TalkFormat.ON_AIR }
+                        .shuffled()
+                        .take(3),
             )
 
         return if (is401) {

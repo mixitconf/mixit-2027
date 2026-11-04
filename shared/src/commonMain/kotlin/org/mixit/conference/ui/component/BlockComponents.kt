@@ -213,13 +213,26 @@ fun FlowContent.statRow(stats: List<Definition>) {
 }
 
 /** Dark banner with a strong message and a primary call to action. */
-fun FlowContent.banner(title: String, text: String, ctaLabel: String, ctaHref: String) {
+fun FlowContent.banner(
+    title: String,
+    text: String,
+    ctaLabel: String,
+    ctaHref: String,
+    secondary: Pair<String, String>? = null,
+    footer: (FlowContent.() -> Unit)? = null,
+) {
     div(classes = "mxt-banner") {
         div(classes = "mxt-banner__body") {
             strong(classes = "mxt-banner__title") { +title }
             span { +text }
         }
-        a(href = ctaHref, classes = "mxt-button mxt-button--primary") { +ctaLabel }
+        div(classes = "mxt-banner__actions") {
+            a(href = ctaHref, classes = "mxt-button mxt-button--primary") { +ctaLabel }
+            if (secondary != null) {
+                a(href = secondary.second, classes = "mxt-button mxt-button--line mxt-banner__secondary") { +secondary.first }
+            }
+        }
+        if (footer != null) div(classes = "mxt-banner__footer") { footer() }
     }
 }
 
@@ -338,5 +351,37 @@ fun FlowContent.logoCard(image: String, title: String, html: String) {
             h3(classes = "mxt-logo-card__title") { +title }
             div(classes = "mxt-logo-card__text") { unsafe { raw(html) } }
         }
+    }
+}
+
+/**
+ * Compact edition picker ("Édition 2026 ▾") that opens a list of links, without JavaScript.
+ * Meant for the dark page header, where a long [editionSwitch] would not fit.
+ */
+fun FlowContent.editionMenu(label: String, years: List<Int>, current: Int, href: (Int) -> String) {
+    details(classes = "mxt-edition-menu") {
+        summary(classes = "mxt-edition-menu__toggle") {
+            span(classes = "mxt-edition-menu__label") { +label }
+            strong { +current.toString() }
+        }
+        nav(classes = "mxt-edition-menu__list") {
+            attributes["aria-label"] = label
+            years.forEach { year ->
+                a(href = href(year), classes = "mxt-edition-menu__link") {
+                    if (year == current) attributes["aria-current"] = "page"
+                    +year.toString()
+                }
+            }
+        }
+    }
+}
+
+/** Rounded filter link, optionally with an icon and a counter. The active one is filled. */
+fun FlowContent.chipLink(label: String, href: String, active: Boolean, icon: String? = null, count: Int? = null) {
+    a(href = href, classes = if (active) "mxt-chip mxt-chip--active" else "mxt-chip") {
+        if (active) attributes["aria-current"] = "true"
+        if (icon != null) img(src = icon, alt = "", classes = "mxt-chip__icon")
+        span { +label }
+        if (count != null) span(classes = "mxt-chip__count") { +count.toString() }
     }
 }

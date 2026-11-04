@@ -9,7 +9,7 @@ import org.mixit.conference.model.talk.Talk
 fun DIV.videoComponent(context: Context, talk: Talk, featured: Boolean = false) =
     talkCardComponent(context, talk, featured)
 
-fun DIV.videoComponent(video: Video) {
+fun FlowContent.videoComponent(video: Video) {
     div("mxt-video__player-container") {
         when (video.type) {
             VideoType.VIMEO -> {
