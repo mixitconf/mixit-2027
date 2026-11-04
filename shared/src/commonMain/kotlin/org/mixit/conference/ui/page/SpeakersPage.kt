@@ -18,6 +18,7 @@ import org.mixit.conference.model.shared.Context
 import org.mixit.conference.ui.CURRENT_YEAR
 import org.mixit.conference.ui.HEADER_CTA
 import org.mixit.conference.ui.TALKS_YEARS
+import org.mixit.conference.ui.isCfpOpen
 import org.mixit.conference.ui.component.Rubrique
 import org.mixit.conference.ui.component.banner
 import org.mixit.conference.ui.component.editionMenu
@@ -55,6 +56,7 @@ fun renderSpeakers(
                 text = context.i18n("speaker.v2.soon.text"),
                 ctaLabel = context.i18n(HEADER_CTA.title),
                 ctaHref = context.navHref(HEADER_CTA),
+                ctaEnabled = isCfpOpen(),
             )
 
             pageSection("${context.i18n("speaker.v2.list.title")} ${event.year}", context.i18n("speaker.selection")) {

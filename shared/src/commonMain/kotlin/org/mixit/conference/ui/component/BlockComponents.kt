@@ -219,6 +219,7 @@ fun FlowContent.banner(
     ctaLabel: String,
     ctaHref: String,
     secondary: Pair<String, String>? = null,
+    ctaEnabled: Boolean = true,
     footer: (FlowContent.() -> Unit)? = null,
 ) {
     div(classes = "mxt-banner") {
@@ -227,7 +228,14 @@ fun FlowContent.banner(
             span { +text }
         }
         div(classes = "mxt-banner__actions") {
-            a(href = ctaHref, classes = "mxt-button mxt-button--primary") { +ctaLabel }
+            if (ctaEnabled) {
+                a(href = ctaHref, classes = "mxt-button mxt-button--primary") { +ctaLabel }
+            } else {
+                span(classes = "mxt-button mxt-button--primary mxt-button--disabled") {
+                    attributes["aria-disabled"] = "true"
+                    +ctaLabel
+                }
+            }
             if (secondary != null) {
                 a(href = secondary.second, classes = "mxt-button mxt-button--line mxt-banner__secondary") { +secondary.first }
             }

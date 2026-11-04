@@ -19,6 +19,7 @@ import org.mixit.conference.ui.component.SectionStyle
 import org.mixit.conference.ui.component.TimelineStep
 import org.mixit.conference.ui.component.blockTitle
 import org.mixit.conference.ui.component.callout
+import org.mixit.conference.ui.component.cfpButton
 import org.mixit.conference.ui.component.cardGrid
 import org.mixit.conference.ui.component.definitionList
 import org.mixit.conference.ui.component.featureCard
@@ -70,9 +71,12 @@ fun renderHomePage(
                 +" ${context.i18n("home.wrapper.crepe").trim()} "
                 span(classes = "mxt-text__secondary") { +context.i18n("home.wrapper.love").trim() }
             }
-            a(href = context.navHref(HEADER_CTA), classes = "mxt-button mxt-button--primary mxt-home__cta") {
-                +context.i18n("home.hero.cfp")
-            }
+            cfpButton(
+                context,
+                "mxt-button mxt-button--primary mxt-home__cta",
+                openLabel = context.i18n(HEADER_CTA.title),
+                closedLabel = context.i18n("home.hero.cfp"),
+            )
         }
     }
 

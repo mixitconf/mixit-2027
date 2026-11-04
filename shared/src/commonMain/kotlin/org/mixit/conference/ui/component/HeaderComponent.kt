@@ -54,7 +54,7 @@ fun DIV.headerComponent(ctx: Context, @Suppress("UNUSED_PARAMETER") event: Event
                 attributes["aria-label"] = ctx.i18n("header.nav")
                 NAVIGATION.forEach { menu ->
                     if (menu.inline) {
-                        menu.items.forEach { item ->
+                        menu.items.filter { it.inHeader }.forEach { item ->
                             a(href = ctx.navHref(item), classes = "mxt-header__link") {
                                 if (ctx.isActive(item)) attributes["aria-current"] = "page"
                                 +ctx.i18n(item.title)
@@ -66,9 +66,7 @@ fun DIV.headerComponent(ctx: Context, @Suppress("UNUSED_PARAMETER") event: Event
                 }
             }
             div(classes = "mxt-header__actions") {
-                a(href = ctx.navHref(HEADER_CTA), classes = "mxt-button mxt-button--outline mxt-header__cta") {
-                    +ctx.i18n(HEADER_CTA.title)
-                }
+                cfpButton(ctx, "mxt-button mxt-button--outline mxt-header__cta", ctx.i18n(HEADER_CTA.title), ctx.i18n(HEADER_CTA.title))
                 languageSwitch(ctx)
                 themeSwitch(ctx, "mxt-header__icon-button")
                 loginLink(ctx, "mxt-header__icon-button", withLabel = false)
@@ -88,7 +86,7 @@ private fun FlowContent.headerDropdown(ctx: Context, menu: Menu) {
             unsafe { raw(ICON_CHEVRON) }
         }
         ul(classes = "dropdown-menu mxt-header__menu") {
-            menu.items.forEach { item ->
+            menu.items.filter { it.inHeader }.forEach { item ->
                 li {
                     a(href = ctx.navHref(item), classes = "dropdown-item mxt-header__menu-item") {
                         if (ctx.isActive(item)) attributes["aria-current"] = "page"
@@ -151,10 +149,8 @@ private fun FlowContent.mobileMenu(ctx: Context) {
             languageSwitch(ctx)
         }
         div(classes = "mxt-mobile-menu__body") {
-            a(href = ctx.navHref(HEADER_CTA), classes = "mxt-button mxt-button--outline mxt-mobile-menu__cta") {
-                +ctx.i18n(HEADER_CTA.title)
-            }
-            navigationGroups(ctx, "mxt-mobile-menu")
+            cfpButton(ctx, "mxt-button mxt-button--outline mxt-mobile-menu__cta", ctx.i18n(HEADER_CTA.title), ctx.i18n("home.hero.cfp"))
+            navigationGroups(ctx, "mxt-mobile-menu", headerOnly = true)
         }
         div(classes = "mxt-mobile-menu__footer") {
             themeSwitch(ctx, "mxt-button mxt-button--ghost", label = ctx.i18n("header.mode"))

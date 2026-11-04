@@ -1,5 +1,9 @@
 package org.mixit.conference.ui
 
+import kotlinx.datetime.Clock
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import org.mixit.conference.model.link.SocialNetwork
 import org.mixit.conference.model.menu.Menu
 import org.mixit.conference.model.menu.MenuItem
@@ -8,6 +12,13 @@ import org.mixit.conference.model.talk.Podcast
 const val CURRENT_YEAR = 2027
 const val CURRENT_TALK_YEAR = 2026
 const val CURRENT_MEDIA_YEAR = 2026
+
+/** Opening day of the call for papers of [CURRENT_YEAR]: the "Propose a talk" buttons stay inactive before it. */
+val CFP_OPENING_DATE = LocalDate(2026, 11, 30)
+
+/** True from [CFP_OPENING_DATE] on, Paris time. */
+fun isCfpOpen(today: LocalDate = Clock.System.now().toLocalDateTime(TimeZone.of("Europe/Paris")).date): Boolean =
+    today >= CFP_OPENING_DATE
 
 
 val TALKS_YEARS = (2012..CURRENT_TALK_YEAR).sortedDescending().filterNot { it == 2020 }
@@ -65,7 +76,7 @@ val NAVIGATION = listOf(
         items = listOf(
             MenuItem(title = "nav.about.us", href = "about"),
             MenuItem(title = "nav.about.values", href = "#home.section.values.title"),
-            MenuItem(title = "nav.about.podcast", href = "#home.section.onair.title"),
+            MenuItem(title = "nav.about.podcast", href = "#home.section.onair.title", inHeader = false),
             MenuItem(title = "nav.about.coc", href = "codeofconduct"),
         )
     ),

@@ -4646,3 +4646,11 @@ body:not([data-theme="dark"]) .mxt-favorite-heart {
         content: none;
     }
 }
+
+/* Inactive button (e.g. "Propose a talk" before the call for papers opens) */
+.mxt-button--disabled,
+.mxt-button--disabled:hover {
+    //opacity: 0.55;
+    cursor: not-allowed;
+    filter: none;
+}
