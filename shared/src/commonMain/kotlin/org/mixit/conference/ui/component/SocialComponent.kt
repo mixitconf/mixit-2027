@@ -1,41 +1,24 @@
 package org.mixit.conference.ui.component
 
-import kotlinx.html.DIV
+import kotlinx.html.FlowContent
 import kotlinx.html.a
 import kotlinx.html.div
 import kotlinx.html.img
-import kotlinx.html.span
 import org.mixit.conference.model.link.SocialNetwork
 import org.mixit.conference.ui.SOCIALS
 
-
-fun DIV.socialLink(social: SocialNetwork) {
-    a(
-        href = social.url,
-        target = "_blank",
-        classes = "mxt-social-link mxt-has-tooltip"
-    ) {
-        attributes["alt"] = social.title
-        img(
-            src = "/images/svg/social/mxt-icon--social-${social.key}.svg",
-            alt = social.title,
-            classes = "mxt-img__social"
-        )
-        span(classes = "mxt-tooltip mxt-tooltip-inverse") { +social.title }
+/** Round social network button (white icon, for dark backgrounds). */
+fun FlowContent.socialLink(social: SocialNetwork) {
+    a(href = social.url, target = "_blank", classes = "mxt-social") {
+        attributes["rel"] = "noopener"
+        attributes["aria-label"] = social.title
+        img(src = "/images/svg/social/mxt-icon--social-${social.key}.svg", alt = "", classes = "mxt-social__icon")
     }
 }
 
-fun DIV.mixitSocialComponent() {
-    a(classes = "navbar-brand", href = "/") {
-        img(
-            classes = "navbar-brand-icon",
-            src = "/images/svg/logo/mxt-icon--logo--light.svg",
-            alt = "MiXiT logo"
-        )
-    }
-    div(classes = "d-flex") {
-        SOCIALS.forEach {
-            socialLink(it)
-        }
+/** All MiXiT social networks, in a row. */
+fun FlowContent.socialLinks() {
+    div(classes = "mxt-socials") {
+        SOCIALS.forEach { socialLink(it) }
     }
 }

@@ -9,6 +9,7 @@ import org.mixit.conference.model.talk.TalkFormat
 import org.mixit.conference.model.talk.Theme
 import org.mixit.conference.shared.model.Topic
 import org.mixit.conference.ui.MEDIA_YEARS
+import org.mixit.conference.ui.component.iconSrc
 import org.mixit.conference.ui.component.sectionComponent
 import org.mixit.conference.ui.component.sponsorGroupComponent
 import org.mixit.conference.ui.component.talkCardComponent
@@ -112,7 +113,7 @@ fun renderArchives(
                     val label = context.i18n("topics.${topic.value}.title")
                     a(href = "${context.uriBasePath}/archives/topic/${topic.value}", classes = "mxt-archives__topic") {
                         img(classes = "mxt-archives__topic-icon") {
-                            src = "/images/svg/topic/mxt-icon--${topic.value}.svg"
+                            src = topic.iconSrc
                             alt = ""
                         }
                         span(classes = "mxt-archives__topic-body") {
@@ -189,7 +190,7 @@ fun renderArchiveTopic(
             archiveBackButton(context)
             div(classes = "mxt-archives__topic-header mt-3") {
                 img(classes = "mxt-archives__topic-icon") {
-                    src = "/images/svg/topic/mxt-icon--${topic.value}.svg"
+                    src = topic.iconSrc
                     alt = ""
                 }
                 div {
