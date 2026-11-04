@@ -199,3 +199,25 @@ fun FlowContent.iconLinks(links: List<Link>) {
         }
     }
 }
+
+/** YouTube thumbnail of a talk video, when the player URL gives the video id. */
+private fun Talk.videoThumbnail(): String? {
+    val url = videos.firstOrNull()?.playerUrl ?: return null
+    val id = Regex("youtube\\.com/embed/([A-Za-z0-9_-]{6,})").find(url)?.groupValues?.get(1) ?: return null
+    return "https://img.youtube.com/vi/$id/hqdefault.jpg"
+}
+
+/** Video of a talk: 16:9 thumbnail with a play mark and its label, then the title. */
+fun FlowContent.videoCard(context: Context, talk: Talk, label: String) {
+    a(href = context.talkHref(talk), classes = "mxt-video-card") {
+        span(classes = "mxt-video-card__thumb") {
+            talk.videoThumbnail()?.let { img(src = it, alt = "", classes = "mxt-video-card__img") { attributes["loading"] = "lazy" } }
+            span(classes = "mxt-video-card__play") {
+                attributes["aria-hidden"] = "true"
+                unsafe { raw("""<svg width="20" height="20" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>""") }
+            }
+            span(classes = "mxt-video-card__label") { +label }
+        }
+        strong(classes = "mxt-video-card__title") { +talk.title }
+    }
+}

@@ -42,7 +42,7 @@ fun renderFaqPage(
             sets.forEach { set ->
                 pageSection(localized(set.title.fr, set.title.en), id = "faq-${set.id}") {
                     set.questions.sortedBy { it.order }.forEach {
-                        accordionItem(localized(it.title.fr, it.title.en), localized(it.answer.fr, it.answer.en))
+                        accordionItem(localized(it.title.fr, it.title.en), context.markdown(localized(it.answer.fr, it.answer.en)))
                     }
                 }
             }
