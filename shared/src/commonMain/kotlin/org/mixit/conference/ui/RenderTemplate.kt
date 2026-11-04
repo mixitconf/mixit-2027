@@ -7,6 +7,12 @@ import org.mixit.conference.model.shared.Context
 import org.mixit.conference.ui.component.footerComponent
 import org.mixit.conference.ui.component.headerComponent
 
+/**
+ * Changes at each server start (so at each deployment): browsers keep the stylesheet in cache,
+ * this query parameter makes them load the new one as soon as the site is updated.
+ */
+private val ASSETS_VERSION: Long = kotlinx.datetime.Clock.System.now().epochSeconds
+
 fun renderTemplate(ctx: Context, event: Event? = null, layoutContent: DIV.(Context) -> Unit = {}) = createHTML().html {
     attributes["lang"] = ctx.language.toLanguageTag()
     head {
@@ -100,7 +106,7 @@ fun renderTemplate(ctx: Context, event: Event? = null, layoutContent: DIV.(Conte
         }
         link {
             rel = "stylesheet"
-            href = "/mixit.css"
+            href = "/mixit.css?v=$ASSETS_VERSION"
         }
         script(type = ScriptType.textJavaScript) {
             // We try to read the usage mode choosed by the user
