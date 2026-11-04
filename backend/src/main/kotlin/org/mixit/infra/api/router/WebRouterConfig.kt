@@ -25,7 +25,9 @@ import org.mixit.infra.api.mapper.toTalkCriteria
 import org.mixit.infra.config.WebContext
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
+import org.springframework.web.servlet.function.EntityResponse
 import org.springframework.web.servlet.function.ServerResponse
 import org.springframework.web.servlet.function.router
 
@@ -45,6 +47,18 @@ class WebRouterConfig {
         pollHandler: PollHandler,
         webContext: WebContext,
     ) = router {
+        // A handler that finds nothing answers an empty 404: show our error page instead of the browser's one
+        filter { request, next ->
+            val response = next(request)
+            val wantsHtml = request.headers().accept().any { it.isCompatibleWith(MediaType.TEXT_HTML) }
+            if (wantsHtml && response.statusCode() == HttpStatus.NOT_FOUND && response !is EntityResponse<*>) {
+                status(HttpStatus.NOT_FOUND)
+                    .contentType(MediaType.TEXT_HTML)
+                    .body(renderError(context = webContext.context ?: Context.default(), status = "404"))
+            } else {
+                response
+            }
+        }
         accept(MediaType.TEXT_HTML).nest {
             arrayOf("/", "/fr", "/en").forEach { path ->
                 GET(path) {
@@ -68,7 +82,8 @@ class WebRouterConfig {
                 if (status == "401") {
                     authenticationApi.logout()
                 }
-                ok()
+                // Keep the real status (404, 500...) so that browsers and crawlers see the error
+                (status?.toIntOrNull()?.let { code -> status(code) } ?: ok())
                     .contentType(MediaType.TEXT_HTML)
                     .body(
                         renderError(

@@ -28,7 +28,7 @@ fun renderError(context: Context, status: String?) =
         val needsLogin = state == 401
 
         div(classes = "mxt-error") {
-            img(src = "/images/png/error.png", alt = context.i18n("error.v2.image"), classes = "mxt-error__image")
+            img(src = "/images/svg/mxt-error-robot.svg", alt = context.i18n("error.v2.image"), classes = "mxt-error__image")
             div(classes = "mxt-error__body") {
                 span(classes = "mxt-eyebrow mxt-eyebrow--muted") { +"${context.i18n("error.v2.label")} $state" }
                 h1(classes = "mxt-error__title") { +context.i18n("error.$state.title") }

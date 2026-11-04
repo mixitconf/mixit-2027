@@ -70,7 +70,9 @@ class ArchiveHandler(
             renderArchiveYear(
                 context = webContext.context ?: Context.default(),
                 event = event,
-                sponsors = peopleRepository.findSponsorByYear(CURRENT_YEAR),
+                // The sponsors of the edition being browsed, not those of the current one
+                sponsors = peopleRepository.findSponsorByYear(year),
+                sponsorEvent = eventRepository.findByYear(year),
                 year = year,
                 talks = talks,
             ),

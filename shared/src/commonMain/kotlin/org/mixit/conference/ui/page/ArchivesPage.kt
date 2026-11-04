@@ -25,6 +25,7 @@ import org.mixit.conference.ui.component.iconSrc
 import org.mixit.conference.ui.component.pageContent
 import org.mixit.conference.ui.component.pageHeaderComponent
 import org.mixit.conference.ui.component.pageSection
+import org.mixit.conference.ui.component.sponsorsSection
 import org.mixit.conference.ui.component.videoCard
 import org.mixit.conference.ui.renderTemplate
 
@@ -155,9 +156,10 @@ fun renderArchiveTopic(
 fun renderArchiveYear(
     context: Context,
     event: Event,
-    @Suppress("UNUSED_PARAMETER") sponsors: List<Sponsor>,
+    sponsors: List<Sponsor>,
     year: Int,
     talks: List<Talk>,
+    sponsorEvent: Event? = null,
 ) =
     renderTemplate(context, event) {
         archiveHeader(context, "MiXiT $year", null, talks.size) {
@@ -166,6 +168,8 @@ fun renderArchiveYear(
             }
         }
         pageContent { archiveTalkSections(context, talks) }
+        // Sponsors of that edition, at the bottom of the page
+        sponsorsSection(context, sponsorEvent ?: event, sponsors)
     }
 
 /** Header of an archive listing: breadcrumb back to the archives, title, description and count. */

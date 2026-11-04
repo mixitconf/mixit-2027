@@ -26,7 +26,7 @@ import org.mixit.conference.ui.component.featureCard
 import org.mixit.conference.ui.component.mediaItem
 import org.mixit.conference.ui.component.navHref
 import org.mixit.conference.ui.component.sectionComponent
-import org.mixit.conference.ui.component.sponsorGroupComponent
+import org.mixit.conference.ui.component.sponsorsSection
 import org.mixit.conference.ui.component.timeline
 import org.mixit.conference.ui.component.topicIconSrc
 import org.mixit.conference.ui.renderTemplate
@@ -166,9 +166,5 @@ fun renderHomePage(
     }
 
     // Sponsors, only once the partners of the edition are known
-    if (sponsors.isNotEmpty()) {
-        sectionComponent(context) {
-            sponsorGroupComponent(context, event, sponsors)
-        }
-    }
+    sponsorsSection(context, event, sponsors)
 }

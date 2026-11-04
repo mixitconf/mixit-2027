@@ -207,7 +207,7 @@ private fun Talk.videoThumbnail(): String? {
     return "https://img.youtube.com/vi/$id/hqdefault.jpg"
 }
 
-/** Video of a talk: 16:9 thumbnail with a play mark and its label, then the title. */
+/** Video of a talk: 16:9 thumbnail with a play mark and its label, then the title and the speakers. */
 fun FlowContent.videoCard(context: Context, talk: Talk, label: String) {
     a(href = context.talkHref(talk), classes = "mxt-video-card") {
         span(classes = "mxt-video-card__thumb") {
@@ -219,5 +219,7 @@ fun FlowContent.videoCard(context: Context, talk: Talk, label: String) {
             span(classes = "mxt-video-card__label") { +label }
         }
         strong(classes = "mxt-video-card__title") { +talk.title }
+        val names = talk.speakers.joinToString(", ") { it.fullName() }
+        if (names.isNotBlank()) span(classes = "mxt-video-card__speakers") { +names }
     }
 }

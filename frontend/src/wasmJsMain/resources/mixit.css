@@ -227,6 +227,54 @@ body {
     border-bottom: 50px solid var(--theme-light);
 }
 
+/*
+ * Inverted end: the exact complement of a start bevel (the part above its diagonal), pulled under the
+ * next start bevel so that one opens right on this band's colour.
+ */
+.mxt-layout__section-effect-end-inverted-dark,
+.mxt-layout__section-effect-end-inverted-light {
+    border-bottom: 50px solid transparent;
+    margin-bottom: -50px;
+}
+
+.mxt-layout__section-effect-end-inverted-dark {
+    border-right-color: var(--theme-dark);
+}
+
+.mxt-layout__section-effect-end-inverted-light {
+    border-right-color: var(--theme-light);
+}
+
+/*
+ * Two coloured bands one after the other: whatever the effect asked by the page, the first band ends
+ * inverted so that the next one opens right on its colour (never a white area between two bands).
+ */
+.mxt-layout__section-effect-end-light:has(+ .mxt-layout__section-effect-start-dark),
+.mxt-layout__section-effect-end-dark:has(+ .mxt-layout__section-effect-start-light),
+.mxt-layout__section-effect-end-light:has(+ .mxt-layout__section-effect-start-light),
+.mxt-layout__section-effect-end-dark:has(+ .mxt-layout__section-effect-start-dark) {
+    border-top: 0;
+    border-bottom: 50px solid transparent;
+    margin-bottom: -50px;
+}
+
+.mxt-layout__section-effect-end-light:has(+ .mxt-layout__section-effect-start-dark),
+.mxt-layout__section-effect-end-light:has(+ .mxt-layout__section-effect-start-light) {
+    border-right-color: var(--theme-light);
+}
+
+.mxt-layout__section-effect-end-dark:has(+ .mxt-layout__section-effect-start-light),
+.mxt-layout__section-effect-end-dark:has(+ .mxt-layout__section-effect-start-dark) {
+    border-right-color: var(--theme-dark);
+}
+
+/* The next band starts right below, without the usual top margin */
+.mxt-layout__section-effect[class*="-end"] + .mxt-layout__section-effect[class*="-start"],
+.mxt-layout__section-effect-end-inverted-dark + .mxt-layout__section-effect,
+.mxt-layout__section-effect-end-inverted-light + .mxt-layout__section-effect {
+    margin-top: 0 !important;
+}
+
 .mxt-video__multi-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -4653,4 +4701,179 @@ body:not([data-theme="dark"]) .mxt-favorite-heart {
     //opacity: 0.55;
     cursor: not-allowed;
     filter: none;
+}
+
+.mxt-video-card__speakers {
+    margin-top: -4px;
+    font-size: 14px;
+    color: color-mix(in srgb, var(--text-color) 75%, transparent);
+}
+
+/* ------------------------------------------------------------------ */
+/* Sponsors: logo wall (page bottom) and sponsors page tiles           */
+/* ------------------------------------------------------------------ */
+
+.mxt-sponsor-wall {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 0 16px;
+}
+
+.mxt-sponsor-wall__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 24px;
+}
+
+.mxt-sponsor-wall__head .mxt-block-title {
+    margin: 0;
+}
+
+.mxt-sponsor-wall__more {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.mxt-sponsor-wall__more:hover {
+    color: var(--text-color);
+}
+
+.mxt-sponsor-logos {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+}
+
+.mxt-sponsor-logos--large {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.mxt-sponsor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    border: 1px solid rgba(44, 35, 61, 0.1);
+    color: #2c233d;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.mxt-sponsor-logos--large .mxt-sponsor-logo {
+    padding: 16px 22px;
+}
+
+a.mxt-sponsor-logo:hover {
+    color: #2c233d;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.mxt-sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Sponsors page */
+.mxt-sponsor-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.mxt-sponsor-tile {
+    scroll-margin-top: 16px;
+}
+
+.mxt-sponsor-tile__summary {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.mxt-sponsor-tile__summary::-webkit-details-marker {
+    display: none;
+}
+
+.mxt-sponsor-tile__summary:hover .mxt-sponsor-logo {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.mxt-sponsor-tile__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.mxt-sponsor-tile__name::after {
+    content: "";
+    flex: none;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.15s;
+}
+
+/* An opened sponsor takes the whole row: logo on the left, its story on the right */
+.mxt-sponsor-tile[open] {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+    gap: 16px 28px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: var(--theme-light);
+}
+
+.mxt-sponsor-tile[open] .mxt-sponsor-tile__name::after {
+    transform: rotate(-135deg);
+    margin-top: 6px;
+}
+
+.mxt-sponsor-tile__body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 15px;
+}
+
+.mxt-sponsor-tile__text {
+    max-width: 75ch;
+}
+
+.mxt-sponsor-tile__text p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .mxt-sponsor-logos,
+    .mxt-sponsor-logos--large,
+    .mxt-sponsor-tiles {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .mxt-sponsor-tile[open] {
+        grid-template-columns: 1fr;
+    }
 }
