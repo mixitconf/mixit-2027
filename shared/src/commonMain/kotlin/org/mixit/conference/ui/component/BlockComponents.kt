@@ -337,20 +337,6 @@ fun FlowContent.personTile(name: String, photo: String, detail: String? = null) 
     }
 }
 
-/** Row of edition links ("2027 2026 ..."), the current one marked with aria-current. */
-fun FlowContent.editionSwitch(label: String, years: List<Int>, current: Int, href: (Int) -> String) {
-    nav(classes = "mxt-edition-switch") {
-        attributes["aria-label"] = label
-        span(classes = "mxt-edition-switch__label") { +label }
-        years.forEach { year ->
-            a(href = href(year), classes = "mxt-edition-switch__link") {
-                if (year == current) attributes["aria-current"] = "page"
-                +year.toString()
-            }
-        }
-    }
-}
-
 /** Card with a logo or photo, a name and a description that may hold HTML (organisations, sponsors). */
 fun FlowContent.logoCard(image: String, title: String, html: String) {
     article(classes = "mxt-logo-card") {
@@ -364,7 +350,7 @@ fun FlowContent.logoCard(image: String, title: String, html: String) {
 
 /**
  * Compact edition picker ("Édition 2026 ▾") that opens a list of links, without JavaScript.
- * Meant for the dark page header, where a long [editionSwitch] would not fit.
+ * Meant for the dark page header.
  */
 fun FlowContent.editionMenu(label: String, years: List<Int>, current: Int, href: (Int) -> String) {
     details(classes = "mxt-edition-menu") {

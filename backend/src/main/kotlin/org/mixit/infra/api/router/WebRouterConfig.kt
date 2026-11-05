@@ -5,6 +5,7 @@ import org.mixit.conference.model.shared.Context
 import org.mixit.conference.ui.CURRENT_MEDIA_YEAR
 import org.mixit.conference.ui.CURRENT_TALK_YEAR
 import org.mixit.conference.ui.CURRENT_YEAR
+import org.mixit.conference.ui.MEDIA_YEARS
 import org.mixit.conference.ui.page.renderError
 import org.mixit.conference.ui.security.loginStartForm
 import org.mixit.domain.api.EventScreen
@@ -30,6 +31,7 @@ import org.springframework.http.MediaType
 import org.springframework.web.servlet.function.EntityResponse
 import org.springframework.web.servlet.function.ServerResponse
 import org.springframework.web.servlet.function.router
+import java.net.URI
 
 @Configuration
 class WebRouterConfig {
@@ -101,8 +103,15 @@ class WebRouterConfig {
             GET("/archives/topic/{topic}") {
                 archiveHandler.findTopic(it.pathVariable("topic"))
             }
+            // An edition of the archives is its media page: keep the old links working
             GET("/archives/year/{year}") {
-                archiveHandler.findYear(it.pathVariable("year").toIntOrNull() ?: 0)
+                val year = it.pathVariable("year").toIntOrNull()
+                if (year == null || year !in MEDIA_YEARS) {
+                    ServerResponse.notFound().build()
+                } else {
+                    val basePath = (webContext.context ?: Context.default()).uriBasePath
+                    ServerResponse.permanentRedirect(URI("$basePath/$year/media")).build()
+                }
             }
             GET("/archives/{theme}") {
                 archiveHandler.findTheme(it.pathVariable("theme"))
