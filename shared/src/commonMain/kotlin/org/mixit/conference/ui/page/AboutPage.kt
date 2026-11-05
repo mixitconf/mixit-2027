@@ -12,7 +12,7 @@ import org.mixit.conference.ui.YEARS
 import org.mixit.conference.ui.component.Definition
 import org.mixit.conference.ui.component.Rubrique
 import org.mixit.conference.ui.component.autoGrid
-import org.mixit.conference.ui.component.editionSwitch
+import org.mixit.conference.ui.component.editionMenu
 import org.mixit.conference.ui.component.figureImage
 import org.mixit.conference.ui.component.pageContent
 import org.mixit.conference.ui.component.pageHeaderComponent
@@ -34,7 +34,9 @@ fun renderAboutPage(
         rubrique = Rubrique.ABOUT,
         title = context.i18n("about.v2.title"),
         intro = context.i18n("about.v2.intro"),
-    )
+    ) {
+        editionMenu(context.i18n("page.edition"), YEARS, event.year) { "${context.uriBasePath}/$it/about" }
+    }
     pageContent {
         statRow(listOf("start", "edition", "team").map {
             Definition(context.i18n("about.stats.$it"), context.i18n("about.stats.$it.label"))
@@ -48,7 +50,6 @@ fun renderAboutPage(
         }
 
         pageSection(context.i18n("about.team.title"), intro = context.i18n("about.team.v2.intro")) {
-            editionSwitch(context.i18n("page.edition"), YEARS, event.year) { "${context.uriBasePath}/$it/about" }
             autoGrid("140px") {
                 staff.sortedBy { it.firstname }.forEach {
                     personTile(it.firstname, it.photoUrl ?: DEFAULT_IMG_URL, it.lastname)

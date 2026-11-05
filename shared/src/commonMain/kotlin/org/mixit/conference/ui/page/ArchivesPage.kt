@@ -25,7 +25,6 @@ import org.mixit.conference.ui.component.iconSrc
 import org.mixit.conference.ui.component.pageContent
 import org.mixit.conference.ui.component.pageHeaderComponent
 import org.mixit.conference.ui.component.pageSection
-import org.mixit.conference.ui.component.sponsorsSection
 import org.mixit.conference.ui.component.videoCard
 import org.mixit.conference.ui.renderTemplate
 
@@ -97,7 +96,7 @@ fun renderArchives(
                     years.forEach { year ->
                         val count = allTalks.count { it.event == year.toString() }
                         li {
-                            a(href = "${context.uriBasePath}/archives/year/$year", classes = "mxt-year-list__link") {
+                            a(href = "${context.uriBasePath}/$year/media", classes = "mxt-year-list__link") {
                                 span(classes = "mxt-year-list__year") { +"$year" }
                                 span(classes = "mxt-year-list__count") { +"$count ${context.i18n("archives.year.videos")}" }
                             }
@@ -153,25 +152,6 @@ fun renderArchiveTopic(
         pageContent { archiveTalkSections(context, talks) }
     }
 
-fun renderArchiveYear(
-    context: Context,
-    event: Event,
-    sponsors: List<Sponsor>,
-    year: Int,
-    talks: List<Talk>,
-    sponsorEvent: Event? = null,
-) =
-    renderTemplate(context, event) {
-        archiveHeader(context, "MiXiT $year", null, talks.size) {
-            a(href = "${context.uriBasePath}/$year/media", classes = "mxt-button mxt-button--line mxt-page-header__button") {
-                +context.i18n("archives.year.media")
-            }
-        }
-        pageContent { archiveTalkSections(context, talks) }
-        // Sponsors of that edition, at the bottom of the page
-        sponsorsSection(context, sponsorEvent ?: event, sponsors)
-    }
-
 /** Header of an archive listing: breadcrumb back to the archives, title, description and count. */
 private fun kotlinx.html.DIV.archiveHeader(
     context: Context,
@@ -179,7 +159,6 @@ private fun kotlinx.html.DIV.archiveHeader(
     intro: String?,
     count: Int,
     icon: String? = null,
-    aside: (kotlinx.html.DIV.() -> Unit)? = null,
 ) {
     pageHeaderComponent(
         context,
@@ -189,7 +168,6 @@ private fun kotlinx.html.DIV.archiveHeader(
         breadcrumb = listOf(Crumb(context.i18n("media.v2.crumb"), "${context.uriBasePath}/archives")),
         meta = { span { +"$count ${context.i18n("archives.topic.count")}" } },
         leading = icon?.let { src -> { img(src = src, alt = "", classes = "mxt-page-header__icon") } },
-        aside = aside,
     )
 }
 

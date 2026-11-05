@@ -60,7 +60,7 @@ fun renderMedia(
             nav(classes = "mxt-media-nav") {
                 attributes["aria-label"] = context.i18n("media.v2.onpage")
                 if (keynotes.isNotEmpty()) chipLink(context.i18n("talk.keynotes.title"), "#keynotes", false, count = keynotes.size)
-                if (albums.isNotEmpty()) chipLink(context.i18n("talk.photos.title"), "#photos", false, count = albums.size)
+                if (albums.isNotEmpty()) chipLink(context.i18n("media.v2.chip.albums"), "#photos", false, count = albums.size)
                 if (others.isNotEmpty()) chipLink(context.i18n("media.v2.all.videos"), "#videos", false, count = others.size)
             }
 

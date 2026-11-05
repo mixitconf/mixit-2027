@@ -7,7 +7,6 @@ import org.mixit.conference.shared.model.Topic
 import org.mixit.conference.ui.CURRENT_YEAR
 import org.mixit.conference.ui.page.renderArchiveTheme
 import org.mixit.conference.ui.page.renderArchiveTopic
-import org.mixit.conference.ui.page.renderArchiveYear
 import org.mixit.conference.ui.page.renderArchives
 import org.mixit.domain.spi.EventRepository
 import org.mixit.domain.spi.PeopleRepository
@@ -58,23 +57,6 @@ class ArchiveHandler(
                 sponsors = peopleRepository.findSponsorByYear(CURRENT_YEAR),
                 theme = theme,
                 talks = talksByTheme.getValue(theme),
-            ),
-        )
-    }
-
-    fun findYear(year: Int): ServerResponse {
-        val event = eventRepository.findByYear(CURRENT_YEAR) ?: return ServerResponse.notFound().build()
-        val talks = archivedTalks.filter { it.event == year.toString() }
-        if (talks.isEmpty()) return ServerResponse.notFound().build()
-        return ServerResponse.ok().contentType(MediaType.TEXT_HTML).body(
-            renderArchiveYear(
-                context = webContext.context ?: Context.default(),
-                event = event,
-                // The sponsors of the edition being browsed, not those of the current one
-                sponsors = peopleRepository.findSponsorByYear(year),
-                sponsorEvent = eventRepository.findByYear(year),
-                year = year,
-                talks = talks,
             ),
         )
     }

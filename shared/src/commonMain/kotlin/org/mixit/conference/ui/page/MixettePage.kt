@@ -12,7 +12,7 @@ import org.mixit.conference.ui.component.Rubrique
 import org.mixit.conference.ui.component.Step
 import org.mixit.conference.ui.component.autoGrid
 import org.mixit.conference.ui.component.callout
-import org.mixit.conference.ui.component.editionSwitch
+import org.mixit.conference.ui.component.editionMenu
 import org.mixit.conference.ui.component.logoCard
 import org.mixit.conference.ui.component.pageContent
 import org.mixit.conference.ui.component.pageHeaderComponent
@@ -32,7 +32,9 @@ fun renderMixettePage(
         rubrique = Rubrique.MIXETTE,
         title = context.i18n("mixette.v2.title"),
         intro = context.i18n("mixette.v2.intro"),
-    )
+    ) {
+        editionMenu(context.i18n("page.edition"), MIXETTE_YEARS, event.year) { "${context.uriBasePath}/$it/mixette" }
+    }
     pageContent {
         pageSection(context.i18n("mixette.how.title")) {
             steps((1..3).map {
@@ -41,9 +43,6 @@ fun renderMixettePage(
         }
 
         pageSection(context.i18n("mixette.orgas.title"), intro = context.i18n("mixette.orgas.intro")) {
-            editionSwitch(context.i18n("page.edition"), MIXETTE_YEARS, event.year) {
-                "${context.uriBasePath}/$it/mixette"
-            }
             if (organizations.isEmpty()) {
                 callout(
                     icon = Rubrique.MIXETTE.src,
