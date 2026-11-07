@@ -59,6 +59,7 @@ val NAVIGATION = listOf(
         items = listOf(
             MenuItem(title = "nav.edition.current", href = ""),
             MenuItem(title = "nav.edition.archives", href = "archives"),
+            MenuItem(title = "nav.edition.sponsors", href = "sponsors"),
         )
     ),
     Menu(
