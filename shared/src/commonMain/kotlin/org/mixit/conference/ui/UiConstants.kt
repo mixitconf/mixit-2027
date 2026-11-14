@@ -59,6 +59,7 @@ val NAVIGATION = listOf(
         items = listOf(
             MenuItem(title = "nav.edition.current", href = ""),
             MenuItem(title = "nav.edition.archives", href = "archives"),
+            MenuItem(title = "nav.edition.sponsors", href = "sponsors"),
         )
     ),
     Menu(
@@ -75,8 +76,6 @@ val NAVIGATION = listOf(
         title = "nav.about.title",
         items = listOf(
             MenuItem(title = "nav.about.us", href = "about"),
-            MenuItem(title = "nav.about.values", href = "#home.section.values.title"),
-            MenuItem(title = "nav.about.podcast", href = "#home.section.onair.title", inHeader = false),
             MenuItem(title = "nav.about.coc", href = "codeofconduct"),
         )
     ),
